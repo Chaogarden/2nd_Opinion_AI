@@ -1,8 +1,8 @@
-# main.py
+# app/main.py
 # ==============================
 # Streamlit UI for 2nd Opinion AI
-# - Audio upload -> Faster-Whisper ASR
-# - Optional speaker diarization (pyannote)
+# - Audio upload -> WhisperX ASR (faster-whisper backend)
+# - Speaker diarization via pyannote (built into whisperx)
 # - Auto-map speakers to DOCTOR / PATIENT (heuristic)
 # - Placeholders for Extraction / RAG / Reasoning / Output
 # ==============================
@@ -20,7 +20,6 @@ ROOT_DIR = Path(__file__).resolve().parents[1]
 if str(ROOT_DIR) not in sys.path:
     sys.path.append(str(ROOT_DIR))
 
-# Faster-Whisper transcription (already updated to accept diarization flags)
 from core.audio.transcribe import transcribe_file
 
 
@@ -61,7 +60,7 @@ st.markdown("""
 # Title + subtitle
 # ---------------------------
 st.title("2nd Opinion AI — MVP")
-st.caption("Local ASR/OCR → Extraction → RAG → Reasoning → SOAP → PDF/TTS (skeleton)")
+st.caption("Local ASR (WhisperX) → Extraction → RAG → Reasoning → SOAP → PDF/TTS (skeleton)")
 
 
 # ---------------------------
@@ -83,26 +82,25 @@ DOC_IMPERATIVES = [
 ]
 DOSAGE_RE = re.compile(r"\b\d+(\.\d+)?\s*mg\b", re.IGNORECASE)
 
+
 def score_doctorish(text: str) -> int:
+    """Score how likely a text segment is from a doctor."""
     t = text.lower()
     score = 0
-    # keyword hits
     for kw in DOC_KEYWORDS:
         if kw in t:
             score += 2
-    # imperatives at beginning of sentence phrases (very rough)
     for imp in DOC_IMPERATIVES:
         if re.search(rf"(?:^|[\.!\?]\s+)({imp})\b", t):
             score += 2
-    # dosage patterns
     if DOSAGE_RE.search(t):
         score += 3
-    # “we’ll / let's / i recommend” style
     if "we'll" in t or "let's" in t or "i recommend" in t:
         score += 1
     return score
 
-def infer_role_mapping(segments):
+
+def infer_role_mapping(segments: list) -> dict:
     """
     Returns a dict: { 'SPEAKER_00': 'DOCTOR', 'SPEAKER_01': 'PATIENT', ... }
     Heuristic: speaker with highest 'doctorish' score -> DOCTOR. Others -> PATIENT/OTHER_i.
@@ -112,26 +110,22 @@ def infer_role_mapping(segments):
         spk = seg.get("speaker", "UNKNOWN")
         per_spk_score[spk] += score_doctorish(seg.get("text", ""))
 
-    # If no speakers or all zero, bail to default order
     if not per_spk_score:
         return {}
 
-    # Rank speakers by score (desc)
     ranked = sorted(per_spk_score.items(), key=lambda x: x[1], reverse=True)
     mapping = {}
     if ranked:
         mapping[ranked[0][0]] = "DOCTOR"
-        # Everyone else as PATIENT/OTHER_i
         others = [spk for spk, _ in ranked[1:]]
         if others:
-            # pick the first other as PATIENT
             mapping[others[0]] = "PATIENT"
-            # remaining as OTHER_i
             for i, spk in enumerate(others[1:], start=1):
                 mapping[spk] = f"OTHER_{i}"
     return mapping
 
-def apply_role_mapping(segments, mapping):
+
+def apply_role_mapping(segments: list, mapping: dict) -> list:
     """Append 'role' to segments; if unknown, keep original speaker id."""
     out = []
     for seg in segments:
@@ -140,13 +134,17 @@ def apply_role_mapping(segments, mapping):
         out.append({**seg, "role": role})
     return out
 
-def swap_doctor_patient(mapping):
+
+def swap_doctor_patient(mapping: dict) -> dict:
     """Swap DOCTOR and PATIENT roles in an existing mapping."""
     swapped = {}
     for k, v in mapping.items():
-        if v == "DOCTOR": swapped[k] = "PATIENT"
-        elif v == "PATIENT": swapped[k] = "DOCTOR"
-        else: swapped[k] = v
+        if v == "DOCTOR":
+            swapped[k] = "PATIENT"
+        elif v == "PATIENT":
+            swapped[k] = "DOCTOR"
+        else:
+            swapped[k] = v
     return swapped
 
 
@@ -171,23 +169,60 @@ with st.sidebar:
 
     st.divider()
 
+    # Model selection
+    model_size = st.selectbox(
+        "Whisper model size",
+        options=["tiny", "base", "small", "medium", "large-v2"],
+        index=1,
+        help="Larger models are more accurate but slower. 'base' is recommended for CPU."
+    )
+
     # Diarization controls
-    diarize_on = st.checkbox("Diarize speakers (pyannote)", value=True,
-                             help="Requires pyannote.audio + HF token. Uses segment-level speaker tags.")
+    diarize_on = st.checkbox(
+        "Diarize speakers (pyannote)",
+        value=True,
+        help="Requires HuggingFace token. Identifies different speakers in the audio."
+    )
+    
     col_d1, col_d2 = st.columns(2)
     with col_d1:
-        min_spk = st.number_input("Min speakers", value=2, min_value=1, max_value=8, step=1,
-                                  help="Set equal to Max for fixed speaker count.")
+        min_spk = st.number_input(
+            "Min speakers",
+            value=2,
+            min_value=1,
+            max_value=8,
+            step=1,
+            help="Set equal to Max for fixed speaker count."
+        )
     with col_d2:
-        max_spk = st.number_input("Max speakers", value=2, min_value=1, max_value=8, step=1)
+        max_spk = st.number_input(
+            "Max speakers",
+            value=2,
+            min_value=1,
+            max_value=8,
+            step=1
+        )
+
+    # HuggingFace token for diarization (hardcoded for convenience)
+    HF_TOKEN_DEFAULT = "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"  # <-- Replace with your actual token
+    
+    hf_token = st.text_input(
+        "HuggingFace Token",
+        type="password",
+        help="Required for speaker diarization. Get one at huggingface.co/settings/tokens",
+        value=HF_TOKEN_DEFAULT
+    )
 
     st.divider()
-    auto_role = st.checkbox("Auto-label DOCTOR / PATIENT", value=True,
-                            help="Heuristic based on medical keywords, dosage patterns, and clinician phrasing.")
+    auto_role = st.checkbox(
+        "Auto-label DOCTOR / PATIENT",
+        value=True,
+        help="Heuristic based on medical keywords, dosage patterns, and clinician phrasing."
+    )
 
 
 # ---------------------------
-# Transcript (ASR wired here)
+# Transcript (ASR with WhisperX)
 # ---------------------------
 st.subheader("Transcript")
 
@@ -205,17 +240,30 @@ if audio_file is not None:
         tmp_path = tmp.name
 
     st.info(f"Transcribing: {audio_file.name}")
-    with st.spinner("Running Faster-Whisper..."):
-        result = transcribe_file(
-            tmp_path,
-            with_diarization=diarize_on,
-            min_speakers=int(min_spk),
-            max_speakers=int(max_spk),
-            hf_token="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",
-        )
-        st.session_state["transcript_result"] = result
-        # reset mapping on new transcript
-        st.session_state["role_mapping"] = {}
+    
+    # Check if diarization requested but no token
+    if diarize_on and not hf_token:
+        st.warning("Diarization requires a HuggingFace token. Proceeding without diarization.")
+        do_diarize = False
+    else:
+        do_diarize = diarize_on
+    
+    with st.spinner("Running WhisperX transcription..."):
+        try:
+            result = transcribe_file(
+                tmp_path,
+                model_size=model_size,
+                with_diarization=do_diarize,
+                min_speakers=int(min_spk),
+                max_speakers=int(max_spk),
+                hf_token=hf_token if hf_token else None,
+            )
+            st.session_state["transcript_result"] = result
+            st.session_state["role_mapping"] = {}
+            st.success("Transcription complete!")
+        except Exception as e:
+            st.error(f"Transcription failed: {str(e)}")
+            st.session_state["transcript_result"] = None
 
 # 2) If no audio but free text is provided, treat it as the transcript
 elif free_text.strip():
@@ -230,14 +278,19 @@ elif free_text.strip():
 if st.session_state["transcript_result"] is not None:
     tr = st.session_state["transcript_result"]
     transcript_text = tr.get("text", "")
+    
+    # Show metadata
+    info = tr.get("info", {})
+    if info.get("duration"):
+        st.caption(f"Duration: {info['duration']:.1f}s | Language: {info.get('language', 'unknown')}")
+    
     st.text_area("ASR Transcript", value=transcript_text, height=200)
 
-    # Colors
+    # Colors for speaker roles
     speaker_palette = {
         "DOCTOR": "#22d3ee",   # cyan
         "PATIENT": "#a78bfa",  # violet
     }
-    # generic palette for other speakers
     generic_palette = [
         "#f59e0b", "#34d399", "#f472b6", "#60a5fa", "#f87171", "#c084fc", "#10b981"
     ]
@@ -263,7 +316,7 @@ if st.session_state["transcript_result"] is not None:
                 segs_with_roles = [{**s, "role": s.get("speaker", "UNKNOWN")} for s in segments]
 
             # Build legend
-            roles_present = list(dict.fromkeys(s["role"] for s in segs_with_roles))  # preserve order
+            roles_present = list(dict.fromkeys(s["role"] for s in segs_with_roles))
             legend_cols = st.columns(max(1, min(6, len(roles_present))))
             other_color_iter = iter(generic_palette)
             role_color = {}
@@ -273,7 +326,10 @@ if st.session_state["transcript_result"] is not None:
                 else:
                     color = role_color.get(role) or next(other_color_iter, "#9ca3af")
                     role_color[role] = color
-                legend_cols[i].markdown(f"<div style='color:{color}; font-weight:600'>{role}</div>", unsafe_allow_html=True)
+                legend_cols[i].markdown(
+                    f"<div style='color:{color}; font-weight:600'>{role}</div>",
+                    unsafe_allow_html=True
+                )
 
             # Print each segment
             for seg in segs_with_roles:
@@ -291,6 +347,7 @@ if st.session_state["transcript_result"] is not None:
 else:
     st.write("Upload audio or paste text to see a transcript.")
 
+
 # ---------------------------
 # Structured slots placeholder
 # ---------------------------
@@ -307,17 +364,20 @@ slots = {
 }
 st.json(slots)
 
+
 # ---------------------------
 # RAG evidence placeholder
 # ---------------------------
 st.subheader("RAG evidence")
 st.write("_Top-k guideline snippets will appear here in a future commit._")
 
+
 # ---------------------------
 # Reasoner output placeholder
 # ---------------------------
 st.subheader("Draft differential + plan (with citations)")
 st.write("_Reasoner output placeholder_")
+
 
 # ---------------------------
 # Action buttons
