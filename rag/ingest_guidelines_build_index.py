@@ -9,6 +9,10 @@ Outputs (in --outdir):
   - guidelines_embeds.npy      (optional vector cache)
 
 Does not touch your existing Merck19 index files.
+
+## LLM Cleaning Hook (optional)
+Set --llm_cleaner to a provider name (e.g. "openai") and ensure the corresponding
+environment variables are set (e.g. OPENAI_API_KEY). By default, no LLM calls are made.
 """
 
 import argparse
@@ -16,7 +20,7 @@ import hashlib
 import json
 import re
 from pathlib import Path
-from typing import Dict, List, Tuple, Optional
+from typing import Dict, List, Tuple, Optional, Any
 import unicodedata
 import collections
 import zipfile
@@ -42,6 +46,79 @@ from sentence_transformers import SentenceTransformer
 import nltk
 from nltk.tokenize import sent_tokenize
 nltk.download("punkt", quiet=True)
+nltk.download("punkt_tab", quiet=True)
+
+
+# ========================
+# CONFIGURATION CONSTANTS
+# ========================
+
+# Minimum word count for a chunk to be embedded
+MIN_CHUNK_WORDS = 40
+
+# Front-matter: skip first N paragraphs if they look like titles/intro
+FRONT_MATTER_SKIP_LINES = 15
+
+# Boilerplate phrases that indicate non-guideline content (case-insensitive)
+BOILERPLATE_PHRASES = [
+    "all rights reserved",
+    "isbn",
+    "writing committee",
+    "acknowledgments",
+    "acknowledgements",
+    "conflict of interest",
+    "conflicts of interest",
+    "disclosures",
+    "funding",
+    "financial support",
+    "author contributions",
+    "authors' contributions",
+    "correspondence:",
+    "reprint requests",
+    "reprints:",
+    "copyright ©",
+    "copyright (c)",
+    "published by",
+    "doi:",
+    "e-mail:",
+    "email:",
+    "fax:",
+    "tel:",
+    "address:",
+    "received:",
+    "accepted:",
+    "revised:",
+    "online publication",
+    "epub ahead",
+    "supplementary material",
+    "supplemental material",
+    "appendix",
+    "abbreviations:",
+    "keywords:",
+    "key words:",
+]
+
+# Section headings to skip entirely (case-insensitive, leaf heading match)
+SKIP_SECTION_HEADINGS = {
+    "references",
+    "bibliography",
+    "works cited",
+    "acknowledgments",
+    "acknowledgements",
+    "about the authors",
+    "author information",
+    "conflicts of interest",
+    "disclosures",
+    "funding",
+    "abbreviations",
+    "table of contents",
+    "contents",
+    "index",
+    "appendix",
+    "supplementary",
+    "supplemental",
+    "author contributions",
+}
 
 
 # ------------------------
@@ -140,15 +217,185 @@ def strip_toc_block(text: str) -> str:
         del lines[start:end]
     return "\n".join(lines)
 
-def filter_and_clean_epub_items(items: List[Tuple[Optional[str], str]]) -> List[Tuple[Optional[str], str]]:
-    out = []
-    for heading, para in items:
-        # skip explicit References/Bibliography sections
-        if heading and heading.strip().lower().split(" > ")[-1] in {"references", "bibliography", "works cited"}:
+
+# ------------------------
+# NEW: Enhanced noise filters
+# ------------------------
+
+def contains_boilerplate_phrase(text: str) -> bool:
+    """Check if text contains any boilerplate phrase indicating non-guideline content."""
+    lower = text.lower()
+    for phrase in BOILERPLATE_PHRASES:
+        if phrase in lower:
+            return True
+    return False
+
+
+def is_reference_entry(para: str) -> bool:
+    """
+    Detect if a paragraph looks like a numbered reference entry.
+    E.g., "1. Smith J, Doe A. Title of paper. J Med. 2020;45(3):123-130."
+    """
+    para = para.strip()
+    if not para:
+        return False
+    
+    # Pattern: starts with number followed by period/parenthesis
+    numbered_start = re.match(r"^\d{1,3}[\.\)]\s*", para)
+    if not numbered_start:
+        return False
+    
+    # Look for journal-style patterns: volume(issue):pages or year;volume
+    journal_patterns = [
+        r"\d{4}\s*;\s*\d+",  # 2020;45
+        r"\d+\s*\(\s*\d+\s*\)\s*:\s*\d+",  # 45(3):123
+        r"\d+\s*:\s*\d+\s*[-–]\s*\d+",  # 45:123-130
+        r"[A-Z][a-z]+\s+[A-Z][A-Z]?\s*[,;]",  # Author initials pattern
+        r"et al\.",  # et al.
+        r"pp?\.\s*\d+",  # p. 123 or pp. 123
+    ]
+    
+    matches = sum(1 for p in journal_patterns if re.search(p, para))
+    return matches >= 2
+
+
+def is_front_matter_line(line: str, line_idx: int) -> bool:
+    """
+    Detect if a line in the first N lines looks like front-matter (title, authors, affiliations).
+    """
+    if line_idx >= FRONT_MATTER_SKIP_LINES:
+        return False
+    
+    line = line.strip()
+    if not line:
+        return False
+    
+    # Very short lines at the start are often titles/headers
+    words = line.split()
+    if len(words) <= 3 and line_idx < 5:
+        return True
+    
+    # Lines with mostly uppercase (titles)
+    alpha_chars = [c for c in line if c.isalpha()]
+    if alpha_chars and sum(1 for c in alpha_chars if c.isupper()) / len(alpha_chars) > 0.7:
+        return True
+    
+    # Lines with author-like patterns (names with degrees/affiliations)
+    author_patterns = [
+        r"^[A-Z][a-z]+\s+[A-Z]\.\s*[A-Z][a-z]+",  # John A. Smith
+        r",\s*(MD|PhD|MPH|RN|DO|FACC|FAHA|FACS)\b",  # Degrees
+        r"^\d+\s*[A-Z][a-z]+\s+(University|Hospital|Institute|College|School|Center|Centre)",  # Affiliations
+    ]
+    for p in author_patterns:
+        if re.search(p, line):
+            return True
+    
+    return False
+
+
+def filter_paragraphs_pdf(paragraphs: List[str]) -> List[str]:
+    """
+    Filter out front-matter, reference entries, and boilerplate paragraphs from PDF text.
+    """
+    filtered = []
+    for idx, para in enumerate(paragraphs):
+        para = para.strip()
+        if not para:
             continue
-        txt = remove_urls(strip_author_year_citations(strip_numeric_bracket_citations(strip_superscripts(para))))
-        if txt.strip():
-            out.append((heading, txt))
+        
+        # Skip front-matter (first few paragraphs that look like titles/authors)
+        lines = para.split('\n')
+        if idx < 3 and all(is_front_matter_line(l, i) for i, l in enumerate(lines) if l.strip()):
+            continue
+        
+        # Skip reference entries
+        if is_reference_entry(para):
+            continue
+        
+        # Skip boilerplate
+        if contains_boilerplate_phrase(para):
+            # Only skip if it's a short paragraph dominated by boilerplate
+            if len(para.split()) < 100:
+                continue
+        
+        # Skip paragraphs that are mostly numbers/punctuation (tables, etc.)
+        alpha_ratio = sum(1 for c in para if c.isalpha()) / max(1, len(para))
+        if alpha_ratio < 0.4:
+            continue
+        
+        filtered.append(para)
+    
+    return filtered
+
+
+def should_skip_heading(heading: Optional[str]) -> bool:
+    """Check if a heading indicates a section we should skip entirely."""
+    if not heading:
+        return False
+    
+    # Get the leaf heading (last part after " > ")
+    parts = heading.strip().lower().split(" > ")
+    leaf = parts[-1].strip() if parts else ""
+    
+    # Check against skip list
+    for skip_term in SKIP_SECTION_HEADINGS:
+        if skip_term in leaf:
+            return True
+    
+    return False
+
+
+def filter_and_clean_epub_items(items: List[Tuple[Optional[str], str]]) -> List[Tuple[Optional[str], str]]:
+    """
+    Filter EPUB items to remove references, boilerplate, and front-matter.
+    """
+    out = []
+    seen_substantive = False
+    
+    for idx, (heading, para) in enumerate(items):
+        # Skip sections by heading
+        if should_skip_heading(heading):
+            continue
+        
+        # Clean the paragraph text
+        txt = para.strip()
+        txt = strip_superscripts(txt)
+        txt = strip_numeric_bracket_citations(txt)
+        txt = strip_author_year_citations(txt)
+        txt = remove_urls(txt)
+        txt = normalize_ws(txt)
+        
+        if not txt:
+            continue
+        
+        # Skip reference entries
+        if is_reference_entry(txt):
+            continue
+        
+        # Skip front-matter: first few short paragraphs before substantive content
+        words = txt.split()
+        if not seen_substantive:
+            # Mark as substantive if we have a paragraph with decent length
+            if len(words) >= 50:
+                seen_substantive = True
+            elif idx < 10:
+                # Skip short early paragraphs (titles, intros)
+                if len(words) < 30:
+                    # Check if it looks like a title or author line
+                    if contains_boilerplate_phrase(txt) or len(words) < 10:
+                        continue
+        
+        # Skip boilerplate paragraphs
+        if contains_boilerplate_phrase(txt) and len(words) < 100:
+            continue
+        
+        # Skip paragraphs with low alphabetic content
+        alpha_ratio = sum(1 for c in txt if c.isalpha()) / max(1, len(txt))
+        if alpha_ratio < 0.4:
+            continue
+        
+        out.append((heading, txt))
+    
     return out
 
 
@@ -156,7 +403,11 @@ def filter_and_clean_epub_items(items: List[Tuple[Optional[str], str]]) -> List[
 # PDF extraction (PyMuPDF)
 # ------------------------
 
-def extract_text_pdf(pdf_path: Path) -> str:
+def extract_text_pdf(pdf_path: Path) -> Tuple[str, List[str]]:
+    """
+    Extract and clean text from a PDF.
+    Returns (full_cleaned_text, list_of_filtered_paragraphs).
+    """
     doc = fitz.open(pdf_path)
 
     # First pass: collect raw lines per page
@@ -197,7 +448,14 @@ def extract_text_pdf(pdf_path: Path) -> str:
     raw = remove_urls(raw)
     raw = remove_references_tail(raw)
 
-    return raw.strip()
+    # Split into paragraphs and filter out noise
+    paragraphs = [p.strip() for p in raw.split("\n\n") if p.strip()]
+    filtered_paragraphs = filter_paragraphs_pdf(paragraphs)
+    
+    # Rejoin for backward compatibility
+    cleaned_text = "\n\n".join(filtered_paragraphs)
+
+    return cleaned_text.strip(), filtered_paragraphs
 
 
 
@@ -271,22 +529,25 @@ def chunk_by_sentences(
     max_words: int = 500,
     min_words: int = 180,
     overlap_sents: int = 1,
-) -> List[str]:
+) -> List[Dict]:
     """
     Simple sentence-aware chunker for plain text (no headings).
+    Returns list of dicts with 'text' and 'position_in_doc'.
     """
-    chunks: List[str] = []
+    chunks: List[Dict] = []
     buf: List[str] = []
+    chunk_idx = 0
 
     def flush():
-        nonlocal buf
+        nonlocal buf, chunk_idx
         if not buf:
             return
         chunk = " ".join(buf).strip()
         if len(chunk.split()) < min_words and chunks:
-            chunks[-1] = (chunks[-1] + " " + chunk).strip()
+            chunks[-1]["text"] = (chunks[-1]["text"] + " " + chunk).strip()
         else:
-            chunks.append(chunk)
+            chunks.append({"text": chunk, "position_in_doc": chunk_idx})
+            chunk_idx += 1
         buf = []
 
     paragraphs = [p.strip() for p in text.split("\n\n") if p.strip()]
@@ -311,21 +572,28 @@ def chunk_items_with_headings(
     overlap_sents: int = 1,
 ) -> List[Dict]:
     """
-    Chunk a list of (heading_path, paragraph_text) pairs. Keeps heading_path in metadata.
+    Chunk a list of (heading_path, paragraph_text) pairs. 
+    Keeps heading_path and position_in_doc in metadata.
     """
     chunks: List[Dict] = []
     buf_sents: List[str] = []
     current_heading: Optional[str] = None
+    chunk_idx = 0
 
     def flush():
-        nonlocal buf_sents
+        nonlocal buf_sents, chunk_idx
         if not buf_sents:
             return
         text = " ".join(buf_sents).strip()
         if len(text.split()) < min_words and chunks:
             chunks[-1]["text"] = (chunks[-1]["text"] + " " + text).strip()
         else:
-            chunks.append({"heading_path": current_heading, "text": text})
+            chunks.append({
+                "heading_path": current_heading, 
+                "text": text,
+                "position_in_doc": chunk_idx
+            })
+            chunk_idx += 1
         buf_sents = []
 
     for heading, para in items:
@@ -347,6 +615,81 @@ def chunk_items_with_headings(
 
 
 # ------------------------
+# Post-chunk filtering
+# ------------------------
+
+def is_low_signal_chunk(text: str) -> bool:
+    """
+    Check if a chunk is low-signal (mostly boilerplate, names, or non-content).
+    """
+    words = text.split()
+    if len(words) < MIN_CHUNK_WORDS:
+        return True
+    
+    # Check alphabetic ratio
+    alpha_ratio = sum(1 for c in text if c.isalpha()) / max(1, len(text))
+    if alpha_ratio < 0.5:
+        return True
+    
+    # Check for boilerplate dominance in short chunks
+    if len(words) < 80 and contains_boilerplate_phrase(text):
+        return True
+    
+    return False
+
+
+# ------------------------
+# Optional LLM Cleaning Hook
+# ------------------------
+
+def maybe_llm_clean(text: str, meta: Dict, args: Any) -> str:
+    """
+    Optional LLM-based cleaning hook.
+    By default (--llm_cleaner none), returns text unchanged.
+    
+    To implement LLM cleaning:
+    1. Set --llm_cleaner to a provider name (e.g., "openai")
+    2. Set appropriate environment variables (e.g., OPENAI_API_KEY)
+    3. Implement the cleaning logic below for your provider
+    
+    Example prompt for cleaning:
+    "Clean this medical guideline text by removing any remaining citations,
+    author credits, or boilerplate. Keep only the clinical recommendations
+    and explanatory content. Return the cleaned text only."
+    """
+    if not hasattr(args, 'llm_cleaner') or args.llm_cleaner == "none":
+        return text
+    
+    # Placeholder for LLM integration
+    # Users can implement their preferred LLM client here
+    provider = args.llm_cleaner
+    
+    if provider == "openai":
+        # Example OpenAI integration (requires openai package and OPENAI_API_KEY)
+        try:
+            import os
+            import openai
+            client = openai.OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
+            response = client.chat.completions.create(
+                model="gpt-4o-mini",
+                messages=[
+                    {"role": "system", "content": "You are a medical text cleaner. Remove citations, author credits, and boilerplate from medical guideline text. Keep only clinical recommendations and explanatory content. Return cleaned text only, no commentary."},
+                    {"role": "user", "content": text[:4000]}  # Truncate to avoid token limits
+                ],
+                max_tokens=2000,
+                temperature=0.0
+            )
+            return response.choices[0].message.content.strip()
+        except Exception as e:
+            print(f"[WARN] LLM cleaning failed: {e}")
+            return text
+    
+    # Add other providers as needed
+    print(f"[WARN] Unknown LLM provider: {provider}, returning original text")
+    return text
+
+
+# ------------------------
 # Embedding / Index
 # ------------------------
 
@@ -360,13 +703,23 @@ def embed_in_batches(model: SentenceTransformer, texts: List[str], batch_size: i
 # ------------------------
 
 def main():
-    ap = argparse.ArgumentParser()
+    ap = argparse.ArgumentParser(
+        description="Ingest medical guideline PDFs and EPUBs into a FAISS index.",
+        epilog="""
+LLM Cleaning Hook:
+  Set --llm_cleaner to a provider name (e.g., "openai") for optional LLM-based
+  chunk cleaning. Requires appropriate environment variables (e.g., OPENAI_API_KEY).
+  Default is "none" (deterministic heuristics only).
+        """
+    )
     ap.add_argument("--root", type=str, default="guidelines", help="Root folder containing your guideline subfolders")
     ap.add_argument("--outdir", type=str, default="rag/index", help="Output folder for index and jsonl files")
     ap.add_argument("--model", type=str, default="BAAI/bge-m3", help="SentenceTransformer embedding model")
     ap.add_argument("--max_words", type=int, default=500)
     ap.add_argument("--min_words", type=int, default=180)
     ap.add_argument("--batch_size", type=int, default=64)
+    ap.add_argument("--llm_cleaner", type=str, default="none", 
+                    help="LLM provider for optional cleaning (none, openai). Default: none")
     args = ap.parse_args()
 
     root = Path(args.root)
@@ -394,50 +747,76 @@ def main():
 
             try:
                 if ext == ".pdf":
-                    raw = extract_text_pdf(path)
-                    if not raw:
+                    cleaned_text, _ = extract_text_pdf(path)
+                    if not cleaned_text:
                         continue
-                    chunks = chunk_by_sentences(raw, max_words=args.max_words, min_words=args.min_words, overlap_sents=1)
-                    for ch in chunks:
-                        all_meta.append({
+                    chunk_dicts = chunk_by_sentences(
+                        cleaned_text, 
+                        max_words=args.max_words, 
+                        min_words=args.min_words, 
+                        overlap_sents=1
+                    )
+                    
+                    for c in chunk_dicts:
+                        chunk_text = c["text"]
+                        
+                        # Skip low-signal chunks
+                        if is_low_signal_chunk(chunk_text):
+                            continue
+                        
+                        # Optional LLM cleaning
+                        chunk_text = maybe_llm_clean(chunk_text, c, args)
+                        
+                        # Build metadata (only for chunks we keep)
+                        meta = {
                             "corpus": corpus,
                             "doc_id": doc_id,
                             "title": title,
                             "section": None,
                             "heading_path": None,
+                            "position_in_doc": c.get("position_in_doc", 0),
                             "source_path": str(path),
                             "sha256": sha
-                        })
-                        # skip micro or low-signal chunks
-                        if len(ch.strip().split()) < 40:
-                            continue
-                        all_texts.append(ch)
+                        }
+                        all_meta.append(meta)
+                        all_texts.append(chunk_text)
 
                 elif ext == ".epub":
                     items = extract_items_epub(path)
                     items = filter_and_clean_epub_items(items)
                     if not items:
                         continue
-                    cdicts = chunk_items_with_headings(items, max_words=args.max_words, min_words=args.min_words, overlap_sents=1)
-
                     
+                    chunk_dicts = chunk_items_with_headings(
+                        items, 
+                        max_words=args.max_words, 
+                        min_words=args.min_words, 
+                        overlap_sents=1
+                    )
                     
-                    if not items:
-                        continue
-                    cdicts = chunk_items_with_headings(items, max_words=args.max_words, min_words=args.min_words, overlap_sents=1)
-                    for c in cdicts:
-                        all_meta.append({
+                    for c in chunk_dicts:
+                        chunk_text = c["text"]
+                        
+                        # Skip low-signal chunks
+                        if is_low_signal_chunk(chunk_text):
+                            continue
+                        
+                        # Optional LLM cleaning
+                        chunk_text = maybe_llm_clean(chunk_text, c, args)
+                        
+                        # Build metadata (only for chunks we keep)
+                        meta = {
                             "corpus": corpus,
                             "doc_id": doc_id,
                             "title": title,
                             "section": None,
                             "heading_path": c.get("heading_path"),
+                            "position_in_doc": c.get("position_in_doc", 0),
                             "source_path": str(path),
                             "sha256": sha
-                        })
-                        if len(c["text"].strip().split()) < 40:
-                            continue
-                        all_texts.append(c["text"])
+                        }
+                        all_meta.append(meta)
+                        all_texts.append(chunk_text)
 
             except Exception as e:
                 print(f"[WARN] Skipping {path} due to error: {e}")
@@ -446,6 +825,9 @@ def main():
     if not all_texts:
         print("No chunks extracted. Exiting.")
         return
+
+    # Verify metadata alignment
+    assert len(all_texts) == len(all_meta), f"Metadata mismatch: {len(all_texts)} texts vs {len(all_meta)} meta"
 
     model = SentenceTransformer(args.model)
 

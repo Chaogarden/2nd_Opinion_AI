@@ -41,7 +41,7 @@ def main():
         if row.get("heading_path"):
             print(f"    heading: {row['heading_path']}")
         print(f"    src: {row['source_path']}")
-        preview = row["text"][:500].replace("\n", " ")
+        preview = row["text"][:6000].replace("\n", " ")
         print("    " + preview + ("…" if len(row['text']) > 500 else ""))
         print("-" * 80)
 
