@@ -1,0 +1,16 @@
+{
+  "overall_summary": "The doctor's clinical note was found to have several areas for improvement, including incomplete documentation of symptoms and missed diagnoses.",
+  "overall_rating": "needs_improvement",
+  "strengths": "The doctor did a good job documenting the patient's medication regimen, allergies, and treatment plan. The safety score was also high at 90%.",
+  "concerns": "Several symptoms were not documented in the note, including nasal congestion from pollen, chills, pounding, depression, and fever. Additionally, two potential red-flag diagnoses (Panic Disorder and Cardiac Disease) were missed. There is a concern about the patient's adherence to Prozac on weekends.",
+  "documentation_quality": "The note was found to have poor consistency with the conversation, with only 12% of symptoms documented. However, medication and allergy coverage were complete.",
+  "diagnostic_reasoning": "The diagnosis coherence score was low at 60%, indicating that the doctor's thought process may not be clearly conveyed in the note. The differential breadth was good at 80%.",
+  "treatment_plan": "The treatment plan was found to be safe, with no safety failures or critical safety issues identified. However, guideline adherence was only 80%.",
+  "safety_assessment": "There is a moderate concern about the patient's dosing of Prozac and potential adherence issues on weekends.",
+  "recommendations": [
+    "Discuss the missed symptoms with your doctor to ensure they are addressed in future visits.",
+    "Ask your doctor to review your medication regimen, including any potential interactions or side effects.",
+    "Consider seeking a second opinion for the missed diagnoses (Panic Disorder and Cardiac Disease)."
+  ],
+  "full_narrative": "Overall, the doctor's clinical note had several areas for improvement. While they did a good job documenting the patient's medication regimen and treatment plan, they failed to document several important symptoms and missed two potential red-flag diagnoses. There is also concern about the patient's adherence to Prozac on weekends. It may be helpful to discuss these issues with your doctor at your next visit."
+}

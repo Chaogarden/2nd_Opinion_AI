@@ -1,0 +1,1193 @@
+================================================================================
+ACI PIPELINE TEST - DETAILED OUTPUT
+Generated: 2025-12-06T04:43:37.539370
+Split: test, Max Examples: 2
+k_guidelines: 3, k_merck: 3
+================================================================================
+
+
+################################################################################
+# ENCOUNTER: D2N068
+################################################################################
+
+============================================================
+DIALOGUE
+============================================================
+[DOCTOR]: hi , brian . how are you ?
+[PATIENT]: hi , good to see you .
+[DOCTOR]: it's good to see you too . so , i know the nurse told you a little bit about dax .
+[PATIENT]: mm-hmm .
+[DOCTOR]: i'd like to tell dax about you , okay ?
+[PATIENT]: sure .
+[DOCTOR]: so , brian is a 58 year old male with a past medical history significant for congestive heart failure and hypertension , who presents today for follow-up of his chronic problems . so , brian , it's been a little while i've seen you .
+[PATIENT]: mm-hmm .
+[DOCTOR]: whats , what's going on ?
+[PATIENT]: i , i just feel out of sorts lately . i do n't know if it's the change in the seasons or if we're just doing a lot of projects around the house and , and some , some construction on our own . i'm just feeling out of it . lack of , uh , energy . i'm just so tired and fatigued , and i feel kinda ... i feel lightheaded every once in a while .
+[DOCTOR]: okay . all right . um , how long has that been going on for ?
+[PATIENT]: uh , probably since labor day , so about five weeks or so .
+[DOCTOR]: okay . and , have you noticed any , like , symptoms of weight gain , like , like swollen legs , or , you know , your belly feels bloated and things like that ?
+[PATIENT]: i feel , i feel bloated every once in a while .
+[DOCTOR]: okay . all right . um , and , are you taking your , your medications ?
+[PATIENT]: uh , yes , i am .
+[DOCTOR]: okay . and , how about your diet ? are you watching your diet ?
+[PATIENT]: uh , it's been a little bit of a struggle . we began construction on our kitchen over labor day weekend , and it was ... hard to cook or prepare meals so we ate out a lot, and not always the best food out. it , it , it kind of reeked havoc , uh , so it's been maybe off a little bit .
+[DOCTOR]: okay . all right . and , how about , you know , other symptoms , like , have you had a fever or chills ?
+[PATIENT]: no .
+[DOCTOR]: okay , and any problems breathing ? do you feel short of breath ?
+[PATIENT]: uh , just when i'm doing doing the projects . again , not even lifting anything really heavy , it's just that if i'm ex- exerting any energy , i , i kinda feel it at that point .
+[DOCTOR]: okay . do you have any chest pain ?
+[PATIENT]: slight cramps . that seems to go away after about , maybe about an hour or so after i first feel it .
+[DOCTOR]: okay , and how about a cough ?
+[PATIENT]: a , a slight cough , and again , i'm not sure if it's just the change of seasons and i'm getting a cold .
+[DOCTOR]: mm-hmm . okay . all right . well , you know , for the most part , how , you know , before all of this-
+[PATIENT]: mm-hmm .
+[DOCTOR]: . how were you doing with your heart failure ? i know that we've kinda talked about you being able to watch your healthy food intake and that's been kind of a struggle in the past .
+[PATIENT]: i , i , i've actually been pretty good about that ever since . the , the , the last year , it's been a little chaotic , but i wanted to make sure i stayed on top of that .
+[DOCTOR]: okay . all right . are you excited for halloween ?
+[PATIENT]: uh , ca n't wait .
+[DOCTOR]: okay .
+[PATIENT]: our home renovations should be complete by then
+[DOCTOR]: all right , yeah , right .
+[PATIENT]: yeah .
+[DOCTOR]: and , so , lastly , for your high blood pressure , how are you doing with that ? have , are , did you buy the blood pressure cuff like i asked ?
+[PATIENT]: yeah , i , i did , and we do mon- , i , i monitor it regularly . my wife makes sure i stay on top of that , but it's been pretty good .
+[DOCTOR]: okay . all right . well , i know you did the review of systems sheet when you checked in , and you were endorsing this fatigue-
+[PATIENT]: mm-hmm .
+[DOCTOR]: . and a little dizziness and we just talked a lot about a lot of other symptoms .
+[PATIENT]: mm-hmm .
+[DOCTOR]: any other symptoms i might be missing ? nausea or vomiting , diarrhea ?
+[PATIENT]: no .
+[DOCTOR]: anything like that ?
+[PATIENT]: no .
+[DOCTOR]: okay . all right . well , i just want to go ahead and do a quick physical exam .
+[PATIENT]: mm-hmm .
+[DOCTOR]: hey , dragon ? show me the vital signs . so , looking at your vital signs here in the office , everything looks good . you know , your blood pressure and your heart rate and your oxygenation all look really good .
+[PATIENT]: mm-hmm .
+[DOCTOR]: so , i'm gon na just take a listen to a few things and check some things out , and i'll let you know what i find , okay ?
+[PATIENT]: perfect .
+[DOCTOR]: okay . so , on your physical examination , you know , i do appreciate some jugular venous distention to-
+[PATIENT]: mm-hmm .
+[DOCTOR]: to about eight centimeters . on your heart exam , i do appreciate a three out of six systolic ejection murmur , which we've heard in the past . and , on your lung exam , i do appreciate some fine crackles at the bases bilaterally , and your lower extremities have , you know , 1+ pitting edema . so , what does all that mean ? that means i think you're retaining a little bit of fluid .
+[PATIENT]: mm-hmm .
+[DOCTOR]: okay ? i wan na just go ahead and look at some of your results , okay ?
+[PATIENT]: sure .
+[DOCTOR]: hey , dragon ? show me the chest x-ray . so , looking here at the results of your chest x-ray , it does look like you have a little bit of fluid in your lungs there , and that can be just from , um , your heart failure , okay ? hey , dragon ? show me the echocardiogram . so , this is the echocardiogram that we did about four months ago , and this shows that the pumping function of your heart is a little bit reduced at 45 % , and it also shows that leaky valve , the mitral regurgitation that , that you have , okay ? um , so , let me just go over and talk about , a little bit , my assessment and my plan for you .
+[PATIENT]: mm-hmm .
+[DOCTOR]: okay ? so , for your first problem , your congestive heart failure , i think you're retaining fluid , and i wan na go ahead and increase your lasix to 80 mg once a day .
+[PATIENT]: mm-hmm .
+[DOCTOR]: i want you to weigh yourself every day . i want you to call me if you're gaining more weight .
+[PATIENT]: mm-hmm .
+[DOCTOR]: and , i certainly want you to call me if you have any other symptoms of shortness of breath , and i wan na go ahead and order another echocardiogram , okay ?
+[PATIENT]: sure .
+[DOCTOR]: hey , dragon ? order an echocardiogram .
+lastly , for your high blood pressure , it looks like you're managing it well at this time , okay ? so , i wan na go ahead and continue with the lisinopril 20 mg a day . i want you to continue to record your blood pressures at home , and report them to me in the patient portal if you see they're getting elevated , okay ?
+[PATIENT]: mm-hmm .
+[DOCTOR]: does that sound like a plan ?
+[PATIENT]: that sounds fine .
+[DOCTOR]: okay . um , i'm gon na be in touch with you after we get your test results , and we'll go from there , okay ?
+[PATIENT]: sure .
+[DOCTOR]: all right . hey , dragon , finalize the note .
+
+============================================================
+EXTRACTED FACTS
+============================================================
+{
+  "chief_complaint": "Feeling out of sorts, lack of energy, fatigue, lightheadedness",
+  "demographics": {},
+  "symptoms": [
+    {
+      "name_surface": "fatigue",
+      "name_norm": "fatigue",
+      "cui": null,
+      "assertion": "present",
+      "duration": "5 weeks",
+      "severity": null,
+      "onset": "gradual",
+      "modifiers": [
+        "exertion"
+      ],
+      "evidence": {
+        "utt_ids": [],
+        "spans": [
+          {
+            "text": "fatigue"
+          }
+        ]
+      }
+    },
+    {
+      "name_surface": "lightheadedness",
+      "name_norm": "lightheadedness",
+      "cui": null,
+      "assertion": "present",
+      "duration": "5 weeks",
+      "severity": null,
+      "onset": "gradual",
+      "modifiers": [
+        "exertion"
+      ],
+      "evidence": {
+        "utt_ids": [],
+        "spans": [
+          {
+            "text": "lightheadedness"
+          }
+        ]
+      }
+    },
+    {
+      "name_surface": "bloating",
+      "name_norm": "bloating",
+      "cui": null,
+      "assertion": "present",
+      "duration": "5 weeks",
+      "severity": null,
+      "onset": "gradual",
+      "modifiers": [],
+      "evidence": {
+        "utt_ids": [],
+        "spans": [
+          {
+            "text": "bloating"
+          }
+        ]
+      }
+    },
+    {
+      "name_surface": "slight cramps",
+      "name_norm": "slight_cramps",
+      "cui": null,
+      "assertion": "present",
+      "duration": "5 weeks",
+      "severity": null,
+      "onset": "gradual",
+      "modifiers": [
+        "after 1 hour"
+      ],
+      "evidence": {
+        "utt_ids": [],
+        "spans": [
+          {
+            "text": "slight cramps"
+          }
+        ]
+      }
+    },
+    {
+      "name_surface": "cough",
+      "name_norm": "cough",
+      "cui": null,
+      "assertion": "present",
+      "duration": "5 weeks",
+      "severity": null,
+      "onset": "gradual",
+      "modifiers": [],
+      "evidence": {
+        "utt_ids": [],
+        "spans": [
+          {
+            "text": "cough"
+          }
+        ]
+      }
+    },
+    {
+      "name_surface": "chest pain (slight cramps)",
+      "name_norm": "chest_pain_(slight_cramps)",
+      "cui": null,
+      "assertion": "present",
+      "duration": null,
+      "severity": null,
+      "onset": null,
+      "modifiers": [],
+      "evidence": {
+        "utt_ids": [],
+        "spans": []
+      }
+    },
+    {
+      "name_surface": "palpitations",
+      "name_norm": "palpitations",
+      "cui": null,
+      "assertion": "present",
+      "duration": null,
+      "severity": null,
+      "onset": null,
+      "modifiers": [],
+      "evidence": {
+        "utt_ids": [],
+        "spans": []
+      }
+    },
+    {
+      "name_surface": "cramps",
+      "name_norm": null,
+      "cui": null,
+      "assertion": "present",
+      "duration": null,
+      "severity": null,
+      "onset": null,
+      "modifiers": [],
+      "evidence": {
+        "utt_ids": [
+          23
+        ],
+        "spans": [
+          {
+            "text": "cramps"
+          }
+        ]
+      }
+    },
+    {
+      "name_surface": "mon-",
+      "name_norm": null,
+      "cui": null,
+      "assertion": "present",
+      "duration": null,
+      "severity": null,
+      "onset": null,
+      "modifiers": [],
+      "evidence": {
+        "utt_ids": [
+          37
+        ],
+        "spans": [
+          {
+            "text": "mon-"
+          }
+        ]
+      }
+    }
+  ],
+  "meds": [
+    {
+      "name_surface": "lasix",
+      "name_norm": "lasix",
+      "rxcui": null,
+      "dose": "80 mg once a day",
+      "strength": null,
+      "freq": "once daily",
+      "route": "oral",
+      "form": null,
+      "prn": null,
+      "assertion": "present",
+      "evidence": {
+        "utt_ids": [],
+        "spans": [
+          {
+            "text": "lasix"
+          }
+        ]
+      }
+    },
+    {
+      "name_surface": "lisinopril",
+      "name_norm": "lisinopril",
+      "rxcui": null,
+      "dose": "20 mg a day",
+      "strength": null,
+      "freq": "once daily",
+      "route": "oral",
+      "form": null,
+      "prn": null,
+      "assertion": "present",
+      "evidence": {
+        "utt_ids": [],
+        "spans": [
+          {
+            "text": "lisinopril"
+          }
+        ]
+      }
+    }
+  ],
+  "allergies": [],
+  "vitals": [
+    {
+      "kind": "bp",
+      "value": "managed well at this time",
+      "evidence": {
+        "utt_ids": [],
+        "spans": []
+      }
+    }
+  ],
+  "risk_factors": [
+    "congestive heart failure",
+    "hypertension"
+  ],
+  "qa_extractions": [
+    {
+      "concept": "pmh_congestive_heart_failure",
+      "value": "congestive heart failure",
+      "assertion": "present",
+      "evidence": {
+        "utt_ids": [],
+        "spans": []
+      }
+    },
+    {
+      "concept": "pmh_hypertension",
+      "value": "hypertension",
+      "assertion": "present",
+      "evidence": {
+        "utt_ids": [],
+        "spans": []
+      }
+    }
+  ]
+}
+
+============================================================
+RAG EVIDENCE (6 chunks)
+============================================================
+
+--- GUIDELINES (3 chunks) ---
+
+[guidelines:4012] Score: 0.6858
+Title: GINA-2025-Update-25 11 08-WMS
+Section: 
+Text:
+These include anxiety and depression, obesity (p.117), deconditioning, chronic
+rhinosinusitis (p.120), inducible laryngeal obstruction, GERD (p.118), COPD (p.133), obstructive sleep apnea,
+bronchiectasis, cardiac disease, and kyphosis due to osteoporosis. Investigate according to clinical suspicion. • Modifiable risk factors and triggers: Identify factors that increase the risk of exacerbations, e.g., smoking, vaping,
+environmental tobacco exposure, other environmental exposures at home or work including allergens (if sensitized),
+indoor and outdoor air pollution, molds and noxious chemicals, and medications such as beta-blockers or nonsteroidal anti-inflammatory drugs (NSAIDs). For allergens, check for sensitization using skin prick testing or specific
+immunoglobin (Ig) E.
+• Regular use and over-use of SABAs: Regular SABA use causes beta-receptor down-regulation and reduction in
+response,692 leading in turn to greater use. SABA over-use may also be habitual. Dispensing of ≥3 SABA canisters
+per year (corresponding to average use more than daily) is associated with increased risk of emergency department
+visit or hospitalization independent of severity,92,93 and dispensing of ≥12 canisters per year (one a month) is
+associated with substantially increased risk of death.93,95 Risks are higher with nebulized SABA.693
+• Anxiety, depression and social and economic problems: These are very common in asthma, particularly in difficult
+asthma687 and contribute to symptoms, impaired quality of life, and poor adherence. • Medication side-effects: Systemic effects, particularly with frequent or continuous OCS, or long-term high-dose ICS
+may contribute to poor quality of life and increase the likelihood of poor adherence. Local side-effects of dysphonia
+or candidiasis may occur with high-dose or potent ICS, especially if inhaler technique is poor. Consider drug
+interactions including risk of adrenal suppression with use of P450 inhibitors such as itraconazole. 3. Review and optimi...
+----------------------------------------
+[guidelines:4065] Score: 0.6694
+Title: GINA-2025-Update-25 11 08-WMS
+Section: 
+Text:
+• Consider systemic corticosteroids for children attending an emergency department or admitted to hospital: oral
+prednisone/prednisolone 1–2 mg/kg/day up to a maximum of 20 mg/day for children aged 0–2 years; 30 mg/day for
+children aged 3–5 years, for up to 5 days, or dexamethasone 0.3 to 0.6 mg/kg/day for 1–2 days. If symptoms do not
+resolve, or recur, during dexamethasone treatment, consider switching to prednisolone. • Oxygen saturation by pulse oximetry may be overestimated in people with dark skin color. Arrange early follow-up after an exacerbation
+• Instruct parent/caregiver to seek medical care if there is no improvement or a deterioration over the next 24–48
+hours. • If feasible, arrange follow-up within 1–3 days of an exacerbation and again 1–2 months later to plan ongoing asthma
+management. Children who have experienced an asthma exacerbation are at risk of further exacerbations, so they should be
+assessed for management to reduce this risk. 12. Management of exacerbations (children 5 years and younger)
+DIAGNOSIS OF EXACERBATIONS
+A flare-up (exacerbation) of asthma in children 5 years and younger is defined as an acute or sub-acute deterioration in
+symptom control that is sufficient to cause distress or risk to health. An exacerbations may necessitate a visit to a
+healthcare provider or require treatment with systemic corticosteroids. In pediatric resources, the term “episode” is
+commonly used. Early symptoms of an exacerbation may include any of the following:
+• Onset of symptoms of respiratory tract infection
+• An acute or sub-acute increase in wheeze and shortness of breath
+• An increase in coughing, especially while the child is asleep
+• Lethargy or reduced exercise tolerance
+• Impairment of daily activities, including feeding
+• A poor response to reliever medication. In a study of children aged 2–5 years, the combination of increased daytime cough, daytime wheeze, and night-time beta2agonist use was a strong predictor at a group level of an imminent ...
+----------------------------------------
+[guidelines:3714] Score: 0.6656
+Title: panicdisorder
+Section: 
+Text:
+The most common side effects of SSRIs are headaches, irritability, nausea and other gastrointestinal issues, insomnia, sexual
+dysfunction, weight gain, increased anxiety, drowsiness,
+and tremor. Some of these effects (e.g., nausea) are usually
+transient, lasting 1–2 weeks. Others (e.g., sexual dysfunction) commonly last for the duration of treatment. Side effects of SSRIs are highly individualized. For example, a
+particular SSRI may cause insomnia in one patient but
+somnolence in another. Thus, although comparative studies may tend to favor one medication over another for a
+particular side effect, a given patient may still experience
+that particular side effect. Fortunately, there are several
+SSRIs on the market, and it is usually possible to ﬁnd one
+that the patient can tolerate well; this may require a process
+of engaging in several therapeutic trials until the optimal
+medication is found for a given patient. There are scattered reports in the literature of extrapyramidal side effects, but these have not been observed in large
+multicenter trials and may be idiosyncratic. Some evidence
+suggests that SSRIs may be associated with an increased
+likelihood of upper gastrointestinal bleeding, particularly
+when taken in combination with NSAIDs or with aspirin
+(260, 261). Use of SSRIs also has been found to be associated with low bone mineral density in male patients age 65
+years and older (262), increased rate of bone loss at the hip
+in older female patients (263), and increased risk of falls and
+of osteoporotic fractures in patients age 50 years and older
+(264, 265). In addition, as described earlier in Section II.H,
+the FDA has warned of the possibility that SSRIs and other
+antidepressants may increase the risk of suicidal ideation
+and behavior in patients age 25 years and younger (227). Copyright 2010, American Psychiatric Association. APA makes this practice guideline freely available to promote its dissemination and use; however, copyright
+protections are enforced in...
+----------------------------------------
+
+--- MERCK MANUAL (3 chunks) ---
+
+[merck:4582] Score: 0.7474
+Heading: Untitled
+Text:
+The main symptom is severe fatigue (usually for > 6 mo) that interferes with daily activities (see Table 348-1 for usual symptoms and signs). Usually, no signs of muscle weakness, arthritis, neuropathy, or organomegaly are present. However, some definitions require the presence of low-grade fever, nonexudative pharyngitis, or palpable or tender lymph nodes. Diagnosis • Clinical criteria [Table 348-1. Diagnostic Criteria for Chronic Fatigue Syndrome] Because there is no definitive diagnostic test, diagnosis is by clinical criteria (see Table 348-1). However, because multiple definitions exist, the criteria are not agreed on universally and should not always be strictly applied to individual patients. The criteria are more useful for epidemiologic and clinical studies than for excluding the diagnosis in individual patients. Further evaluation aims to exclude treatable disorders. A reasonable assessment includes CBC and measurement of electrolytes, ESR, and thyroidstimulating hormone. In some cases, chest x-ray and tests for antinuclear antibody, rheumatoid factor, hepatitis, and HIV should be added. Other viral antibody and other expensive tests are unlikely to shed light on the diagnosis or cause. Obvious depression or severe anxiety excludes the diagnosis of CFS. Treatment • Sometimes nonsedating antidepressants • Sometimes psychologic intervention, physical rehabilitation, and/or regular exercise • Avoidance of prolonged rest Nonsedating antidepressants are commonly prescribed, although their value is undetermined. Antiviral treatments with acyclovir and amantadine do not seem effective. V&lganciclovir is under study. Studies of immunologic treatments, including high-dose immune globulins, dialyzable WBC extract, amphigen, interferons, isoprinosine, and corticosteroids, have been inconclusive and mostly disappointing. Dietary supplements and high-dose vitamins are commonly used, but their usefulness has not been substantiated. Psychologic intervention (eg, individu...
+----------------------------------------
+[merck:2095] Score: 0.7042
+Heading: Untitled
+Text:
+Symptoms consist of insomnia, irritability, depression, nausea, and anorexia; symptoms peak at 2 to 3 days and last up to 7 days. Diagnosis • Clinical evaluation Diagnosis is usually made clinically. Drug levels are not measured. Most routine urine drug screens include marijuana (see p. 1510). Treatment • Supportive measures Treatment is usually unnecessary; for patients experiencing significant discomfort, treatment is supportive. Management of abuse typically consists of behavioral therapy in an outpatient drug treatment program. Cocaine Cocaine is a sympathomimetic drug with CNS stimulant and euphoriant properties. High doses can cause panic, schizophrenic-like symptoms, seizures, hyperthermia, hypertension, arrhythmias, stroke, aortic dissection, intestinal ischemia, and Ml. Toxicity is managed with supportive care, including IV benzodiazepines (for agitation, hypertension, and seizures) and cooling techniques (for hyperthermia). Withdrawal manifests primarily as depression, difficulty concentrating, and somnolence (cocaine washout syndrome). 1694 The Merck Manual of Diagnosis & Therapy, 19th Edition Chapter 160. Drug Use & Dependence Most cocaine users are episodic recreational users. However, about 25% (or more) of users meet criteria for abuse or dependence. Use among adolescents has declined recently. Availability of highly biologically active forms, such as crack cocaine, has worsened the problem of cocaine dependence. Most cocaine in the US is about 50 to 60% pure; it may contain a wide array of fillers, adulterants, and contaminants. Most cocaine in the US is volatilized and inhaled, but it may be snorted, or injected IV. For inhalation, the powdered hydrochloride salt is converted to a more volatile form, usually by adding NaHCC>3, water, and heat. The resultant precipitate (crack cocaine) is volatilized by heating (it is not burned) and inhaled. Onset of effect is quick, and intensity of the high rivals IV injection. Tolerance to cocaine occurs, and wit...
+----------------------------------------
+[merck:1740] Score: 0.7009
+Heading: Untitled
+Text:
+Later in the several weeks' course of the disease, jaundice, hepatomegaly, splenomegaly, myocarditis, and heart failure may occur, especially in louse-borne disease. Other symptoms may include ophthalmitis, iridocyclitis, exacerbation of asthma, and erythema multiforme. Meningismus is rare. Spontaneous abortion can occur. 1411 The Merck Manual of Diagnosis & Therapy, 19th Edition Chapter 136. Spirochetes The patient is usually asymptomatic for several days to > 1 wk between the initial episode and the first relapse. Relapses, related to the cyclic development of the parasites, occur with a sudden return of fever and often arthralgia and all the former symptoms and signs. Jaundice is more common during relapse. The illness clears as before, but 2 to 10 similar episodes may follow at intervals of 1 to 2 wk. The episodes become progressively less severe, and patients eventually recover as they develop immunity. Diagnosis • Darkfield microscopy The diagnosis is suggested by recurrent fever and confirmed by visualization of spirochetes in the blood during a febrile episode. The spirochetes may be seen on darkfield examination or Wright's- or Giemsastained thick and thin blood smears. (Acridine orange stain for examining blood or tissue is more sensitive than Wright's or Giemsa stain.) Serologic tests are unreliable. Mild polymorphonuclear leukocytosis may occur. Serologic tests for syphilis and Lyme disease may be falsely positive. Differential diagnosis includes Lyme arthritis, malaria, dengue, yellow fever, leptospirosis, typhus, influenza, and enteric fevers. Treatment • Tetracycline, doxycycline, or erythromycin In relapsing fever transmitted by ticks, tetracycline or erythromycin 500 mg po q 6 h is given for 5 to 10 days. A single 500-mg oral dose of either drug cures louse-transmitted fever. Doxycycline 100 mg po q 12 h for 5 to 10 days is also effective. Children < 8 yr are given erythromycin estolate 10 mg/kg po tid. When vomiting or severe disease precludes oral...
+----------------------------------------
+
+============================================================
+DIAGNOSER OUTPUT
+============================================================
+{
+  "differential": [
+    {
+      "condition": "Chronic Fatigue Syndrome",
+      "likelihood": "moderate",
+      "rationale": "Patient's symptoms of fatigue, lightheadedness, bloating, and slight cramps have been present for 5 weeks, which is consistent with the diagnostic criteria for Chronic Fatigue Syndrome. However, further evaluation is needed to exclude other treatable disorders.",
+      "evidence_ids": [
+        "merck:4582"
+      ]
+    },
+    {
+      "condition": "Anxiety Disorder",
+      "likelihood": "low",
+      "rationale": "Patient's symptoms of palpitations and cramps could be related to anxiety, but there is no clear indication of an anxiety disorder.",
+      "evidence_ids": [
+        "guidelines:3714"
+      ]
+    },
+    {
+      "condition": "Cocaine Use Disorder",
+      "likelihood": "low",
+      "rationale": "Patient's symptoms do not clearly indicate cocaine use or withdrawal. However, it is essential to consider the possibility of substance abuse.",
+      "evidence_ids": [
+        "merck:2095"
+      ]
+    },
+    {
+      "condition": "Lyme Disease",
+      "likelihood": "low",
+      "rationale": "Patient's symptoms could be related to Lyme disease, but there are no clear indications of a tick bite or exposure to the disease.",
+      "evidence_ids": [
+        "merck:1740"
+      ]
+    }
+  ],
+  "red_flags": [
+    {
+      "description": "Potential for substance abuse",
+      "risk_level": "moderate",
+      "evidence_ids": [
+        "merck:2095"
+      ]
+    },
+    {
+      "description": "Possible cardiac complications due to hypertension and congestive heart failure",
+      "risk_level": "high",
+      "evidence_ids": []
+    }
+  ],
+  "initial_workup": [
+    {
+      "test_name": "Complete Blood Count (CBC)",
+      "priority": "routine",
+      "rationale": "To evaluate for anemia, infection, or other underlying conditions.",
+      "evidence_ids": [
+        "merck:4582"
+      ]
+    },
+    {
+      "test_name": "Electrolyte Panel",
+      "priority": "routine",
+      "rationale": "To evaluate for electrolyte imbalances that could contribute to fatigue and lightheadedness.",
+      "evidence_ids": [
+        "merck:4582"
+      ]
+    },
+    {
+      "test_name": "Thyroid-Stimulating Hormone (TSH)",
+      "priority": "routine",
+      "rationale": "To evaluate for hypothyroidism, which can cause fatigue and other symptoms.",
+      "evidence_ids": [
+        "merck:4582"
+      ]
+    }
+  ],
+  "management_plan": {
+    "non_pharm": [
+      {
+        "intervention": "Cognitive-behavioral therapy (CBT) or stress management techniques",
+        "rationale": "To help patient manage stress and anxiety related to symptoms.",
+        "evidence_ids": [
+          "guidelines:3714"
+        ]
+      },
+      {
+        "intervention": "Regular exercise program",
+        "rationale": "To improve fatigue and overall well-being.",
+        "evidence_ids": [
+          "merck:4582"
+        ]
+      }
+    ],
+    "pharm": [
+      {
+        "drug": "Nonsedating antidepressant (e.g., fluoxetine)",
+        "route": "Oral",
+        "dose": "20-40 mg/day",
+        "frequency": "Daily",
+        "duration": "",
+        "indication": "",
+        "evidence_ids": [
+          "merck:4582"
+        ]
+      }
+    ]
+  },
+  "contraindications_and_interactions": [],
+  "coding_and_labels": {
+    "icd10_codes": [],
+    "snomed_codes": [],
+    "labels": []
+  },
+  "overall_uncertainty": 0.5,
+  "groundedness_score": 0.5,
+  "notes_on_missing_info": null
+}
+
+============================================================
+CONSULTANT CRITIQUE
+============================================================
+{
+  "issues": [
+    {
+      "kind": "safety_gap",
+      "description": "The diagnostic plan does not address the patient's hypertension and congestive heart failure, which are significant risk factors for cardiac complications.",
+      "severity": "high",
+      "target_path": "/red_flags/0/evidence_ids",
+      "evidence_ids": [
+        "guidelines:4012",
+        "guidelines:4065"
+      ],
+      "suggested_fix": "Consider adding a cardiology consultation or further evaluation to address the patient's cardiovascular risk factors."
+    },
+    {
+      "kind": "dosing_error",
+      "description": "The management plan recommends a nonsedating antidepressant (e.g., fluoxetine) without specifying a dose adjustment for patients with congestive heart failure.",
+      "severity": "moderate",
+      "target_path": "/management_plan/pharm/0/dose",
+      "evidence_ids": [
+        "merck:4582"
+      ],
+      "suggested_fix": "Consider adjusting the dose of fluoxetine to 10-20 mg/day for patients with congestive heart failure."
+    },
+    {
+      "kind": "guideline_conflict",
+      "description": "The diagnostic plan recommends a nonsedating antidepressant (e.g., fluoxetine) without considering alternative treatments for anxiety disorders.",
+      "severity": "moderate",
+      "target_path": "/management_plan/non_pharm/0/intervention",
+      "evidence_ids": [
+        "guidelines:3714"
+      ],
+      "suggested_fix": "Consider recommending a selective serotonin reuptake inhibitor (SSRI) or cognitive-behavioral therapy (CBT) as an alternative treatment for anxiety disorders."
+    },
+    {
+      "kind": "missing_differential",
+      "description": "The diagnostic plan does not consider other potential causes of the patient's symptoms, such as hypothyroidism or sleep apnea.",
+      "severity": "moderate",
+      "target_path": "/differential/0/rationale",
+      "evidence_ids": [
+        "merck:4582"
+      ],
+      "suggested_fix": "Consider adding a differential diagnosis for hypothyroidism and sleep apnea."
+    }
+  ],
+  "overall_assessment": "The diagnostic plan is generally well-structured, but it lacks consideration of the patient's cardiovascular risk factors and alternative treatments for anxiety disorders.",
+  "overall_safety_rating": "needs_review"
+}
+
+============================================================
+ARBITER RESULT
+============================================================
+{
+  "final_plan": {
+    "differential": [
+      {
+        "condition": "Chronic Fatigue Syndrome",
+        "likelihood": "moderate",
+        "rationale": "Patient's symptoms of fatigue, lightheadedness, bloating, and slight cramps have been present for 5 weeks, which is consistent with the diagnostic criteria for Chronic Fatigue Syndrome. However, further evaluation is needed to exclude other treatable disorders.",
+        "evidence_ids": [
+          "merck:4582"
+        ]
+      },
+      {
+        "condition": "Anxiety Disorder",
+        "likelihood": "low",
+        "rationale": "Patient's symptoms of palpitations and cramps could be related to anxiety, but there is no clear indication of an anxiety disorder.",
+        "evidence_ids": [
+          "guidelines:3714"
+        ]
+      },
+      {
+        "condition": "Cocaine Use Disorder",
+        "likelihood": "low",
+        "rationale": "Patient's symptoms do not clearly indicate cocaine use or withdrawal. However, it is essential to consider the possibility of substance abuse.",
+        "evidence_ids": [
+          "merck:2095"
+        ]
+      },
+      {
+        "condition": "Lyme Disease",
+        "likelihood": "low",
+        "rationale": "Patient's symptoms could be related to Lyme disease, but there are no clear indications of a tick bite or exposure to the disease.",
+        "evidence_ids": [
+          "merck:1740"
+        ]
+      }
+    ],
+    "red_flags": [
+      {
+        "description": "Potential for substance abuse",
+        "risk_level": "moderate",
+        "evidence_ids": [
+          "merck:2095"
+        ]
+      },
+      {
+        "description": "Possible cardiac complications due to hypertension and congestive heart failure",
+        "risk_level": "high",
+        "evidence_ids": []
+      }
+    ],
+    "initial_workup": [
+      {
+        "test_name": "Complete Blood Count (CBC)",
+        "priority": "routine",
+        "rationale": "To evaluate for anemia, infection, or other underlying conditions.",
+        "evidence_ids": [
+          "merck:4582"
+        ]
+      },
+      {
+        "test_name": "Electrolyte Panel",
+        "priority": "routine",
+        "rationale": "To evaluate for electrolyte imbalances that could contribute to fatigue and lightheadedness.",
+        "evidence_ids": [
+          "merck:4582"
+        ]
+      },
+      {
+        "test_name": "Thyroid-Stimulating Hormone (TSH)",
+        "priority": "routine",
+        "rationale": "To evaluate for hypothyroidism, which can cause fatigue and other symptoms.",
+        "evidence_ids": [
+          "merck:4582"
+        ]
+      }
+    ],
+    "management_plan": {
+      "non_pharm": [
+        {
+          "intervention": "Cognitive-behavioral therapy (CBT) or stress management techniques",
+          "rationale": "To help patient manage stress and anxiety related to symptoms.",
+          "evidence_ids": [
+            "guidelines:3714"
+          ]
+        },
+        {
+          "intervention": "Regular exercise program",
+          "rationale": "To improve fatigue and overall well-being.",
+          "evidence_ids": [
+            "merck:4582"
+          ]
+        }
+      ],
+      "pharm": [
+        {
+          "drug": "Nonsedating antidepressant (e.g., fluoxetine)",
+          "route": "Oral",
+          "dose": "20-40 mg/day",
+          "frequency": "Daily",
+          "duration": "",
+          "indication": "",
+          "evidence_ids": [
+            "merck:4582"
+          ]
+        }
+      ]
+    },
+    "contraindications_and_interactions": [],
+    "coding_and_labels": {
+      "icd10_codes": [],
+      "snomed_codes": [],
+      "labels": []
+    },
+    "overall_uncertainty": 0.5,
+    "groundedness_score": 0.5,
+    "notes_on_missing_info": null
+  },
+  "abstained": false,
+  "patches_applied": [],
+  "notes_on_missing_info": null,
+  "unresolved_issues": [
+    "Needs manual review (safety_gap): The diagnostic plan does not address the patient's hypertension and congestive heart failure, which are significant risk factors for cardiac complications.",
+    "Minor issue (moderate): The management plan recommends a nonsedating antidepressant (e.g., fluoxetine) without specifying a dose adjustment for patients with congestive heart failure.",
+    "Minor issue (moderate): The diagnostic plan recommends a nonsedating antidepressant (e.g., fluoxetine) without considering alternative treatments for anxiety disorders.",
+    "Minor issue (moderate): The diagnostic plan does not consider other potential causes of the patient's symptoms, such as hypothyroidism or sleep apnea."
+  ]
+}
+
+
+################################################################################
+# ENCOUNTER: D2N069
+################################################################################
+
+============================================================
+DIALOGUE
+============================================================
+[DOCTOR]: hi , ms. thompson . i'm dr. moore . how are you ?
+[PATIENT]: hi , dr. moore .
+[DOCTOR]: hi .
+[PATIENT]: i'm doing okay except for my knee .
+[DOCTOR]: all right , hey , dragon , ms. thompson is a 43 year old female here for right knee pain . so tell me what happened with your knee ?
+[PATIENT]: well , i was , um , trying to change a light bulb , and i was up on a ladder and i kinda had a little bit of a stumble and kinda twisted my knee as i was trying to catch my fall .
+[DOCTOR]: okay . and did you injure yourself any place else ?
+[PATIENT]: no , no . it just seems to be the knee .
+[DOCTOR]: all right . and when did this happen ?
+[PATIENT]: it was yesterday .
+[DOCTOR]: all right . and , uh , where does it hurt mostly ?
+[PATIENT]: it hurts like in , in , in the inside of my knee .
+[DOCTOR]: okay .
+[PATIENT]: right here .
+[DOCTOR]: all right . and anything make it better or worse ?
+[PATIENT]: i have been putting ice on it , uh , and i've been taking ibuprofen , but it does n't seem to help much .
+[DOCTOR]: okay . so it sounds like you fell a couple days ago , and you've hurt something inside of your right knee .
+[PATIENT]: mm-hmm .
+[DOCTOR]: and you've been taking a little bit of ice , uh , putting some ice on it , and has n't really helped and some ibuprofen . is that right ?
+[PATIENT]: that's right . yeah .
+[DOCTOR]: okay , let's review your past history for a second . it looks like , uh , do you have any other past medical history ?
+[PATIENT]: uh , afib .
+[DOCTOR]: okay , and are you taking any medications for that ?
+[PATIENT]: yeah , i am . um , begins with a d.
+[DOCTOR]: uh , digoxin ?
+[PATIENT]: that's it . yeah , that's it .
+[DOCTOR]: okay , all right . how about any surgeries in the past ?
+[PATIENT]: i have had a nose job .
+[DOCTOR]: all right . um , let's do your exam , okay ? so is it tender ... where is it mostly tender right now ?
+[PATIENT]: right on the inside of my knee . right here .
+[DOCTOR]: all right , so if i bend your knee forward , does that seem to hurt ?
+[PATIENT]: yes , that hurts .
+[DOCTOR]: all right , how about if i twist it a little bit that way .
+[PATIENT]: that hurts a lot .
+[DOCTOR]: okay , okay . and how about down here ? do you feel me touch you down here ?
+[PATIENT]: yes .
+[DOCTOR]: all right . any other pain down here in your calves ?
+[PATIENT]: no .
+[DOCTOR]: no , okay . so on exam you do have some tenderness over the medial portion of your knee over the medial meniscus area . uh , there is no , uh , there is a little bit of tenderness when i flex your , uh , when i , uh , uh , do some valgus stressing on your , on your leg . um , you have normal sensation . so let's take a look at your x-rays .
+[PATIENT]: okay .
+[DOCTOR]: okay . hey dragon , show me the x-rays . so looking at the x-ray , um , of your left knee , uh , it appears to be there's no fractures there right now . i do n't see any , uh , there's a little bit of , uh , fluid , uh , but there is no , uh , there's no , um , fracture or there's no dislocation . everything else seems to be lined up properly , okay ?
+[PATIENT]: okay .
+[DOCTOR]: so in summary after my exam , uh , looking at your knee , uh , on the x-ray and your exam , you have some tenderness over the medial meniscus , so i think you have probably an acute medial meniscus sprain right now or strain . uh , at this point , my recommendation would be to put you in a knee brace , uh , and we'll go ahead and have you use some crutches temporarily for the next couple days . we'll have you come back in about a week and see how you're doing , and if it's not better , we'll get an mri at that time .
+[PATIENT]: okay .
+[DOCTOR]: i'm going to recommend we give you some motrin , 800 milligrams . uh , you can take it about every six hours , uh , with food . uh , and we'll give you about a two week supply .
+[PATIENT]: okay .
+[DOCTOR]: okay . uh , do you have any questions ?
+[PATIENT]: no , i think i'm good .
+[DOCTOR]: all right . hey , dragon , order the medications and procedures discussed , and finalize the report . okay , come with me and we'll get you checked out .
+
+============================================================
+EXTRACTED FACTS
+============================================================
+{
+  "chief_complaint": "Right knee pain",
+  "demographics": {},
+  "symptoms": [
+    {
+      "name_surface": "knee pain",
+      "name_norm": "knee_pain",
+      "cui": null,
+      "assertion": "present",
+      "duration": "2 days",
+      "severity": null,
+      "onset": "sudden",
+      "modifiers": [
+        "aching",
+        "right knee, inside of the knee",
+        "ice and ibuprofen"
+      ],
+      "evidence": {
+        "utt_ids": [],
+        "spans": [
+          {
+            "text": "knee pain"
+          }
+        ]
+      }
+    }
+  ],
+  "meds": [
+    {
+      "name_surface": "ibuprofen",
+      "name_norm": "ibuprofen",
+      "rxcui": "5640",
+      "dose": null,
+      "strength": null,
+      "freq": "as needed",
+      "route": "oral",
+      "form": null,
+      "prn": null,
+      "assertion": "present",
+      "evidence": {
+        "utt_ids": [],
+        "spans": [
+          {
+            "text": "ibuprofen"
+          }
+        ]
+      }
+    },
+    {
+      "name_surface": "motrin (800mg)",
+      "name_norm": "motrin (800mg)",
+      "rxcui": null,
+      "dose": "800mg",
+      "strength": null,
+      "freq": "every 6 hours",
+      "route": "oral",
+      "form": null,
+      "prn": null,
+      "assertion": "present",
+      "evidence": {
+        "utt_ids": [],
+        "spans": [
+          {
+            "text": "motrin (800mg)"
+          }
+        ]
+      }
+    }
+  ],
+  "allergies": [],
+  "vitals": [],
+  "risk_factors": [],
+  "qa_extractions": []
+}
+
+============================================================
+RAG EVIDENCE (6 chunks)
+============================================================
+
+--- GUIDELINES (3 chunks) ---
+
+[guidelines:636] Score: 0.6022
+Title: standards-of-care-2025
+Section: 
+Text:
+Several high-quality and mediumquality studies support the role of pregabalin in treatment of pain in DPN. One
+high-quality study and many small studies
+support the role of gabapentin in the
+treatment of pain in DPN. Medium-quality
+studies suggest that mirogabalin has a
+small effect on pain in DPN (80). Adverse effects may be more severe in
+older individuals (83) and may be attenuated by lower starting doses and
+more gradual titration. SNRIs. SNRIs include duloxetine, venlafaxine, and desvenlafaxine, all selective
+SNRIs. Two high-quality studies and ﬁve
+medium-quality studies support the role
+of duloxetine in the treatment of pain in
+DPN. A high-quality study supports the
+role of venlafaxine in the treatment of
+pain in DPN. Onlyone medium-quality study
+supports a possible role for desvenlafaxine
+for treatment of pain in DPN (80). Adverse
+events may be more severe in older people
+but may be attenuated with lower doses
+and slower titration of duloxetine. Tricyclic Antidepressants. TCAs have been
+studied for treatment of pain. Most of
+the relevant data were acquired from trials of amitriptyline and include two highquality studies and two medium-quality
+Retinopathy, Neuropathy, and Foot Care
+S257 studies supporting the effectiveness of
+amitryiptylinein in the treatment of painful DPN (80,82). Anticholinergic side effects may be dose limiting and restrict
+use in individuals $65 years of age. Sodium Channel Blockers. Sodium channel blockers include lamotrigine, lacosamide, carbamazepine, oxcarbazepine, and
+valproic acid. Five medium-quality studies
+support the role of sodium channel blockers in treating pain in DPN (80). Capsaicin. Capsaicin has received FDA approval for treatment of pain in DPN using
+an 8% patch, with one high-quality study
+reported. One medium-quality study of
+0.075% capsaicin cream has been reported. In individuals with contraindications to oral pharmacotherapy or who
+prefer topical treatments, the use of topical capsaicin can be considered. Lidocaine
+...
+----------------------------------------
+[guidelines:637] Score: 0.5965
+Title: standards-of-care-2025
+Section: 
+Text:
+Given that opioids and
+SNRIs are both effective for painful DPN, it
+is not surprising that these SNRI and opioid
+agents are effective in the treatment of
+pain in DPN too (80). However, the effect
+size is similar to that of other effective
+therapies, such as SNRIs, and these medications have the same risks as other
+opioids listed above. In fact, tramadol
+has been shown to be associated with
+all-cause mortality with an effect size similar to that of codeine (87). Similar to other
+opioids, risks likely outweigh beneﬁts, and
+the AAN guidelines also recommend
+against their use for painful DPN (80). Orthostatic Hypotension
+Treating orthostatic hypotension is challenging. The therapeutic goal is to minimize postural symptoms rather than to
+restore normotension. Most individuals
+require both nonpharmacologic measures
+(e.g., ensuring adequate salt intake, avoiding medications that aggravate hypotension, or using compressive garments over
+the legs and abdomen) and pharmacologic
+measures. Physical activity and exercise
+should be encouraged to avoid deconditioning, which is known to exacerbate
+orthostatic intolerance, and volume repletion with ﬂuids and salt is critical. Additionally, supine blood pressure tends
+to be much higher in these individuals,
+often requiring treatment of blood pressure at bedtime with shorter-acting drugs
+that also affect baroreceptor activity
+such as guanfacine or clonidine, shorteracting calcium blockers (e.g., isradipine),
+or shorter-acting b-blockers such as atenolol or metoprolol tartrate. Alternatives
+can include enalapril if an individual
+is unable to tolerate preferred agents
+(88–90). Midodrine and droxidopa are approved by the FDA for the treatment of
+orthostatic hypotension. Gastroparesis
+Treatment of diabetic gastroparesis may
+be very challenging. A small-particle diet
+may
+provide
+some
+symptom
+relief
+(91–93). In addition, foods with small
+particle size may improve key symptoms
+(94). Withdrawing drugs with adverse effects on gastrointestinal ...
+----------------------------------------
+[guidelines:3779] Score: 0.5925
+Title: qaseem-et-al-2017-noninvasive-treatments-for-acute-subacute-and-chronic-low-back-pain-a-clinical-practice-guideline
+Section: 
+Text:
+(moderate effect) Operant therapy: improved pain (small effect) Cognitive behavioral therapy: improved pain (moderate effect) Spinal manipulation: improved pain (small effect) Radicular low back pain Exercise: improved pain or function (small effect) Pain, function, health-related quality of life, work disability/return to work, global improvement, number of back pain episodes or time between episodes, patient satisfaction, adverse effects Pharmacologic interventions: NSAIDs, nonopioid analgesics, opioid analgesics, tramadol and tapentadol, antidepressants, SMRs, benzodiazepines, corticosteroids, antiepileptic drugs Nonpharmacologic interventions: interdisciplinary or multicomponent rehabilitation; psychological therapies; exercise and related interventions, such as yoga or tai chi; complementary and alternative medicine therapies, including spinal manipulation, acupuncture, and massage; passive physical modalities, such as heat, cold, ultrasound, transcutaneous electrical nerve stimulation, electrical muscle stimulation, interferential therapy, short-wave diathermy, traction, LLLT, lumbar supports/braces Harms Generally poorly reported Pharmacologic NSAIDs: increased adverse effects compared with placebo and acetaminophen (COX-2–selective NSAIDs decreased risk for adverse effects compared with traditional NSAIDs) Opioids: nausea, dizziness, constipation, vomiting, somnolence, and dry mouth SMRs: increased risk for any adverse event and central nervous system adverse events (mostly sedation) Benzodiazepines: somnolence, fatigue, lightheadedness Antidepressants: increased risk for any adverse event Nonpharmacologic Poorly reported, but no increase in serious adverse effects Continued on following page 522 Annals of Internal Medicine • Vol. 166 No. 7 • 4 April 2017 dence) and a moderate effect on pain with no clear
+effect on function compared with sham acupuncture
+(low-quality
+evidence). Moderate-quality
+evidence
+showed that mindfulness-based stress reduction resulted...
+----------------------------------------
+
+--- MERCK MANUAL (3 chunks) ---
+
+[merck:529] Score: 0.6585
+Heading: Untitled
+Text:
+The regular use of pillows under the knees while reclining encourages contractures and should also be avoided. Patients should sit in straight-back chairs without slumping, sleep on a firm bed, perhaps with a bed board, use a car seat shifted forward and designed for comfort, do postural exercises, wear wellsupported shoes or athletic shoes, and continue employment and physical activity. In OAof the spine, knee, or thumb carpometacarpal joint, various supports can relieve pain and increase function, but to preserve flexibility, they should be accompanied by specific exercise programs. In erosive OA, range-of-motion exercises done in warm water can help prevent contractures. Drugs: Drug therapy is an adjunct to the physical program. Acetaminophen in doses of up to 1 g po qid may relieve pain and is safe. More potent analgesia may be required. NSAIDs, including cyclooxygenase-2 (COX-2) inhibitors or coxibs, may be considered if patients have refractory pain or signs of inflammation (eg, redness, warmth). NSAIDs may be used simultaneously with other analgesics (eg, tramadol, opioids) to provide better relief of symptoms. Muscle relaxants (usually in low doses) occasionally relieve pain that arises from muscles strained by attempting to support OAjoints. In the elderly, however, they may cause more adverse effects than relief. Oral corticosteroids have no role. However, intra-articular depot corticosteroids help relieve pain and increase joint flexibility. Synthetic hyaluronans (similar to hyaluronic acid, a normal component of the joint) can be injected into 432 The Merck Manual of Diagnosis & Therapy, 19th Edition Chapter 35. Joint Disorders the knee, with pain relief for prolonged periods of time (up to a year). However, the effect seems to be small. The treatment is a series of 3 to 5 weekly injections. Glucosamine sulfate 1500 mg po once/day has been suggested to relieve pain and slow joint deterioration; chondroitin sulfate 1200 mg once/day has also been suggested...
+----------------------------------------
+[merck:4420] Score: 0.6297
+Heading: Untitled
+Text:
+Symptoms and Signs A chronic nagging ache, pain, tingling, or numbness starts in the buttocks and can extend along the course of the sciatic nerve, down the entire back of the thigh and calf, and sometimes into the foot. Pain worsens when the piriformis is pressed against the sciatic nerve (eg, while sitting on a toilet, a car seat, or a narrow bicycle seat or while running). Diagnosis • Physical examination and provocative testing Diagnosis is by physical examination. Pain with forceful internal rotation of the flexed thigh (Freiberg's maneuver), abduction of the affected leg while sitting (Pace's maneuver), raising of the knee several centimeters off the table while lying on a table on the side of the unaffected leg (Beatty's maneuver), or pressure into the buttocks where the sciatic nerve crosses the piriformis muscle while the patient slowly bends to the floor (Mirkin test) is diagnostic. Imaging is not useful except to rule out other causes of sciatic compression. Unlike piriformis pain, lumbar disk compression of the sciatic nerve (sciatica — see p. 383) usually causes low back pain in addition to sciatic pain down the lower extremity. However, differentiation from a lumbar disk disorder is sometimes difficult, and referral to a specialist may be needed. Treatment • Modification of activity • Stretches Patients should temporarily stop running, bicycling, or doing any activity that elicits pain. Patients whose pain is aggravated by sitting should stand or, if unable to do so, change positions to remove the source of pressure around the buttock. Specific stretching exercises for the posterior hip and piriformis can be beneficial. Surgery is rarely warranted. A carefully directed corticosteroid injection near the site where the piriformis muscle crosses the sciatic nerve often helps temporarily. NSAIDs can also provide temporary pain relief. Knee Pain Etiology There are many causes of pain in or around the knee in athletes, particularly runners, including • Sublu...
+----------------------------------------
+[merck:517] Score: 0.6147
+Heading: Untitled
+Text:
+Prognosis Complete remissions occur in 50 to 75% of treated patients. Patients with polyarticular onset and a positive RF have a less favorable prognosis. Treatment • Drugs that slow disease progression • Usually NSAIDs Similar to the therapy of patients with adult RA, disease-modifying antirheumatic drugs (DMARDs), particularly the biologic agents, have dramatically changed the therapeutic approach. Symptoms may be reduced with NSAIDs. Naproxen 5 to 10 mg/kg po bid, ibuprofen 5 to 10 mg/kg po qid, 423 The Merck Manual of Diagnosis & Therapy, 19th Edition Chapter 35. Joint Disorders and indomethacin 0.5 to 1.0 mg/kg po tid are among the most useful. Salicylates are rarely used because of their possible role in causing Reye's syndrome (see p. 2937). Except for severe systemic disease, systemic corticosteroids can usually be avoided. When necessary, the lowest possible dose is used (eg, oral prednisone, 0.0125 to 0.5 mg/kg qid, or the same daily dose given once or twice daily). Growth retardation, osteoporosis, and osteonecrosis are the major hazards of prolonged corticosteroid use in children. Intra-articular depot corticosteroids can be given. The dosage for children is adjusted based on weight. Children may need to be sedated for intra-articular injection. Methotrexate is useful for pauciarticular and polyarticular disease. Adverse effects are monitored as in adults. Bone marrow depression and hepatic toxicity are monitored with CBC, AST, ALT, and albumin. Occasionally, sulfasalazine is used, especially in cases of suspected spondyloarthropathy. IM gold and penicillamine are rarely used. Etanercept, used as in adults, blocks tumor necrosis factor-a (TNF-a) and is often effective; 0.4 mg/kg sc (up to a maximum of 25 mg) is given twice/wk. Anakinra is particularly effective in some patients with systemic-onset disease. Physical therapy, exercises, splints, and other supportive measures help prevent flexion contractures. Adaptive devices can improve function and minim...
+----------------------------------------
+
+============================================================
+DIAGNOSER OUTPUT
+============================================================
+{
+  "differential": [
+    {
+      "condition": "Patellofemoral Pain Syndrome",
+      "likelihood": "high",
+      "rationale": "Patient's history of twisting their knee while changing a light bulb, combined with the location of pain on the inside of the knee, is consistent with patellofemoral pain syndrome.",
+      "evidence_ids": [
+        "guidelines:636"
+      ]
+    },
+    {
+      "condition": "Meniscal Tear",
+      "likelihood": "moderate",
+      "rationale": "Patient's history of twisting their knee could have caused a meniscal tear, and the location of pain on the inside of the knee is consistent with this diagnosis.",
+      "evidence_ids": [
+        "guidelines:636"
+      ]
+    },
+    {
+      "condition": "Osteoarthritis",
+      "likelihood": "low",
+      "rationale": "Patient's age and history of twisting their knee could contribute to osteoarthritis, but the location of pain on the inside of the knee is not typical for this condition.",
+      "evidence_ids": [
+        "merck:4420"
+      ]
+    }
+  ],
+  "red_flags": [
+    {
+      "description": "Patient's history of AFib and use of digoxin",
+      "risk_level": "moderate",
+      "evidence_ids": [
+        "guidelines:3779"
+      ]
+    },
+    {
+      "description": "Patient's use of NSAIDs (ibuprofen) for pain management",
+      "risk_level": "moderate",
+      "evidence_ids": [
+        "merck:529"
+      ]
+    }
+  ],
+  "initial_workup": [
+    {
+      "test_name": "Knee examination and provocative testing",
+      "priority": "urgent",
+      "rationale": "To assess the severity of pain and identify any potential underlying conditions.",
+      "evidence_ids": [
+        "merck:4420"
+      ]
+    },
+    {
+      "test_name": "Imaging studies (X-rays or MRI)",
+      "priority": "routine",
+      "rationale": "To rule out other causes of knee pain, such as fractures or ligament sprains.",
+      "evidence_ids": [
+        "guidelines:636"
+      ]
+    }
+  ],
+  "management_plan": {
+    "non_pharm": [
+      {
+        "intervention": "Rest and ice",
+        "rationale": "To reduce pain and inflammation.",
+        "evidence_ids": [
+          "merck:4420"
+        ]
+      },
+      {
+        "intervention": "Physical therapy",
+        "rationale": "To improve knee function and strength.",
+        "evidence_ids": [
+          "guidelines:3779"
+        ]
+      }
+    ],
+    "pharm": [
+      {
+        "drug": "Ibuprofen",
+        "route": "oral",
+        "dose": "400mg po qid",
+        "frequency": "as needed",
+        "duration": "until pain is controlled",
+        "indication": "Pain management",
+        "evidence_ids": [
+          "merck:529"
+        ]
+      }
+    ]
+  },
+  "contraindications_and_interactions": [
+    {
+      "issue": "Patient's use of digoxin and NSAIDs",
+      "related_meds": [
+        "ibuprofen"
+      ],
+      "severity": "moderate",
+      "evidence_ids": [
+        "guidelines:3779"
+      ]
+    }
+  ],
+  "coding_and_labels": {
+    "icd10_codes": [
+      "M72.86",
+      "M25.562"
+    ],
+    "snomed_codes": [
+      "73211009",
+      "73211100"
+    ],
+    "labels": [
+      "Patellofemoral Pain Syndrome",
+      "Meniscal Tear"
+    ]
+  },
+  "overall_uncertainty": 0.5,
+  "groundedness_score": 0.5,
+  "notes_on_missing_info": null
+}
+
+============================================================
+CONSULTANT CRITIQUE
+============================================================
+{
+  "issues": [
+    {
+      "kind": "safety_gap",
+      "description": "The management plan does not address the patient's use of ibuprofen, which is contraindicated with digoxin.",
+      "severity": "high",
+      "target_path": "/management_plan/pharm/0",
+      "evidence_ids": [
+        "guidelines:3779"
+      ],
+      "suggested_fix": "Consider alternative pain management options or adjust the dose of ibuprofen to minimize risk."
+    },
+    {
+      "kind": "dosing_error",
+      "description": "The prescribed dose of ibuprofen is 400mg po qid, which exceeds the maximum recommended dose.",
+      "severity": "critical",
+      "target_path": "/management_plan/pharm/0",
+      "evidence_ids": [
+        "merck:529"
+      ],
+      "suggested_fix": "Reduce the dose to 200-300mg po qid or consider alternative pain management options."
+    },
+    {
+      "kind": "guideline_conflict",
+      "description": "The diagnostic plan lists Meniscal Tear as a high likelihood condition, but the rationale provided is inconsistent with current guidelines.",
+      "severity": "moderate",
+      "target_path": "/differential/1",
+      "evidence_ids": [
+        "guidelines:636"
+      ],
+      "suggested_fix": "Re-evaluate the likelihood of Meniscal Tear based on current guidelines and patient history."
+    },
+    {
+      "kind": "other",
+      "description": "The diagnostic plan does not address potential underlying conditions such as osteoarthritis, which may be contributing to the patient's knee pain.",
+      "severity": "moderate",
+      "target_path": "/differential/2",
+      "evidence_ids": [
+        "merck:4420"
+      ],
+      "suggested_fix": "Consider adding osteoarthritis to the differential diagnosis and addressing potential underlying conditions."
+    }
+  ],
+  "overall_assessment": "The diagnostic plan has several safety gaps, dosing errors, and guideline conflicts that need to be addressed.",
+  "overall_safety_rating": "unsafe"
+}
+
+============================================================
+ARBITER RESULT
+============================================================
+{
+  "final_plan": null,
+  "abstained": true,
+  "patches_applied": [],
+  "notes_on_missing_info": "Cannot generate safe clinical plan due to 1 critical issue(s):\n- The prescribed dose of ibuprofen is 400mg po qid, which exceeds the maximum recommended dose.\n\nHuman review required.",
+  "unresolved_issues": [
+    "The prescribed dose of ibuprofen is 400mg po qid, which exceeds the maximum recommended dose."
+  ]
+}
+
+
+================================================================================
+SUMMARY
+================================================================================
+Total encounters processed: 2
+Successful: 2
+Errors: 0

@@ -1,0 +1,2571 @@
+{
+  "encounter_id": "D2N071",
+  "note_type": "soap",
+  "source_note_consistency": {
+    "support_score": 0.84,
+    "contradiction_score": 0.16,
+    "hallucination_density": 0.0,
+    "verdict": "poor",
+    "claim_judgments": [
+      {
+        "claim_id": "claim_0",
+        "claim_text": "*Chief Complaint:** Annual exam.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          17,
+          29,
+          3
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:17",
+            "source": "dialogue",
+            "snippet": "correct . correct .",
+            "score": 0.5645700693130493
+          },
+          {
+            "evidence_id": "dialogue:29",
+            "source": "dialogue",
+            "snippet": "good .",
+            "score": 0.5637373924255371
+          },
+          {
+            "evidence_id": "dialogue:3",
+            "source": "dialogue",
+            "snippet": "sure .",
+            "score": 0.5335153341293335
+          }
+        ],
+        "confidence": 0.45165605545043946
+      },
+      {
+        "claim_id": "claim_1",
+        "claim_text": "*History of Present Illness:** Mr.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          27,
+          35,
+          31
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:27",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5775430798530579
+          },
+          {
+            "evidence_id": "dialogue:35",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5775430798530579
+          },
+          {
+            "evidence_id": "dialogue:31",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5775430798530579
+          }
+        ],
+        "confidence": 0.4620344638824463
+      },
+      {
+        "claim_id": "claim_2",
+        "claim_text": "Ralph Barnes is a 62-year-old male with a past medical history significant for depression, prior lobectomy, and hypertension, presenting for his annual examination.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          4,
+          12,
+          20
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:4",
+            "source": "dialogue",
+            "snippet": "so ralph is a 62-year-old male with a past medical history significant for depression and prior lobe...",
+            "score": 0.8392813205718994
+          },
+          {
+            "evidence_id": "dialogue:12",
+            "source": "dialogue",
+            "snippet": "okay . all right . um , and then i know that you've had that prior lobectomy a couple years ago . an...",
+            "score": 0.5465505719184875
+          },
+          {
+            "evidence_id": "dialogue:20",
+            "source": "dialogue",
+            "snippet": "okay , great . all right . well , let's go ahead . i'd like to do a quick physical exam . let's look...",
+            "score": 0.5396778583526611
+          }
+        ],
+        "confidence": 0.8392813205718994
+      },
+      {
+        "claim_id": "claim_3",
+        "claim_text": "He reports feeling relatively okay overall, though the spring was challenging due to pollen.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          13,
+          5,
+          14
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:13",
+            "source": "dialogue",
+            "snippet": "other than during the heat and the pollen , it's been pretty good .",
+            "score": 0.7573250532150269
+          },
+          {
+            "evidence_id": "dialogue:5",
+            "source": "dialogue",
+            "snippet": "um , relatively speaking , okay . it was kind of a , a tough spring with all the pollen and everythi...",
+            "score": 0.6746904850006104
+          },
+          {
+            "evidence_id": "dialogue:14",
+            "source": "dialogue",
+            "snippet": "okay . all right . so i , i know that the nurse went over the review of systems sheet with you , and...",
+            "score": 0.6106407046318054
+          }
+        ],
+        "confidence": 0.7573250532150269
+      },
+      {
+        "claim_id": "claim_4",
+        "claim_text": "He recently experienced stress related to moving his oldest daughter into college.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          5,
+          6,
+          8
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:5",
+            "source": "dialogue",
+            "snippet": "um , relatively speaking , okay . it was kind of a , a tough spring with all the pollen and everythi...",
+            "score": 0.6833324432373047
+          },
+          {
+            "evidence_id": "dialogue:6",
+            "source": "dialogue",
+            "snippet": "okay . i know . i know . that's a , that's a hard thing to get over , moving kids out of the house a...",
+            "score": 0.6179295778274536
+          },
+          {
+            "evidence_id": "dialogue:8",
+            "source": "dialogue",
+            "snippet": "so , um well , how are you doing from , you know , let's talk a little bit about your depression . h...",
+            "score": 0.5262039303779602
+          }
+        ],
+        "confidence": 0.6833324432373047
+      },
+      {
+        "claim_id": "claim_5",
+        "claim_text": "Regarding his depression, he reports consistent medication adherence (Prozac) and denies any recent incidents, stating it is well-managed and maintained.",
+        "section": "S",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          8,
+          9,
+          34
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:8",
+            "source": "dialogue",
+            "snippet": "so , um well , how are you doing from , you know , let's talk a little bit about your depression . h...",
+            "score": 0.6693399548530579
+          },
+          {
+            "evidence_id": "dialogue:9",
+            "source": "dialogue",
+            "snippet": "yeah , i've been staying on top of the meds , and i have n't had any incidents in a while , so it's ...",
+            "score": 0.6495383977890015
+          },
+          {
+            "evidence_id": "dialogue:34",
+            "source": "dialogue",
+            "snippet": "okay . hey , dragon , order a refill of prozac , 20 milligrams daily . from a ... for your next prob...",
+            "score": 0.5710963010787964
+          }
+        ],
+        "confidence": 0.6693399548530579
+      },
+      {
+        "claim_id": "claim_6",
+        "claim_text": "He notes ongoing difficulty managing his hypertension, describing it as a struggle.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          9,
+          4,
+          16
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:9",
+            "source": "dialogue",
+            "snippet": "yeah , i've been staying on top of the meds , and i have n't had any incidents in a while , so it's ...",
+            "score": 0.6345503926277161
+          },
+          {
+            "evidence_id": "dialogue:4",
+            "source": "dialogue",
+            "snippet": "so ralph is a 62-year-old male with a past medical history significant for depression and prior lobe...",
+            "score": 0.6001543998718262
+          },
+          {
+            "evidence_id": "dialogue:16",
+            "source": "dialogue",
+            "snippet": "okay , so you also have some shortness of breath with with exertion .",
+            "score": 0.5919971466064453
+          }
+        ],
+        "confidence": 0.6345503926277161
+      },
+      {
+        "claim_id": "claim_7",
+        "claim_text": "He is prescribed Norvasc and reports being regular with medication during the business week but occasionally forgets doses on weekends, especially when traveling or busy.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          11,
+          10,
+          8
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:11",
+            "source": "dialogue",
+            "snippet": "i ... i'm pretty regular with the medications during the business week , but on there's weekends , y...",
+            "score": 0.7776259779930115
+          },
+          {
+            "evidence_id": "dialogue:10",
+            "source": "dialogue",
+            "snippet": "okay . yeah , i , i see that we have you on the norvasc . and so are you taking it at home ? is it r...",
+            "score": 0.6249951124191284
+          },
+          {
+            "evidence_id": "dialogue:8",
+            "source": "dialogue",
+            "snippet": "so , um well , how are you doing from , you know , let's talk a little bit about your depression . h...",
+            "score": 0.5398456454277039
+          }
+        ],
+        "confidence": 0.7776259779930115
+      },
+      {
+        "claim_id": "claim_8",
+        "claim_text": "He states he takes his blood pressure at home and it has been running high.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          10,
+          20,
+          36
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:10",
+            "source": "dialogue",
+            "snippet": "okay . yeah , i , i see that we have you on the norvasc . and so are you taking it at home ? is it r...",
+            "score": 0.7059415578842163
+          },
+          {
+            "evidence_id": "dialogue:20",
+            "source": "dialogue",
+            "snippet": "okay , great . all right . well , let's go ahead . i'd like to do a quick physical exam . let's look...",
+            "score": 0.6221578121185303
+          },
+          {
+            "evidence_id": "dialogue:36",
+            "source": "dialogue",
+            "snippet": "you're doing a great job of keeping it controlled . i know you said you have n't been taking it that...",
+            "score": 0.5969094038009644
+          }
+        ],
+        "confidence": 0.7059415578842163
+      },
+      {
+        "claim_id": "claim_9",
+        "claim_text": "He had a lobectomy a couple of years ago.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          4,
+          12,
+          34
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:4",
+            "source": "dialogue",
+            "snippet": "so ralph is a 62-year-old male with a past medical history significant for depression and prior lobe...",
+            "score": 0.6606259346008301
+          },
+          {
+            "evidence_id": "dialogue:12",
+            "source": "dialogue",
+            "snippet": "okay . all right . um , and then i know that you've had that prior lobectomy a couple years ago . an...",
+            "score": 0.6587390899658203
+          },
+          {
+            "evidence_id": "dialogue:34",
+            "source": "dialogue",
+            "snippet": "okay . hey , dragon , order a refill of prozac , 20 milligrams daily . from a ... for your next prob...",
+            "score": 0.5702511668205261
+          }
+        ],
+        "confidence": 0.6606259346008301
+      },
+      {
+        "claim_id": "claim_10",
+        "claim_text": "He reports no issues with shortness of breath related to allergies, except during periods of high heat and pollen.",
+        "section": "S",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          13,
+          12,
+          14
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:13",
+            "source": "dialogue",
+            "snippet": "other than during the heat and the pollen , it's been pretty good .",
+            "score": 0.6868260502815247
+          },
+          {
+            "evidence_id": "dialogue:12",
+            "source": "dialogue",
+            "snippet": "okay . all right . um , and then i know that you've had that prior lobectomy a couple years ago . an...",
+            "score": 0.6270099878311157
+          },
+          {
+            "evidence_id": "dialogue:14",
+            "source": "dialogue",
+            "snippet": "okay . all right . so i , i know that the nurse went over the review of systems sheet with you , and...",
+            "score": 0.5944976806640625
+          }
+        ],
+        "confidence": 0.6868260502815247
+      },
+      {
+        "claim_id": "claim_11",
+        "claim_text": "He endorses nasal congestion from pollen.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          14,
+          13,
+          33
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:14",
+            "source": "dialogue",
+            "snippet": "okay . all right . so i , i know that the nurse went over the review of systems sheet with you , and...",
+            "score": 0.6432607769966125
+          },
+          {
+            "evidence_id": "dialogue:13",
+            "source": "dialogue",
+            "snippet": "other than during the heat and the pollen , it's been pretty good .",
+            "score": 0.5399444103240967
+          },
+          {
+            "evidence_id": "dialogue:33",
+            "source": "dialogue",
+            "snippet": "uh , actually , i do need a refill .",
+            "score": 0.5365460515022278
+          }
+        ],
+        "confidence": 0.6432607769966125
+      },
+      {
+        "claim_id": "claim_12",
+        "claim_text": "He exercises regularly by running 4 to 5 miles daily.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          19,
+          15,
+          18
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:19",
+            "source": "dialogue",
+            "snippet": "uh , like 4 to 5 miles a day .",
+            "score": 0.7773890495300293
+          },
+          {
+            "evidence_id": "dialogue:15",
+            "source": "dialogue",
+            "snippet": "sometimes i , i regularly , uh , go for a run in the morning . that's my workout , and sometimes if ...",
+            "score": 0.5674675107002258
+          },
+          {
+            "evidence_id": "dialogue:18",
+            "source": "dialogue",
+            "snippet": "all right , and how far are you running ?",
+            "score": 0.5641459226608276
+          }
+        ],
+        "confidence": 0.7773890495300293
+      },
+      {
+        "claim_id": "claim_13",
+        "claim_text": "He reports occasional shortness of breath with exertion, particularly when it is humid, and sometimes feels a pounding in his chest which usually resolves.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          15,
+          16,
+          14
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:15",
+            "source": "dialogue",
+            "snippet": "sometimes i , i regularly , uh , go for a run in the morning . that's my workout , and sometimes if ...",
+            "score": 0.7480549216270447
+          },
+          {
+            "evidence_id": "dialogue:16",
+            "source": "dialogue",
+            "snippet": "okay , so you also have some shortness of breath with with exertion .",
+            "score": 0.7197090983390808
+          },
+          {
+            "evidence_id": "dialogue:14",
+            "source": "dialogue",
+            "snippet": "okay . all right . so i , i know that the nurse went over the review of systems sheet with you , and...",
+            "score": 0.6344842910766602
+          }
+        ],
+        "confidence": 0.7480549216270447
+      },
+      {
+        "claim_id": "claim_14",
+        "claim_text": "*Past Medical History:**",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          20,
+          29,
+          23
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:20",
+            "source": "dialogue",
+            "snippet": "okay , great . all right . well , let's go ahead . i'd like to do a quick physical exam . let's look...",
+            "score": 0.5173048973083496
+          },
+          {
+            "evidence_id": "dialogue:29",
+            "source": "dialogue",
+            "snippet": "good .",
+            "score": 0.5033080577850342
+          },
+          {
+            "evidence_id": "dialogue:23",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5016258358955383
+          }
+        ],
+        "confidence": 0.41384391784667973
+      },
+      {
+        "claim_id": "claim_15",
+        "claim_text": "Depression",
+        "section": "S",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          8,
+          30,
+          4
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:8",
+            "source": "dialogue",
+            "snippet": "so , um well , how are you doing from , you know , let's talk a little bit about your depression . h...",
+            "score": 0.5448182821273804
+          },
+          {
+            "evidence_id": "dialogue:30",
+            "source": "dialogue",
+            "snippet": "so i'm not too concerned about that , that chest pounding . hey , dragon , show me the chest x-ray ....",
+            "score": 0.5147343277931213
+          },
+          {
+            "evidence_id": "dialogue:4",
+            "source": "dialogue",
+            "snippet": "so ralph is a 62-year-old male with a past medical history significant for depression and prior lobe...",
+            "score": 0.48600369691848755
+          }
+        ],
+        "confidence": 0.5147343277931213
+      },
+      {
+        "claim_id": "claim_16",
+        "claim_text": "Prior Lobectomy (a couple of years ago)",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          12,
+          4,
+          33
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:12",
+            "source": "dialogue",
+            "snippet": "okay . all right . um , and then i know that you've had that prior lobectomy a couple years ago . an...",
+            "score": 0.6831787824630737
+          },
+          {
+            "evidence_id": "dialogue:4",
+            "source": "dialogue",
+            "snippet": "so ralph is a 62-year-old male with a past medical history significant for depression and prior lobe...",
+            "score": 0.5845134854316711
+          },
+          {
+            "evidence_id": "dialogue:33",
+            "source": "dialogue",
+            "snippet": "uh , actually , i do need a refill .",
+            "score": 0.5514132976531982
+          }
+        ],
+        "confidence": 0.6831787824630737
+      },
+      {
+        "claim_id": "claim_17",
+        "claim_text": "Hypertension",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          9,
+          20,
+          34
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:9",
+            "source": "dialogue",
+            "snippet": "yeah , i've been staying on top of the meds , and i have n't had any incidents in a while , so it's ...",
+            "score": 0.5666004419326782
+          },
+          {
+            "evidence_id": "dialogue:20",
+            "source": "dialogue",
+            "snippet": "okay , great . all right . well , let's go ahead . i'd like to do a quick physical exam . let's look...",
+            "score": 0.5386321544647217
+          },
+          {
+            "evidence_id": "dialogue:34",
+            "source": "dialogue",
+            "snippet": "okay . hey , dragon , order a refill of prozac , 20 milligrams daily . from a ... for your next prob...",
+            "score": 0.5164677500724792
+          }
+        ],
+        "confidence": 0.4532803535461426
+      },
+      {
+        "claim_id": "claim_18",
+        "claim_text": "*Past Surgical History:**",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          29,
+          39,
+          27
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:29",
+            "source": "dialogue",
+            "snippet": "good .",
+            "score": 0.5000564455986023
+          },
+          {
+            "evidence_id": "dialogue:39",
+            "source": "dialogue",
+            "snippet": "same here .",
+            "score": 0.4944675862789154
+          },
+          {
+            "evidence_id": "dialogue:27",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.48758912086486816
+          }
+        ],
+        "confidence": 0.40004515647888184
+      },
+      {
+        "claim_id": "claim_19",
+        "claim_text": "Lobectomy (a couple of years ago)",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          12,
+          4,
+          34
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:12",
+            "source": "dialogue",
+            "snippet": "okay . all right . um , and then i know that you've had that prior lobectomy a couple years ago . an...",
+            "score": 0.6772280931472778
+          },
+          {
+            "evidence_id": "dialogue:4",
+            "source": "dialogue",
+            "snippet": "so ralph is a 62-year-old male with a past medical history significant for depression and prior lobe...",
+            "score": 0.5965129733085632
+          },
+          {
+            "evidence_id": "dialogue:34",
+            "source": "dialogue",
+            "snippet": "okay . hey , dragon , order a refill of prozac , 20 milligrams daily . from a ... for your next prob...",
+            "score": 0.5564683675765991
+          }
+        ],
+        "confidence": 0.6772280931472778
+      },
+      {
+        "claim_id": "claim_20",
+        "claim_text": "*Family History:** Not discussed.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          31,
+          27,
+          23
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:31",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5209323167800903
+          },
+          {
+            "evidence_id": "dialogue:27",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5209323167800903
+          },
+          {
+            "evidence_id": "dialogue:23",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5209323167800903
+          }
+        ],
+        "confidence": 0.4167458534240723
+      },
+      {
+        "claim_id": "claim_21",
+        "claim_text": "*Social History:** Exercises by running 4-5 miles daily.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          19,
+          15,
+          18
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:19",
+            "source": "dialogue",
+            "snippet": "uh , like 4 to 5 miles a day .",
+            "score": 0.7584902048110962
+          },
+          {
+            "evidence_id": "dialogue:15",
+            "source": "dialogue",
+            "snippet": "sometimes i , i regularly , uh , go for a run in the morning . that's my workout , and sometimes if ...",
+            "score": 0.5622604489326477
+          },
+          {
+            "evidence_id": "dialogue:18",
+            "source": "dialogue",
+            "snippet": "all right , and how far are you running ?",
+            "score": 0.5442774295806885
+          }
+        ],
+        "confidence": 0.7584902048110962
+      },
+      {
+        "claim_id": "claim_22",
+        "claim_text": "Discussed stress related to moving daughter to college.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          5,
+          6,
+          8
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:5",
+            "source": "dialogue",
+            "snippet": "um , relatively speaking , okay . it was kind of a , a tough spring with all the pollen and everythi...",
+            "score": 0.696086049079895
+          },
+          {
+            "evidence_id": "dialogue:6",
+            "source": "dialogue",
+            "snippet": "okay . i know . i know . that's a , that's a hard thing to get over , moving kids out of the house a...",
+            "score": 0.5996040105819702
+          },
+          {
+            "evidence_id": "dialogue:8",
+            "source": "dialogue",
+            "snippet": "so , um well , how are you doing from , you know , let's talk a little bit about your depression . h...",
+            "score": 0.5205371379852295
+          }
+        ],
+        "confidence": 0.696086049079895
+      },
+      {
+        "claim_id": "claim_23",
+        "claim_text": "Smoking/Alcohol not discussed.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          29,
+          39,
+          27
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:29",
+            "source": "dialogue",
+            "snippet": "good .",
+            "score": 0.5641752481460571
+          },
+          {
+            "evidence_id": "dialogue:39",
+            "source": "dialogue",
+            "snippet": "same here .",
+            "score": 0.5418612957000732
+          },
+          {
+            "evidence_id": "dialogue:27",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5297662019729614
+          }
+        ],
+        "confidence": 0.4513401985168457
+      },
+      {
+        "claim_id": "claim_24",
+        "claim_text": "*Review of Systems:**",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          29,
+          35,
+          31
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:29",
+            "source": "dialogue",
+            "snippet": "good .",
+            "score": 0.5576279759407043
+          },
+          {
+            "evidence_id": "dialogue:35",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5312433242797852
+          },
+          {
+            "evidence_id": "dialogue:31",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5312433242797852
+          }
+        ],
+        "confidence": 0.4461023807525635
+      },
+      {
+        "claim_id": "claim_25",
+        "claim_text": "**General:** Denies muscle aches (as per ROS questioning).",
+        "section": "S",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          28,
+          3,
+          29
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:28",
+            "source": "dialogue",
+            "snippet": "and in reviewing the results , it looks like your ekg is completely normal , so that's good .",
+            "score": 0.526941180229187
+          },
+          {
+            "evidence_id": "dialogue:3",
+            "source": "dialogue",
+            "snippet": "sure .",
+            "score": 0.5236149430274963
+          },
+          {
+            "evidence_id": "dialogue:29",
+            "source": "dialogue",
+            "snippet": "good .",
+            "score": 0.517926812171936
+          }
+        ],
+        "confidence": 0.526941180229187
+      },
+      {
+        "claim_id": "claim_26",
+        "claim_text": "**HEENT:** Endorses nasal congestion (from pollen).",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          14,
+          16,
+          33
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:14",
+            "source": "dialogue",
+            "snippet": "okay . all right . so i , i know that the nurse went over the review of systems sheet with you , and...",
+            "score": 0.6469355821609497
+          },
+          {
+            "evidence_id": "dialogue:16",
+            "source": "dialogue",
+            "snippet": "okay , so you also have some shortness of breath with with exertion .",
+            "score": 0.5490232110023499
+          },
+          {
+            "evidence_id": "dialogue:33",
+            "source": "dialogue",
+            "snippet": "uh , actually , i do need a refill .",
+            "score": 0.5254344344139099
+          }
+        ],
+        "confidence": 0.6469355821609497
+      },
+      {
+        "claim_id": "claim_27",
+        "claim_text": "Denies cough (as per ROS questioning).",
+        "section": "S",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          16,
+          17,
+          24
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:16",
+            "source": "dialogue",
+            "snippet": "okay , so you also have some shortness of breath with with exertion .",
+            "score": 0.5252640843391418
+          },
+          {
+            "evidence_id": "dialogue:17",
+            "source": "dialogue",
+            "snippet": "correct . correct .",
+            "score": 0.5190337300300598
+          },
+          {
+            "evidence_id": "dialogue:24",
+            "source": "dialogue",
+            "snippet": "all right , so i'm just gon na listen to your heart and lungs and check you out , okay ?",
+            "score": 0.5114420652389526
+          }
+        ],
+        "confidence": 0.5252640843391418
+      },
+      {
+        "claim_id": "claim_28",
+        "claim_text": "**Cardiovascular:** Endorses occasional pounding in chest with exertion (palpitations).",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          15,
+          20,
+          16
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:15",
+            "source": "dialogue",
+            "snippet": "sometimes i , i regularly , uh , go for a run in the morning . that's my workout , and sometimes if ...",
+            "score": 0.6386887431144714
+          },
+          {
+            "evidence_id": "dialogue:20",
+            "source": "dialogue",
+            "snippet": "okay , great . all right . well , let's go ahead . i'd like to do a quick physical exam . let's look...",
+            "score": 0.632847011089325
+          },
+          {
+            "evidence_id": "dialogue:16",
+            "source": "dialogue",
+            "snippet": "okay , so you also have some shortness of breath with with exertion .",
+            "score": 0.6077592968940735
+          }
+        ],
+        "confidence": 0.6386887431144714
+      },
+      {
+        "claim_id": "claim_29",
+        "claim_text": "Endorses shortness of breath with exertion.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          16,
+          14,
+          20
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:16",
+            "source": "dialogue",
+            "snippet": "okay , so you also have some shortness of breath with with exertion .",
+            "score": 0.7898117899894714
+          },
+          {
+            "evidence_id": "dialogue:14",
+            "source": "dialogue",
+            "snippet": "okay . all right . so i , i know that the nurse went over the review of systems sheet with you , and...",
+            "score": 0.6017772555351257
+          },
+          {
+            "evidence_id": "dialogue:20",
+            "source": "dialogue",
+            "snippet": "okay , great . all right . well , let's go ahead . i'd like to do a quick physical exam . let's look...",
+            "score": 0.5597383379936218
+          }
+        ],
+        "confidence": 0.7898117899894714
+      },
+      {
+        "claim_id": "claim_30",
+        "claim_text": "**Respiratory:** Endorses shortness of breath with exertion.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          16,
+          14,
+          20
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:16",
+            "source": "dialogue",
+            "snippet": "okay , so you also have some shortness of breath with with exertion .",
+            "score": 0.7320226430892944
+          },
+          {
+            "evidence_id": "dialogue:14",
+            "source": "dialogue",
+            "snippet": "okay . all right . so i , i know that the nurse went over the review of systems sheet with you , and...",
+            "score": 0.5949286222457886
+          },
+          {
+            "evidence_id": "dialogue:20",
+            "source": "dialogue",
+            "snippet": "okay , great . all right . well , let's go ahead . i'd like to do a quick physical exam . let's look...",
+            "score": 0.5688257813453674
+          }
+        ],
+        "confidence": 0.7320226430892944
+      },
+      {
+        "claim_id": "claim_31",
+        "claim_text": "Denies cough (as per ROS questioning).",
+        "section": "S",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          16,
+          17,
+          24
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:16",
+            "source": "dialogue",
+            "snippet": "okay , so you also have some shortness of breath with with exertion .",
+            "score": 0.5252640843391418
+          },
+          {
+            "evidence_id": "dialogue:17",
+            "source": "dialogue",
+            "snippet": "correct . correct .",
+            "score": 0.5190337300300598
+          },
+          {
+            "evidence_id": "dialogue:24",
+            "source": "dialogue",
+            "snippet": "all right , so i'm just gon na listen to your heart and lungs and check you out , okay ?",
+            "score": 0.5114420652389526
+          }
+        ],
+        "confidence": 0.5252640843391418
+      },
+      {
+        "claim_id": "claim_32",
+        "claim_text": "**Psychiatric:** Endorses depression (currently well-managed).",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          8,
+          29,
+          22
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:8",
+            "source": "dialogue",
+            "snippet": "so , um well , how are you doing from , you know , let's talk a little bit about your depression . h...",
+            "score": 0.6154745221138
+          },
+          {
+            "evidence_id": "dialogue:29",
+            "source": "dialogue",
+            "snippet": "good .",
+            "score": 0.60771644115448
+          },
+          {
+            "evidence_id": "dialogue:22",
+            "source": "dialogue",
+            "snippet": "hey , dragon , show me the vital signs . so here in the office today , your blood pressure looks qui...",
+            "score": 0.5944021344184875
+          }
+        ],
+        "confidence": 0.6154745221138
+      },
+      {
+        "claim_id": "claim_33",
+        "claim_text": "*Medications:**",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          27,
+          35,
+          31
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:27",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5346859097480774
+          },
+          {
+            "evidence_id": "dialogue:35",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5346859097480774
+          },
+          {
+            "evidence_id": "dialogue:31",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5346859097480774
+          }
+        ],
+        "confidence": 0.42774872779846196
+      },
+      {
+        "claim_id": "claim_34",
+        "claim_text": "Prozac 20 mg daily (as stated by physician)",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          32,
+          34,
+          8
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:32",
+            "source": "dialogue",
+            "snippet": ". with your current strategy . let's continue you on the prozac 20 milligrams a day and do you need ...",
+            "score": 0.6608507037162781
+          },
+          {
+            "evidence_id": "dialogue:34",
+            "source": "dialogue",
+            "snippet": "okay . hey , dragon , order a refill of prozac , 20 milligrams daily . from a ... for your next prob...",
+            "score": 0.6060808300971985
+          },
+          {
+            "evidence_id": "dialogue:8",
+            "source": "dialogue",
+            "snippet": "so , um well , how are you doing from , you know , let's talk a little bit about your depression . h...",
+            "score": 0.539101243019104
+          }
+        ],
+        "confidence": 0.6608507037162781
+      },
+      {
+        "claim_id": "claim_35",
+        "claim_text": "Norvasc (dose/frequency not specified in transcript, patient reports taking regularly during week)",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          10,
+          11,
+          36
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:10",
+            "source": "dialogue",
+            "snippet": "okay . yeah , i , i see that we have you on the norvasc . and so are you taking it at home ? is it r...",
+            "score": 0.6089634895324707
+          },
+          {
+            "evidence_id": "dialogue:11",
+            "source": "dialogue",
+            "snippet": "i ... i'm pretty regular with the medications during the business week , but on there's weekends , y...",
+            "score": 0.5732161998748779
+          },
+          {
+            "evidence_id": "dialogue:36",
+            "source": "dialogue",
+            "snippet": "you're doing a great job of keeping it controlled . i know you said you have n't been taking it that...",
+            "score": 0.5315261483192444
+          }
+        ],
+        "confidence": 0.6089634895324707
+      },
+      {
+        "claim_id": "claim_36",
+        "claim_text": "*Allergies:** Not explicitly discussed, but patient notes sensitivity to pollen.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          14,
+          13,
+          12
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:14",
+            "source": "dialogue",
+            "snippet": "okay . all right . so i , i know that the nurse went over the review of systems sheet with you , and...",
+            "score": 0.6206693053245544
+          },
+          {
+            "evidence_id": "dialogue:13",
+            "source": "dialogue",
+            "snippet": "other than during the heat and the pollen , it's been pretty good .",
+            "score": 0.5543290972709656
+          },
+          {
+            "evidence_id": "dialogue:12",
+            "source": "dialogue",
+            "snippet": "okay . all right . um , and then i know that you've had that prior lobectomy a couple years ago . an...",
+            "score": 0.5370365977287292
+          }
+        ],
+        "confidence": 0.6206693053245544
+      },
+      {
+        "claim_id": "claim_37",
+        "claim_text": "*Vital Signs (in office):**",
+        "section": "O",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          20,
+          22,
+          29
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:20",
+            "source": "dialogue",
+            "snippet": "okay , great . all right . well , let's go ahead . i'd like to do a quick physical exam . let's look...",
+            "score": 0.5303129553794861
+          },
+          {
+            "evidence_id": "dialogue:22",
+            "source": "dialogue",
+            "snippet": "hey , dragon , show me the vital signs . so here in the office today , your blood pressure looks qui...",
+            "score": 0.5214208960533142
+          },
+          {
+            "evidence_id": "dialogue:29",
+            "source": "dialogue",
+            "snippet": "good .",
+            "score": 0.5083762407302856
+          }
+        ],
+        "confidence": 0.42425036430358887
+      },
+      {
+        "claim_id": "claim_38",
+        "claim_text": "Blood Pressure: 120/80 mmHg (as stated by physician)",
+        "section": "O",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          22,
+          20,
+          36
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:22",
+            "source": "dialogue",
+            "snippet": "hey , dragon , show me the vital signs . so here in the office today , your blood pressure looks qui...",
+            "score": 0.6742175817489624
+          },
+          {
+            "evidence_id": "dialogue:20",
+            "source": "dialogue",
+            "snippet": "okay , great . all right . well , let's go ahead . i'd like to do a quick physical exam . let's look...",
+            "score": 0.6557691097259521
+          },
+          {
+            "evidence_id": "dialogue:36",
+            "source": "dialogue",
+            "snippet": "you're doing a great job of keeping it controlled . i know you said you have n't been taking it that...",
+            "score": 0.5990549325942993
+          }
+        ],
+        "confidence": 0.6742175817489624
+      },
+      {
+        "claim_id": "claim_39",
+        "claim_text": "*Physical Examination:**",
+        "section": "O",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          29,
+          35,
+          31
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:29",
+            "source": "dialogue",
+            "snippet": "good .",
+            "score": 0.5423890352249146
+          },
+          {
+            "evidence_id": "dialogue:35",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5293186902999878
+          },
+          {
+            "evidence_id": "dialogue:31",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5293186902999878
+          }
+        ],
+        "confidence": 0.43391122817993166
+      },
+      {
+        "claim_id": "claim_40",
+        "claim_text": "**Head:** Pain to palpation of the sinuses.",
+        "section": "O",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          26,
+          16,
+          20
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:26",
+            "source": "dialogue",
+            "snippet": "okay , so on exam , everything seems to be good . your heart , i hear a slight two out of six systol...",
+            "score": 0.5333076119422913
+          },
+          {
+            "evidence_id": "dialogue:16",
+            "source": "dialogue",
+            "snippet": "okay , so you also have some shortness of breath with with exertion .",
+            "score": 0.5289314389228821
+          },
+          {
+            "evidence_id": "dialogue:20",
+            "source": "dialogue",
+            "snippet": "okay , great . all right . well , let's go ahead . i'd like to do a quick physical exam . let's look...",
+            "score": 0.5137186646461487
+          }
+        ],
+        "confidence": 0.42664608955383304
+      },
+      {
+        "claim_id": "claim_41",
+        "claim_text": "**Cardiovascular:** Regular rate.",
+        "section": "O",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          29,
+          20,
+          17
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:29",
+            "source": "dialogue",
+            "snippet": "good .",
+            "score": 0.6309477686882019
+          },
+          {
+            "evidence_id": "dialogue:20",
+            "source": "dialogue",
+            "snippet": "okay , great . all right . well , let's go ahead . i'd like to do a quick physical exam . let's look...",
+            "score": 0.6276851296424866
+          },
+          {
+            "evidence_id": "dialogue:17",
+            "source": "dialogue",
+            "snippet": "correct . correct .",
+            "score": 0.6130415201187134
+          }
+        ],
+        "confidence": 0.6309477686882019
+      },
+      {
+        "claim_id": "claim_42",
+        "claim_text": "2/6 systolic ejection murmur noted.",
+        "section": "O",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          26,
+          16,
+          19
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:26",
+            "source": "dialogue",
+            "snippet": "okay , so on exam , everything seems to be good . your heart , i hear a slight two out of six systol...",
+            "score": 0.6122968792915344
+          },
+          {
+            "evidence_id": "dialogue:16",
+            "source": "dialogue",
+            "snippet": "okay , so you also have some shortness of breath with with exertion .",
+            "score": 0.5603986978530884
+          },
+          {
+            "evidence_id": "dialogue:19",
+            "source": "dialogue",
+            "snippet": "uh , like 4 to 5 miles a day .",
+            "score": 0.5508397221565247
+          }
+        ],
+        "confidence": 0.6122968792915344
+      },
+      {
+        "claim_id": "claim_43",
+        "claim_text": "**Respiratory:** Lungs clear to auscultation.",
+        "section": "O",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          29,
+          24,
+          38
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:29",
+            "source": "dialogue",
+            "snippet": "good .",
+            "score": 0.6222035884857178
+          },
+          {
+            "evidence_id": "dialogue:24",
+            "source": "dialogue",
+            "snippet": "all right , so i'm just gon na listen to your heart and lungs and check you out , okay ?",
+            "score": 0.591269850730896
+          },
+          {
+            "evidence_id": "dialogue:38",
+            "source": "dialogue",
+            "snippet": "all right . good to see you .",
+            "score": 0.5863087773323059
+          }
+        ],
+        "confidence": 0.6222035884857178
+      },
+      {
+        "claim_id": "claim_44",
+        "claim_text": "*Diagnostic Data:**",
+        "section": "O",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          35,
+          31,
+          21
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:35",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5217461585998535
+          },
+          {
+            "evidence_id": "dialogue:31",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5217461585998535
+          },
+          {
+            "evidence_id": "dialogue:21",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5217461585998535
+          }
+        ],
+        "confidence": 0.41739692687988283
+      },
+      {
+        "claim_id": "claim_45",
+        "claim_text": "**EKG (prior to visit):** Normal.",
+        "section": "O",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          28,
+          20,
+          38
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:28",
+            "source": "dialogue",
+            "snippet": "and in reviewing the results , it looks like your ekg is completely normal , so that's good .",
+            "score": 0.6816545724868774
+          },
+          {
+            "evidence_id": "dialogue:20",
+            "source": "dialogue",
+            "snippet": "okay , great . all right . well , let's go ahead . i'd like to do a quick physical exam . let's look...",
+            "score": 0.6173338294029236
+          },
+          {
+            "evidence_id": "dialogue:38",
+            "source": "dialogue",
+            "snippet": "all right . good to see you .",
+            "score": 0.5967416763305664
+          }
+        ],
+        "confidence": 0.6816545724868774
+      },
+      {
+        "claim_id": "claim_46",
+        "claim_text": "**Chest X-ray (prior to visit):** Normal, unremarkable, looks good post-lobectomy.",
+        "section": "O",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          30,
+          28,
+          38
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:30",
+            "source": "dialogue",
+            "snippet": "so i'm not too concerned about that , that chest pounding . hey , dragon , show me the chest x-ray ....",
+            "score": 0.6792681217193604
+          },
+          {
+            "evidence_id": "dialogue:28",
+            "source": "dialogue",
+            "snippet": "and in reviewing the results , it looks like your ekg is completely normal , so that's good .",
+            "score": 0.6225748062133789
+          },
+          {
+            "evidence_id": "dialogue:38",
+            "source": "dialogue",
+            "snippet": "all right . good to see you .",
+            "score": 0.58271723985672
+          }
+        ],
+        "confidence": 0.6792681217193604
+      },
+      {
+        "claim_id": "claim_47",
+        "claim_text": "Barnes is a 62-year-old male presenting for his annual examination.",
+        "section": "A",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          4,
+          29,
+          38
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:4",
+            "source": "dialogue",
+            "snippet": "so ralph is a 62-year-old male with a past medical history significant for depression and prior lobe...",
+            "score": 0.6642413139343262
+          },
+          {
+            "evidence_id": "dialogue:29",
+            "source": "dialogue",
+            "snippet": "good .",
+            "score": 0.48907744884490967
+          },
+          {
+            "evidence_id": "dialogue:38",
+            "source": "dialogue",
+            "snippet": "all right . good to see you .",
+            "score": 0.4780822992324829
+          }
+        ],
+        "confidence": 0.6642413139343262
+      },
+      {
+        "claim_id": "claim_48",
+        "claim_text": "**Annual Exam:** Routine visit for health maintenance.",
+        "section": "A",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          20,
+          38,
+          29
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:20",
+            "source": "dialogue",
+            "snippet": "okay , great . all right . well , let's go ahead . i'd like to do a quick physical exam . let's look...",
+            "score": 0.6255571842193604
+          },
+          {
+            "evidence_id": "dialogue:38",
+            "source": "dialogue",
+            "snippet": "all right . good to see you .",
+            "score": 0.579697847366333
+          },
+          {
+            "evidence_id": "dialogue:29",
+            "source": "dialogue",
+            "snippet": "good .",
+            "score": 0.5774500966072083
+          }
+        ],
+        "confidence": 0.6255571842193604
+      },
+      {
+        "claim_id": "claim_49",
+        "claim_text": "**Depression:** Well-controlled on current regimen of Prozac 20 mg daily.",
+        "section": "A",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          8,
+          34,
+          32
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:8",
+            "source": "dialogue",
+            "snippet": "so , um well , how are you doing from , you know , let's talk a little bit about your depression . h...",
+            "score": 0.6813912391662598
+          },
+          {
+            "evidence_id": "dialogue:34",
+            "source": "dialogue",
+            "snippet": "okay . hey , dragon , order a refill of prozac , 20 milligrams daily . from a ... for your next prob...",
+            "score": 0.6687905192375183
+          },
+          {
+            "evidence_id": "dialogue:32",
+            "source": "dialogue",
+            "snippet": ". with your current strategy . let's continue you on the prozac 20 milligrams a day and do you need ...",
+            "score": 0.6251218318939209
+          }
+        ],
+        "confidence": 0.6813912391662598
+      },
+      {
+        "claim_id": "claim_50",
+        "claim_text": "Patient reports good adherence and no recent incidents.",
+        "section": "A",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          29,
+          13,
+          28
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:29",
+            "source": "dialogue",
+            "snippet": "good .",
+            "score": 0.6362960338592529
+          },
+          {
+            "evidence_id": "dialogue:13",
+            "source": "dialogue",
+            "snippet": "other than during the heat and the pollen , it's been pretty good .",
+            "score": 0.6309342980384827
+          },
+          {
+            "evidence_id": "dialogue:28",
+            "source": "dialogue",
+            "snippet": "and in reviewing the results , it looks like your ekg is completely normal , so that's good .",
+            "score": 0.6194678544998169
+          }
+        ],
+        "confidence": 0.6362960338592529
+      },
+      {
+        "claim_id": "claim_51",
+        "claim_text": "**History of Lobectomy:** Clinically stable.",
+        "section": "A",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          9,
+          29,
+          28
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:9",
+            "source": "dialogue",
+            "snippet": "yeah , i've been staying on top of the meds , and i have n't had any incidents in a while , so it's ...",
+            "score": 0.6064247488975525
+          },
+          {
+            "evidence_id": "dialogue:29",
+            "source": "dialogue",
+            "snippet": "good .",
+            "score": 0.5851592421531677
+          },
+          {
+            "evidence_id": "dialogue:28",
+            "source": "dialogue",
+            "snippet": "and in reviewing the results , it looks like your ekg is completely normal , so that's good .",
+            "score": 0.5806812644004822
+          }
+        ],
+        "confidence": 0.6064247488975525
+      },
+      {
+        "claim_id": "claim_52",
+        "claim_text": "Patient is able to exercise significantly (running 4-5 miles daily).",
+        "section": "A",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          19,
+          15,
+          28
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:19",
+            "source": "dialogue",
+            "snippet": "uh , like 4 to 5 miles a day .",
+            "score": 0.7222915887832642
+          },
+          {
+            "evidence_id": "dialogue:15",
+            "source": "dialogue",
+            "snippet": "sometimes i , i regularly , uh , go for a run in the morning . that's my workout , and sometimes if ...",
+            "score": 0.6004332304000854
+          },
+          {
+            "evidence_id": "dialogue:28",
+            "source": "dialogue",
+            "snippet": "and in reviewing the results , it looks like your ekg is completely normal , so that's good .",
+            "score": 0.5787994861602783
+          }
+        ],
+        "confidence": 0.7222915887832642
+      },
+      {
+        "claim_id": "claim_53",
+        "claim_text": "Chest X-ray is normal post-lobectomy.",
+        "section": "A",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          30,
+          28,
+          34
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:30",
+            "source": "dialogue",
+            "snippet": "so i'm not too concerned about that , that chest pounding . hey , dragon , show me the chest x-ray ....",
+            "score": 0.6465103030204773
+          },
+          {
+            "evidence_id": "dialogue:28",
+            "source": "dialogue",
+            "snippet": "and in reviewing the results , it looks like your ekg is completely normal , so that's good .",
+            "score": 0.594376802444458
+          },
+          {
+            "evidence_id": "dialogue:34",
+            "source": "dialogue",
+            "snippet": "okay . hey , dragon , order a refill of prozac , 20 milligrams daily . from a ... for your next prob...",
+            "score": 0.5492762327194214
+          }
+        ],
+        "confidence": 0.6465103030204773
+      },
+      {
+        "claim_id": "claim_54",
+        "claim_text": "No further surgical follow-up deemed necessary.",
+        "section": "A",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          34,
+          28,
+          41
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:34",
+            "source": "dialogue",
+            "snippet": "okay . hey , dragon , order a refill of prozac , 20 milligrams daily . from a ... for your next prob...",
+            "score": 0.5734643936157227
+          },
+          {
+            "evidence_id": "dialogue:28",
+            "source": "dialogue",
+            "snippet": "and in reviewing the results , it looks like your ekg is completely normal , so that's good .",
+            "score": 0.5560613870620728
+          },
+          {
+            "evidence_id": "dialogue:41",
+            "source": "dialogue",
+            "snippet": "thank you .",
+            "score": 0.5240751504898071
+          }
+        ],
+        "confidence": 0.5734643936157227
+      },
+      {
+        "claim_id": "claim_55",
+        "claim_text": "**Hypertension:** Appears well-controlled in office today (BP 120/80), and physician notes improvement in trends over several years.",
+        "section": "A",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          22,
+          9,
+          36
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:22",
+            "source": "dialogue",
+            "snippet": "hey , dragon , show me the vital signs . so here in the office today , your blood pressure looks qui...",
+            "score": 0.7510056495666504
+          },
+          {
+            "evidence_id": "dialogue:9",
+            "source": "dialogue",
+            "snippet": "yeah , i've been staying on top of the meds , and i have n't had any incidents in a while , so it's ...",
+            "score": 0.6995502710342407
+          },
+          {
+            "evidence_id": "dialogue:36",
+            "source": "dialogue",
+            "snippet": "you're doing a great job of keeping it controlled . i know you said you have n't been taking it that...",
+            "score": 0.6528828740119934
+          }
+        ],
+        "confidence": 0.7510056495666504
+      },
+      {
+        "claim_id": "claim_56",
+        "claim_text": "Patient reports adherence issues on weekends and elevated home readings, but overall control seems adequate on current Norvasc regimen.",
+        "section": "A",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          10,
+          11,
+          9
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:10",
+            "source": "dialogue",
+            "snippet": "okay . yeah , i , i see that we have you on the norvasc . and so are you taking it at home ? is it r...",
+            "score": 0.6584847569465637
+          },
+          {
+            "evidence_id": "dialogue:11",
+            "source": "dialogue",
+            "snippet": "i ... i'm pretty regular with the medications during the business week , but on there's weekends , y...",
+            "score": 0.6170130968093872
+          },
+          {
+            "evidence_id": "dialogue:9",
+            "source": "dialogue",
+            "snippet": "yeah , i've been staying on top of the meds , and i have n't had any incidents in a while , so it's ...",
+            "score": 0.5588539242744446
+          }
+        ],
+        "confidence": 0.6584847569465637
+      },
+      {
+        "claim_id": "claim_57",
+        "claim_text": "**Systolic Ejection Murmur:** New finding noted on physical exam requiring further evaluation.",
+        "section": "A",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          26,
+          20,
+          36
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:26",
+            "source": "dialogue",
+            "snippet": "okay , so on exam , everything seems to be good . your heart , i hear a slight two out of six systol...",
+            "score": 0.5997252464294434
+          },
+          {
+            "evidence_id": "dialogue:20",
+            "source": "dialogue",
+            "snippet": "okay , great . all right . well , let's go ahead . i'd like to do a quick physical exam . let's look...",
+            "score": 0.5991389155387878
+          },
+          {
+            "evidence_id": "dialogue:36",
+            "source": "dialogue",
+            "snippet": "you're doing a great job of keeping it controlled . i know you said you have n't been taking it that...",
+            "score": 0.5472590923309326
+          }
+        ],
+        "confidence": 0.4797801971435547
+      },
+      {
+        "claim_id": "claim_58",
+        "claim_text": "Physician is not concerned about patient's reported chest pounding given normal EKG and CXR, but the murmur warrants investigation.",
+        "section": "A",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          36,
+          26,
+          30
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:36",
+            "source": "dialogue",
+            "snippet": "you're doing a great job of keeping it controlled . i know you said you have n't been taking it that...",
+            "score": 0.6215063333511353
+          },
+          {
+            "evidence_id": "dialogue:26",
+            "source": "dialogue",
+            "snippet": "okay , so on exam , everything seems to be good . your heart , i hear a slight two out of six systol...",
+            "score": 0.6021723747253418
+          },
+          {
+            "evidence_id": "dialogue:30",
+            "source": "dialogue",
+            "snippet": "so i'm not too concerned about that , that chest pounding . hey , dragon , show me the chest x-ray ....",
+            "score": 0.6004183292388916
+          }
+        ],
+        "confidence": 0.6004183292388916
+      },
+      {
+        "claim_id": "claim_59",
+        "claim_text": "**Annual Exam:**",
+        "section": "P",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          29,
+          17,
+          35
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:29",
+            "source": "dialogue",
+            "snippet": "good .",
+            "score": 0.4938777685165405
+          },
+          {
+            "evidence_id": "dialogue:17",
+            "source": "dialogue",
+            "snippet": "correct . correct .",
+            "score": 0.4897803068161011
+          },
+          {
+            "evidence_id": "dialogue:35",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.4756796956062317
+          }
+        ],
+        "confidence": 0.39510221481323243
+      },
+      {
+        "claim_id": "claim_60",
+        "claim_text": "Order routine blood work.",
+        "section": "P",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          20,
+          36,
+          34
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:20",
+            "source": "dialogue",
+            "snippet": "okay , great . all right . well , let's go ahead . i'd like to do a quick physical exam . let's look...",
+            "score": 0.6784587502479553
+          },
+          {
+            "evidence_id": "dialogue:36",
+            "source": "dialogue",
+            "snippet": "you're doing a great job of keeping it controlled . i know you said you have n't been taking it that...",
+            "score": 0.6527461409568787
+          },
+          {
+            "evidence_id": "dialogue:34",
+            "source": "dialogue",
+            "snippet": "okay . hey , dragon , order a refill of prozac , 20 milligrams daily . from a ... for your next prob...",
+            "score": 0.6175491213798523
+          }
+        ],
+        "confidence": 0.6784587502479553
+      },
+      {
+        "claim_id": "claim_61",
+        "claim_text": "Follow up with patient via patient portal once results are available.",
+        "section": "P",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          20,
+          36,
+          40
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:20",
+            "source": "dialogue",
+            "snippet": "okay , great . all right . well , let's go ahead . i'd like to do a quick physical exam . let's look...",
+            "score": 0.6027844548225403
+          },
+          {
+            "evidence_id": "dialogue:36",
+            "source": "dialogue",
+            "snippet": "you're doing a great job of keeping it controlled . i know you said you have n't been taking it that...",
+            "score": 0.5991910099983215
+          },
+          {
+            "evidence_id": "dialogue:40",
+            "source": "dialogue",
+            "snippet": "hey , dragon , finalize the note . the nurse will be in .",
+            "score": 0.56050705909729
+          }
+        ],
+        "confidence": 0.6027844548225403
+      },
+      {
+        "claim_id": "claim_62",
+        "claim_text": "**Depression:**",
+        "section": "P",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          21,
+          27,
+          35
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:21",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5272426605224609
+          },
+          {
+            "evidence_id": "dialogue:27",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5272426605224609
+          },
+          {
+            "evidence_id": "dialogue:35",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5272426605224609
+          }
+        ],
+        "confidence": 0.42179412841796876
+      },
+      {
+        "claim_id": "claim_63",
+        "claim_text": "Continue Prozac 20 mg daily.",
+        "section": "P",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          32,
+          34,
+          8
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:32",
+            "source": "dialogue",
+            "snippet": ". with your current strategy . let's continue you on the prozac 20 milligrams a day and do you need ...",
+            "score": 0.7297682762145996
+          },
+          {
+            "evidence_id": "dialogue:34",
+            "source": "dialogue",
+            "snippet": "okay . hey , dragon , order a refill of prozac , 20 milligrams daily . from a ... for your next prob...",
+            "score": 0.6725631356239319
+          },
+          {
+            "evidence_id": "dialogue:8",
+            "source": "dialogue",
+            "snippet": "so , um well , how are you doing from , you know , let's talk a little bit about your depression . h...",
+            "score": 0.5826781988143921
+          }
+        ],
+        "confidence": 0.7297682762145996
+      },
+      {
+        "claim_id": "claim_64",
+        "claim_text": "Refill ordered for Prozac 20 mg daily.",
+        "section": "P",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          32,
+          33,
+          34
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:32",
+            "source": "dialogue",
+            "snippet": ". with your current strategy . let's continue you on the prozac 20 milligrams a day and do you need ...",
+            "score": 0.816198468208313
+          },
+          {
+            "evidence_id": "dialogue:33",
+            "source": "dialogue",
+            "snippet": "uh , actually , i do need a refill .",
+            "score": 0.6990184783935547
+          },
+          {
+            "evidence_id": "dialogue:34",
+            "source": "dialogue",
+            "snippet": "okay . hey , dragon , order a refill of prozac , 20 milligrams daily . from a ... for your next prob...",
+            "score": 0.6502009630203247
+          }
+        ],
+        "confidence": 0.816198468208313
+      },
+      {
+        "claim_id": "claim_65",
+        "claim_text": "**History of Lobectomy:**",
+        "section": "P",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          12,
+          39,
+          27
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:12",
+            "source": "dialogue",
+            "snippet": "okay . all right . um , and then i know that you've had that prior lobectomy a couple years ago . an...",
+            "score": 0.4673154652118683
+          },
+          {
+            "evidence_id": "dialogue:39",
+            "source": "dialogue",
+            "snippet": "same here .",
+            "score": 0.4617346525192261
+          },
+          {
+            "evidence_id": "dialogue:27",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.4585949778556824
+          }
+        ],
+        "confidence": 0.37385237216949463
+      },
+      {
+        "claim_id": "claim_66",
+        "claim_text": "No further workup or follow-up with surgeon needed at this time, given clinical status and normal imaging.",
+        "section": "P",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          34,
+          28,
+          20
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:34",
+            "source": "dialogue",
+            "snippet": "okay . hey , dragon , order a refill of prozac , 20 milligrams daily . from a ... for your next prob...",
+            "score": 0.6312494277954102
+          },
+          {
+            "evidence_id": "dialogue:28",
+            "source": "dialogue",
+            "snippet": "and in reviewing the results , it looks like your ekg is completely normal , so that's good .",
+            "score": 0.6145206689834595
+          },
+          {
+            "evidence_id": "dialogue:20",
+            "source": "dialogue",
+            "snippet": "okay , great . all right . well , let's go ahead . i'd like to do a quick physical exam . let's look...",
+            "score": 0.546515166759491
+          }
+        ],
+        "confidence": 0.6312494277954102
+      },
+      {
+        "claim_id": "claim_67",
+        "claim_text": "**Hypertension:**",
+        "section": "P",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          23,
+          35,
+          21
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:23",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.538345217704773
+          },
+          {
+            "evidence_id": "dialogue:35",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.538345217704773
+          },
+          {
+            "evidence_id": "dialogue:21",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.538345217704773
+          }
+        ],
+        "confidence": 0.43067617416381837
+      },
+      {
+        "claim_id": "claim_68",
+        "claim_text": "Continue Norvasc.",
+        "section": "P",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          10,
+          29,
+          39
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:10",
+            "source": "dialogue",
+            "snippet": "okay . yeah , i , i see that we have you on the norvasc . and so are you taking it at home ? is it r...",
+            "score": 0.6112538576126099
+          },
+          {
+            "evidence_id": "dialogue:29",
+            "source": "dialogue",
+            "snippet": "good .",
+            "score": 0.5934149026870728
+          },
+          {
+            "evidence_id": "dialogue:39",
+            "source": "dialogue",
+            "snippet": "same here .",
+            "score": 0.5780115723609924
+          }
+        ],
+        "confidence": 0.6112538576126099
+      },
+      {
+        "claim_id": "claim_69",
+        "claim_text": "Encourage consistent weekend dosing if possible, though current control appears acceptable based on office BP and trends.",
+        "section": "P",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          22,
+          11,
+          36
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:22",
+            "source": "dialogue",
+            "snippet": "hey , dragon , show me the vital signs . so here in the office today , your blood pressure looks qui...",
+            "score": 0.6355397701263428
+          },
+          {
+            "evidence_id": "dialogue:11",
+            "source": "dialogue",
+            "snippet": "i ... i'm pretty regular with the medications during the business week , but on there's weekends , y...",
+            "score": 0.6299774646759033
+          },
+          {
+            "evidence_id": "dialogue:36",
+            "source": "dialogue",
+            "snippet": "you're doing a great job of keeping it controlled . i know you said you have n't been taking it that...",
+            "score": 0.6272050738334656
+          }
+        ],
+        "confidence": 0.6355397701263428
+      },
+      {
+        "claim_id": "claim_70",
+        "claim_text": "**Systolic Ejection Murmur:**",
+        "section": "P",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          26,
+          23,
+          31
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:26",
+            "source": "dialogue",
+            "snippet": "okay , so on exam , everything seems to be good . your heart , i hear a slight two out of six systol...",
+            "score": 0.5119538307189941
+          },
+          {
+            "evidence_id": "dialogue:23",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5032405853271484
+          },
+          {
+            "evidence_id": "dialogue:31",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5032405853271484
+          }
+        ],
+        "confidence": 0.4095630645751953
+      },
+      {
+        "claim_id": "claim_71",
+        "claim_text": "Order echocardiogram to evaluate the murmur.",
+        "section": "P",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          36,
+          24,
+          20
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:36",
+            "source": "dialogue",
+            "snippet": "you're doing a great job of keeping it controlled . i know you said you have n't been taking it that...",
+            "score": 0.6879838109016418
+          },
+          {
+            "evidence_id": "dialogue:24",
+            "source": "dialogue",
+            "snippet": "all right , so i'm just gon na listen to your heart and lungs and check you out , okay ?",
+            "score": 0.6433531045913696
+          },
+          {
+            "evidence_id": "dialogue:20",
+            "source": "dialogue",
+            "snippet": "okay , great . all right . well , let's go ahead . i'd like to do a quick physical exam . let's look...",
+            "score": 0.6239673495292664
+          }
+        ],
+        "confidence": 0.6879838109016418
+      },
+      {
+        "claim_id": "claim_72",
+        "claim_text": "Follow up with patient via patient portal once results are available.",
+        "section": "P",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          20,
+          36,
+          40
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:20",
+            "source": "dialogue",
+            "snippet": "okay , great . all right . well , let's go ahead . i'd like to do a quick physical exam . let's look...",
+            "score": 0.6027844548225403
+          },
+          {
+            "evidence_id": "dialogue:36",
+            "source": "dialogue",
+            "snippet": "you're doing a great job of keeping it controlled . i know you said you have n't been taking it that...",
+            "score": 0.5991910099983215
+          },
+          {
+            "evidence_id": "dialogue:40",
+            "source": "dialogue",
+            "snippet": "hey , dragon , finalize the note . the nurse will be in .",
+            "score": 0.56050705909729
+          }
+        ],
+        "confidence": 0.6027844548225403
+      },
+      {
+        "claim_id": "claim_73",
+        "claim_text": "Patient understands and agrees with the plan.",
+        "section": "P",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          29,
+          28,
+          38
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:29",
+            "source": "dialogue",
+            "snippet": "good .",
+            "score": 0.6360863447189331
+          },
+          {
+            "evidence_id": "dialogue:28",
+            "source": "dialogue",
+            "snippet": "and in reviewing the results , it looks like your ekg is completely normal , so that's good .",
+            "score": 0.6133931875228882
+          },
+          {
+            "evidence_id": "dialogue:38",
+            "source": "dialogue",
+            "snippet": "all right . good to see you .",
+            "score": 0.6101481914520264
+          }
+        ],
+        "confidence": 0.6360863447189331
+      },
+      {
+        "claim_id": "claim_74",
+        "claim_text": "Return for follow-up as needed or for next annual exam.",
+        "section": "P",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          20,
+          33,
+          28
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:20",
+            "source": "dialogue",
+            "snippet": "okay , great . all right . well , let's go ahead . i'd like to do a quick physical exam . let's look...",
+            "score": 0.6291425824165344
+          },
+          {
+            "evidence_id": "dialogue:33",
+            "source": "dialogue",
+            "snippet": "uh , actually , i do need a refill .",
+            "score": 0.5969123840332031
+          },
+          {
+            "evidence_id": "dialogue:28",
+            "source": "dialogue",
+            "snippet": "and in reviewing the results , it looks like your ekg is completely normal , so that's good .",
+            "score": 0.5640841722488403
+          }
+        ],
+        "confidence": 0.6291425824165344
+      }
+    ],
+    "total_claims_evaluated": 75
+  },
+  "coverage_of_salient_findings": {
+    "completeness_score": 0.65625,
+    "omission_rate": 0.6153846153846154,
+    "verdict": "borderline",
+    "symptom_recall": 0.125,
+    "medication_recall": 1.0,
+    "allergy_recall": 1.0,
+    "risk_factor_recall": 0.5,
+    "omissions": [
+      {
+        "finding_type": "symptom",
+        "finding_text": "nasal_congestion_from_pollen",
+        "dialogue_sentence_ids": [],
+        "importance": "moderate"
+      },
+      {
+        "finding_type": "symptom",
+        "finding_text": "chills",
+        "dialogue_sentence_ids": [],
+        "importance": "moderate"
+      },
+      {
+        "finding_type": "symptom",
+        "finding_text": "pounding",
+        "dialogue_sentence_ids": [],
+        "importance": "moderate"
+      },
+      {
+        "finding_type": "symptom",
+        "finding_text": "depression",
+        "dialogue_sentence_ids": [],
+        "importance": "moderate"
+      },
+      {
+        "finding_type": "symptom",
+        "finding_text": "fever",
+        "dialogue_sentence_ids": [],
+        "importance": "moderate"
+      },
+      {
+        "finding_type": "symptom",
+        "finding_text": "hypertension",
+        "dialogue_sentence_ids": [],
+        "importance": "moderate"
+      },
+      {
+        "finding_type": "symptom",
+        "finding_text": "chest_pounding_with_exertion",
+        "dialogue_sentence_ids": [],
+        "importance": "moderate"
+      },
+      {
+        "finding_type": "risk_factor",
+        "finding_text": "family history of heart disease (not mentioned but implied by prior lobectomy)",
+        "dialogue_sentence_ids": [],
+        "importance": "moderate"
+      }
+    ],
+    "critical_omissions": 0
+  },
+  "assessment_quality": {
+    "dx_coherence_score": 0.6,
+    "differential_breadth_score": 0.8,
+    "verdict": "borderline",
+    "diagnosis_evaluations": [
+      {
+        "diagnosis": "well-controlled depression (primary)",
+        "coherence_with_evidence": 0.9,
+        "evidence_support": [],
+        "guideline_support": [],
+        "concerns": []
+      },
+      {
+        "diagnosis": "clinically stable post-lobectomy (primary)",
+        "coherence_with_evidence": 1.0,
+        "evidence_support": [],
+        "guideline_support": [],
+        "concerns": []
+      },
+      {
+        "diagnosis": "hypertension (primary)",
+        "coherence_with_evidence": 0.8,
+        "evidence_support": [],
+        "guideline_support": [],
+        "concerns": [
+          "BP 120/80 may not accurately reflect long-term control"
+        ]
+      }
+    ],
+    "missed_differentials": [
+      {
+        "condition": "Panic Disorder",
+        "reasoning": "Patient reports shortness of breath with exertion, chest pounding with exertion, and fever/chills. These symptoms could be indicative of a panic disorder.",
+        "is_red_flag": true,
+        "guideline_evidence": []
+      },
+      {
+        "condition": "Cardiac Disease",
+        "reasoning": "Patient has a family history of heart disease (implied by prior lobectomy) and reports chest pounding with exertion. This could be indicative of cardiac disease.",
+        "is_red_flag": true,
+        "guideline_evidence": []
+      }
+    ],
+    "red_flag_misses": 2
+  },
+  "plan_quality_and_safety": {
+    "guideline_adherence_score": 0.8,
+    "safety_score": 0.9,
+    "verdict": "safe",
+    "guideline_checks": [
+      {
+        "plan_item": "Continue Prozac 20 mg daily.",
+        "item_type": "medication",
+        "guideline_adherence": "aligned",
+        "guideline_citations": [],
+        "deviation_explanation": ""
+      },
+      {
+        "plan_item": "Order echocardiogram to evaluate the murmur.",
+        "item_type": "diagnostic_test",
+        "guideline_adherence": "aligned",
+        "guideline_citations": [],
+        "deviation_explanation": ""
+      }
+    ],
+    "guideline_deviations": 0,
+    "safety_checks": [
+      {
+        "check_type": "drug_allergy",
+        "status": "pass",
+        "description": "No known allergies to Prozac or Norvasc.",
+        "related_items": [
+          "Prozac",
+          "Norvasc"
+        ],
+        "severity": "low"
+      },
+      {
+        "check_type": "dosing_range",
+        "status": "warning",
+        "description": "Dosing of Prozac is within normal range, but patient reports adherence issues on weekends.",
+        "related_items": [
+          "Prozac"
+        ],
+        "severity": "moderate"
+      }
+    ],
+    "safety_failures": 0,
+    "critical_safety_issues": 0,
+    "missing_return_precautions": true,
+    "missing_follow_up": false
+  },
+  "overall_score": 0.7490625,
+  "overall_verdict": "poor",
+  "overall_safety": "needs_review",
+  "num_claims_evaluated": 75,
+  "num_guideline_checks": 2,
+  "num_safety_checks": 2
+}

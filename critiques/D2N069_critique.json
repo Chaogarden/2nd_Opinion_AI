@@ -1,0 +1,1603 @@
+{
+  "encounter_id": "D2N069",
+  "note_type": "soap",
+  "source_note_consistency": {
+    "support_score": 0.6136363636363636,
+    "contradiction_score": 0.38636363636363635,
+    "hallucination_density": 0.0,
+    "verdict": "poor",
+    "claim_judgments": [
+      {
+        "claim_id": "claim_0",
+        "claim_text": "*Chief Complaint:** Right knee pain.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          11,
+          29,
+          16
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:11",
+            "source": "dialogue",
+            "snippet": "it hurts like in , in , in the inside of my knee .",
+            "score": 0.6969648599624634
+          },
+          {
+            "evidence_id": "dialogue:29",
+            "source": "dialogue",
+            "snippet": "right on the inside of my knee . right here .",
+            "score": 0.6765867471694946
+          },
+          {
+            "evidence_id": "dialogue:16",
+            "source": "dialogue",
+            "snippet": "okay . so it sounds like you fell a couple days ago , and you've hurt something inside of your right...",
+            "score": 0.6716649532318115
+          }
+        ],
+        "confidence": 0.6969648599624634
+      },
+      {
+        "claim_id": "claim_1",
+        "claim_text": "*History of Present Illness:** Ms.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          1,
+          20,
+          17
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:1",
+            "source": "dialogue",
+            "snippet": "hi , dr. moore .",
+            "score": 0.5861918926239014
+          },
+          {
+            "evidence_id": "dialogue:20",
+            "source": "dialogue",
+            "snippet": "okay , let's review your past history for a second . it looks like , uh , do you have any other past...",
+            "score": 0.5657962560653687
+          },
+          {
+            "evidence_id": "dialogue:17",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5598833560943604
+          }
+        ],
+        "confidence": 0.4689535140991211
+      },
+      {
+        "claim_id": "claim_2",
+        "claim_text": "Thompson is a 43-year-old female presenting with right knee pain that began yesterday.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          4,
+          11,
+          16
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:4",
+            "source": "dialogue",
+            "snippet": "all right , hey , dragon , ms. thompson is a 43 year old female here for right knee pain . so tell m...",
+            "score": 0.819639265537262
+          },
+          {
+            "evidence_id": "dialogue:11",
+            "source": "dialogue",
+            "snippet": "it hurts like in , in , in the inside of my knee .",
+            "score": 0.6691511869430542
+          },
+          {
+            "evidence_id": "dialogue:16",
+            "source": "dialogue",
+            "snippet": "okay . so it sounds like you fell a couple days ago , and you've hurt something inside of your right...",
+            "score": 0.6408408880233765
+          }
+        ],
+        "confidence": 0.819639265537262
+      },
+      {
+        "claim_id": "claim_3",
+        "claim_text": "She reports the onset occurred while she was on a ladder attempting to change a light bulb.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          5,
+          33,
+          27
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:5",
+            "source": "dialogue",
+            "snippet": "well , i was , um , trying to change a light bulb , and i was up on a ladder and i kinda had a littl...",
+            "score": 0.7181459665298462
+          },
+          {
+            "evidence_id": "dialogue:33",
+            "source": "dialogue",
+            "snippet": "that hurts a lot .",
+            "score": 0.5226033329963684
+          },
+          {
+            "evidence_id": "dialogue:27",
+            "source": "dialogue",
+            "snippet": "i have had a nose job .",
+            "score": 0.5191366672515869
+          }
+        ],
+        "confidence": 0.7181459665298462
+      },
+      {
+        "claim_id": "claim_4",
+        "claim_text": "She stumbled and twisted her right knee while trying to catch her fall.",
+        "section": "S",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          5,
+          16,
+          7
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:5",
+            "source": "dialogue",
+            "snippet": "well , i was , um , trying to change a light bulb , and i was up on a ladder and i kinda had a littl...",
+            "score": 0.71638423204422
+          },
+          {
+            "evidence_id": "dialogue:16",
+            "source": "dialogue",
+            "snippet": "okay . so it sounds like you fell a couple days ago , and you've hurt something inside of your right...",
+            "score": 0.6674718856811523
+          },
+          {
+            "evidence_id": "dialogue:7",
+            "source": "dialogue",
+            "snippet": "no , no . it just seems to be the knee .",
+            "score": 0.6036768555641174
+          }
+        ],
+        "confidence": 0.6036768555641174
+      },
+      {
+        "claim_id": "claim_5",
+        "claim_text": "The pain is primarily located on the inside (medial aspect) of her right knee.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          11,
+          29,
+          16
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:11",
+            "source": "dialogue",
+            "snippet": "it hurts like in , in , in the inside of my knee .",
+            "score": 0.7808275818824768
+          },
+          {
+            "evidence_id": "dialogue:29",
+            "source": "dialogue",
+            "snippet": "right on the inside of my knee . right here .",
+            "score": 0.763306736946106
+          },
+          {
+            "evidence_id": "dialogue:16",
+            "source": "dialogue",
+            "snippet": "okay . so it sounds like you fell a couple days ago , and you've hurt something inside of your right...",
+            "score": 0.6891777515411377
+          }
+        ],
+        "confidence": 0.7808275818824768
+      },
+      {
+        "claim_id": "claim_6",
+        "claim_text": "She has attempted to alleviate the pain with ice and over-the-counter ibuprofen, but reports these measures have not provided significant relief.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          15,
+          18,
+          33
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:15",
+            "source": "dialogue",
+            "snippet": "i have been putting ice on it , uh , and i've been taking ibuprofen , but it does n't seem to help m...",
+            "score": 0.8384503126144409
+          },
+          {
+            "evidence_id": "dialogue:18",
+            "source": "dialogue",
+            "snippet": "and you've been taking a little bit of ice , uh , putting some ice on it , and has n't really helped...",
+            "score": 0.7690072059631348
+          },
+          {
+            "evidence_id": "dialogue:33",
+            "source": "dialogue",
+            "snippet": "that hurts a lot .",
+            "score": 0.6015783548355103
+          }
+        ],
+        "confidence": 0.8384503126144409
+      },
+      {
+        "claim_id": "claim_7",
+        "claim_text": "She denies any other injuries sustained during the fall.",
+        "section": "S",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          3,
+          7,
+          40
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:3",
+            "source": "dialogue",
+            "snippet": "i'm doing okay except for my knee .",
+            "score": 0.589917778968811
+          },
+          {
+            "evidence_id": "dialogue:7",
+            "source": "dialogue",
+            "snippet": "no , no . it just seems to be the knee .",
+            "score": 0.5871424078941345
+          },
+          {
+            "evidence_id": "dialogue:40",
+            "source": "dialogue",
+            "snippet": "okay . hey dragon , show me the x-rays . so looking at the x-ray , um , of your left knee , uh , it ...",
+            "score": 0.5059363842010498
+          }
+        ],
+        "confidence": 0.589917778968811
+      },
+      {
+        "claim_id": "claim_8",
+        "claim_text": "*Past Medical History:** Atrial fibrillation.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          20,
+          9,
+          26
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:20",
+            "source": "dialogue",
+            "snippet": "okay , let's review your past history for a second . it looks like , uh , do you have any other past...",
+            "score": 0.5966687202453613
+          },
+          {
+            "evidence_id": "dialogue:9",
+            "source": "dialogue",
+            "snippet": "it was yesterday .",
+            "score": 0.5669084787368774
+          },
+          {
+            "evidence_id": "dialogue:26",
+            "source": "dialogue",
+            "snippet": "okay , all right . how about any surgeries in the past ?",
+            "score": 0.5562600493431091
+          }
+        ],
+        "confidence": 0.47733497619628906
+      },
+      {
+        "claim_id": "claim_9",
+        "claim_text": "*Past Surgical History:** Rhinoplasty.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          26,
+          20,
+          9
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:26",
+            "source": "dialogue",
+            "snippet": "okay , all right . how about any surgeries in the past ?",
+            "score": 0.6446453332901001
+          },
+          {
+            "evidence_id": "dialogue:20",
+            "source": "dialogue",
+            "snippet": "okay , let's review your past history for a second . it looks like , uh , do you have any other past...",
+            "score": 0.5767487287521362
+          },
+          {
+            "evidence_id": "dialogue:9",
+            "source": "dialogue",
+            "snippet": "it was yesterday .",
+            "score": 0.5612717270851135
+          }
+        ],
+        "confidence": 0.6446453332901001
+      },
+      {
+        "claim_id": "claim_10",
+        "claim_text": "*Family History:** Not discussed.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          12,
+          45,
+          43
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:12",
+            "source": "dialogue",
+            "snippet": "okay .",
+            "score": 0.5448050498962402
+          },
+          {
+            "evidence_id": "dialogue:45",
+            "source": "dialogue",
+            "snippet": "okay .",
+            "score": 0.5448050498962402
+          },
+          {
+            "evidence_id": "dialogue:43",
+            "source": "dialogue",
+            "snippet": "okay .",
+            "score": 0.5448050498962402
+          }
+        ],
+        "confidence": 0.4358440399169922
+      },
+      {
+        "claim_id": "claim_11",
+        "claim_text": "*Social History:** Not discussed.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          12,
+          39,
+          45
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:12",
+            "source": "dialogue",
+            "snippet": "okay .",
+            "score": 0.5315383672714233
+          },
+          {
+            "evidence_id": "dialogue:39",
+            "source": "dialogue",
+            "snippet": "okay .",
+            "score": 0.5315383672714233
+          },
+          {
+            "evidence_id": "dialogue:45",
+            "source": "dialogue",
+            "snippet": "okay .",
+            "score": 0.5315383672714233
+          }
+        ],
+        "confidence": 0.4252306938171387
+      },
+      {
+        "claim_id": "claim_12",
+        "claim_text": "*Medications:**",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          17,
+          48,
+          2
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:17",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5346859097480774
+          },
+          {
+            "evidence_id": "dialogue:48",
+            "source": "dialogue",
+            "snippet": "all right . hey , dragon , order the medications and procedures discussed , and finalize the report ...",
+            "score": 0.5082849860191345
+          },
+          {
+            "evidence_id": "dialogue:2",
+            "source": "dialogue",
+            "snippet": "hi .",
+            "score": 0.4991958737373352
+          }
+        ],
+        "confidence": 0.42774872779846196
+      },
+      {
+        "claim_id": "claim_13",
+        "claim_text": "Digoxin (dose and frequency not specified)",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          24,
+          44,
+          22
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:24",
+            "source": "dialogue",
+            "snippet": "uh , digoxin ?",
+            "score": 0.6187449097633362
+          },
+          {
+            "evidence_id": "dialogue:44",
+            "source": "dialogue",
+            "snippet": "i'm going to recommend we give you some motrin , 800 milligrams . uh , you can take it about every s...",
+            "score": 0.4842635989189148
+          },
+          {
+            "evidence_id": "dialogue:22",
+            "source": "dialogue",
+            "snippet": "okay , and are you taking any medications for that ?",
+            "score": 0.43448013067245483
+          }
+        ],
+        "confidence": 0.6187449097633362
+      },
+      {
+        "claim_id": "claim_14",
+        "claim_text": "Ibuprofen (over-the-counter, dose and frequency not specified)",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          15,
+          18,
+          44
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:15",
+            "source": "dialogue",
+            "snippet": "i have been putting ice on it , uh , and i've been taking ibuprofen , but it does n't seem to help m...",
+            "score": 0.5699673295021057
+          },
+          {
+            "evidence_id": "dialogue:18",
+            "source": "dialogue",
+            "snippet": "and you've been taking a little bit of ice , uh , putting some ice on it , and has n't really helped...",
+            "score": 0.5636923909187317
+          },
+          {
+            "evidence_id": "dialogue:44",
+            "source": "dialogue",
+            "snippet": "i'm going to recommend we give you some motrin , 800 milligrams . uh , you can take it about every s...",
+            "score": 0.48446112871170044
+          }
+        ],
+        "confidence": 0.45597386360168457
+      },
+      {
+        "claim_id": "claim_15",
+        "claim_text": "*Allergies:** Not discussed.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          39,
+          12,
+          45
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:39",
+            "source": "dialogue",
+            "snippet": "okay .",
+            "score": 0.566138505935669
+          },
+          {
+            "evidence_id": "dialogue:12",
+            "source": "dialogue",
+            "snippet": "okay .",
+            "score": 0.566138505935669
+          },
+          {
+            "evidence_id": "dialogue:45",
+            "source": "dialogue",
+            "snippet": "okay .",
+            "score": 0.566138505935669
+          }
+        ],
+        "confidence": 0.4529108047485352
+      },
+      {
+        "claim_id": "claim_16",
+        "claim_text": "*Review of Systems:**",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          17,
+          2,
+          45
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:17",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5312433242797852
+          },
+          {
+            "evidence_id": "dialogue:2",
+            "source": "dialogue",
+            "snippet": "hi .",
+            "score": 0.5108209848403931
+          },
+          {
+            "evidence_id": "dialogue:45",
+            "source": "dialogue",
+            "snippet": "okay .",
+            "score": 0.5068768262863159
+          }
+        ],
+        "confidence": 0.42499465942382814
+      },
+      {
+        "claim_id": "claim_17",
+        "claim_text": "**General:** Denies other injuries.",
+        "section": "S",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          3,
+          7,
+          47
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:3",
+            "source": "dialogue",
+            "snippet": "i'm doing okay except for my knee .",
+            "score": 0.5852899551391602
+          },
+          {
+            "evidence_id": "dialogue:7",
+            "source": "dialogue",
+            "snippet": "no , no . it just seems to be the knee .",
+            "score": 0.5671644806861877
+          },
+          {
+            "evidence_id": "dialogue:47",
+            "source": "dialogue",
+            "snippet": "no , i think i'm good .",
+            "score": 0.5580490827560425
+          }
+        ],
+        "confidence": 0.5852899551391602
+      },
+      {
+        "claim_id": "claim_18",
+        "claim_text": "**Musculoskeletal:** Right knee pain as described above.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          11,
+          16,
+          29
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:11",
+            "source": "dialogue",
+            "snippet": "it hurts like in , in , in the inside of my knee .",
+            "score": 0.6565297842025757
+          },
+          {
+            "evidence_id": "dialogue:16",
+            "source": "dialogue",
+            "snippet": "okay . so it sounds like you fell a couple days ago , and you've hurt something inside of your right...",
+            "score": 0.6557801961898804
+          },
+          {
+            "evidence_id": "dialogue:29",
+            "source": "dialogue",
+            "snippet": "right on the inside of my knee . right here .",
+            "score": 0.6232091188430786
+          }
+        ],
+        "confidence": 0.6565297842025757
+      },
+      {
+        "claim_id": "claim_19",
+        "claim_text": "Denies pain in the calves.",
+        "section": "S",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          36,
+          3,
+          7
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:36",
+            "source": "dialogue",
+            "snippet": "all right . any other pain down here in your calves ?",
+            "score": 0.7154134511947632
+          },
+          {
+            "evidence_id": "dialogue:3",
+            "source": "dialogue",
+            "snippet": "i'm doing okay except for my knee .",
+            "score": 0.6171768307685852
+          },
+          {
+            "evidence_id": "dialogue:7",
+            "source": "dialogue",
+            "snippet": "no , no . it just seems to be the knee .",
+            "score": 0.6081963181495667
+          }
+        ],
+        "confidence": 0.7154134511947632
+      },
+      {
+        "claim_id": "claim_20",
+        "claim_text": "Other systems not discussed.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          12,
+          45,
+          43
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:12",
+            "source": "dialogue",
+            "snippet": "okay .",
+            "score": 0.5752425193786621
+          },
+          {
+            "evidence_id": "dialogue:45",
+            "source": "dialogue",
+            "snippet": "okay .",
+            "score": 0.5752425193786621
+          },
+          {
+            "evidence_id": "dialogue:43",
+            "source": "dialogue",
+            "snippet": "okay .",
+            "score": 0.5752425193786621
+          }
+        ],
+        "confidence": 0.4601940155029297
+      },
+      {
+        "claim_id": "claim_21",
+        "claim_text": "*Vitals:** Not documented.",
+        "section": "O",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          37,
+          17,
+          12
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:37",
+            "source": "dialogue",
+            "snippet": "no .",
+            "score": 0.5416346788406372
+          },
+          {
+            "evidence_id": "dialogue:17",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5366551876068115
+          },
+          {
+            "evidence_id": "dialogue:12",
+            "source": "dialogue",
+            "snippet": "okay .",
+            "score": 0.5305067300796509
+          }
+        ],
+        "confidence": 0.5416346788406372
+      },
+      {
+        "claim_id": "claim_22",
+        "claim_text": "*Physical Exam:**",
+        "section": "O",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          17,
+          13,
+          2
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:17",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5291346907615662
+          },
+          {
+            "evidence_id": "dialogue:13",
+            "source": "dialogue",
+            "snippet": "right here .",
+            "score": 0.5254536867141724
+          },
+          {
+            "evidence_id": "dialogue:2",
+            "source": "dialogue",
+            "snippet": "hi .",
+            "score": 0.5026733875274658
+          }
+        ],
+        "confidence": 0.42330775260925296
+      },
+      {
+        "claim_id": "claim_23",
+        "claim_text": "**Right Knee:** Tenderness noted over the medial portion, specifically in the medial meniscus area.",
+        "section": "O",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          38,
+          42,
+          29
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:38",
+            "source": "dialogue",
+            "snippet": "no , okay . so on exam you do have some tenderness over the medial portion of your knee over the med...",
+            "score": 0.7195837497711182
+          },
+          {
+            "evidence_id": "dialogue:42",
+            "source": "dialogue",
+            "snippet": "so in summary after my exam , uh , looking at your knee , uh , on the x-ray and your exam , you have...",
+            "score": 0.7154405117034912
+          },
+          {
+            "evidence_id": "dialogue:29",
+            "source": "dialogue",
+            "snippet": "right on the inside of my knee . right here .",
+            "score": 0.6407850384712219
+          }
+        ],
+        "confidence": 0.7195837497711182
+      },
+      {
+        "claim_id": "claim_24",
+        "claim_text": "Pain elicited with passive flexion.",
+        "section": "O",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          31,
+          33,
+          11
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:31",
+            "source": "dialogue",
+            "snippet": "yes , that hurts .",
+            "score": 0.6465200185775757
+          },
+          {
+            "evidence_id": "dialogue:33",
+            "source": "dialogue",
+            "snippet": "that hurts a lot .",
+            "score": 0.6426453590393066
+          },
+          {
+            "evidence_id": "dialogue:11",
+            "source": "dialogue",
+            "snippet": "it hurts like in , in , in the inside of my knee .",
+            "score": 0.626625657081604
+          }
+        ],
+        "confidence": 0.6465200185775757
+      },
+      {
+        "claim_id": "claim_25",
+        "claim_text": "Significant pain elicited with valgus stress.",
+        "section": "O",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          33,
+          31,
+          11
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:33",
+            "source": "dialogue",
+            "snippet": "that hurts a lot .",
+            "score": 0.6644777059555054
+          },
+          {
+            "evidence_id": "dialogue:31",
+            "source": "dialogue",
+            "snippet": "yes , that hurts .",
+            "score": 0.630060076713562
+          },
+          {
+            "evidence_id": "dialogue:11",
+            "source": "dialogue",
+            "snippet": "it hurts like in , in , in the inside of my knee .",
+            "score": 0.5929880738258362
+          }
+        ],
+        "confidence": 0.6644777059555054
+      },
+      {
+        "claim_id": "claim_26",
+        "claim_text": "Sensation is intact distal to the knee.",
+        "section": "O",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          7,
+          3,
+          29
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:7",
+            "source": "dialogue",
+            "snippet": "no , no . it just seems to be the knee .",
+            "score": 0.7351311445236206
+          },
+          {
+            "evidence_id": "dialogue:3",
+            "source": "dialogue",
+            "snippet": "i'm doing okay except for my knee .",
+            "score": 0.7174612879753113
+          },
+          {
+            "evidence_id": "dialogue:29",
+            "source": "dialogue",
+            "snippet": "right on the inside of my knee . right here .",
+            "score": 0.6997643113136292
+          }
+        ],
+        "confidence": 0.7351311445236206
+      },
+      {
+        "claim_id": "claim_27",
+        "claim_text": "No tenderness or pain noted in the calves.",
+        "section": "O",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          36,
+          3,
+          40
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:36",
+            "source": "dialogue",
+            "snippet": "all right . any other pain down here in your calves ?",
+            "score": 0.6835134029388428
+          },
+          {
+            "evidence_id": "dialogue:3",
+            "source": "dialogue",
+            "snippet": "i'm doing okay except for my knee .",
+            "score": 0.5994278788566589
+          },
+          {
+            "evidence_id": "dialogue:40",
+            "source": "dialogue",
+            "snippet": "okay . hey dragon , show me the x-rays . so looking at the x-ray , um , of your left knee , uh , it ...",
+            "score": 0.5922917723655701
+          }
+        ],
+        "confidence": 0.6835134029388428
+      },
+      {
+        "claim_id": "claim_28",
+        "claim_text": "*Imaging:**",
+        "section": "O",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          17,
+          2,
+          13
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:17",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5480932593345642
+          },
+          {
+            "evidence_id": "dialogue:2",
+            "source": "dialogue",
+            "snippet": "hi .",
+            "score": 0.5298300385475159
+          },
+          {
+            "evidence_id": "dialogue:13",
+            "source": "dialogue",
+            "snippet": "right here .",
+            "score": 0.5239846706390381
+          }
+        ],
+        "confidence": 0.4384746074676514
+      },
+      {
+        "claim_id": "claim_29",
+        "claim_text": "**Right Knee X-ray:** Reviewed.",
+        "section": "O",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          29,
+          3,
+          7
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:29",
+            "source": "dialogue",
+            "snippet": "right on the inside of my knee . right here .",
+            "score": 0.6280673742294312
+          },
+          {
+            "evidence_id": "dialogue:3",
+            "source": "dialogue",
+            "snippet": "i'm doing okay except for my knee .",
+            "score": 0.6198951005935669
+          },
+          {
+            "evidence_id": "dialogue:7",
+            "source": "dialogue",
+            "snippet": "no , no . it just seems to be the knee .",
+            "score": 0.6078906059265137
+          }
+        ],
+        "confidence": 0.6078906059265137
+      },
+      {
+        "claim_id": "claim_30",
+        "claim_text": "No evidence of acute fracture or dislocation.",
+        "section": "O",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          40,
+          3,
+          7
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:40",
+            "source": "dialogue",
+            "snippet": "okay . hey dragon , show me the x-rays . so looking at the x-ray , um , of your left knee , uh , it ...",
+            "score": 0.7007449865341187
+          },
+          {
+            "evidence_id": "dialogue:3",
+            "source": "dialogue",
+            "snippet": "i'm doing okay except for my knee .",
+            "score": 0.6024577021598816
+          },
+          {
+            "evidence_id": "dialogue:7",
+            "source": "dialogue",
+            "snippet": "no , no . it just seems to be the knee .",
+            "score": 0.5446957945823669
+          }
+        ],
+        "confidence": 0.6024577021598816
+      },
+      {
+        "claim_id": "claim_31",
+        "claim_text": "Mild joint effusion is noted.",
+        "section": "O",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          7,
+          3,
+          29
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:7",
+            "source": "dialogue",
+            "snippet": "no , no . it just seems to be the knee .",
+            "score": 0.6263911128044128
+          },
+          {
+            "evidence_id": "dialogue:3",
+            "source": "dialogue",
+            "snippet": "i'm doing okay except for my knee .",
+            "score": 0.5960185527801514
+          },
+          {
+            "evidence_id": "dialogue:29",
+            "source": "dialogue",
+            "snippet": "right on the inside of my knee . right here .",
+            "score": 0.5558492541313171
+          }
+        ],
+        "confidence": 0.6263911128044128
+      },
+      {
+        "claim_id": "claim_32",
+        "claim_text": "Alignment appears proper.",
+        "section": "O",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          47,
+          41,
+          12
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:47",
+            "source": "dialogue",
+            "snippet": "no , i think i'm good .",
+            "score": 0.6801016330718994
+          },
+          {
+            "evidence_id": "dialogue:41",
+            "source": "dialogue",
+            "snippet": "okay .",
+            "score": 0.6666316390037537
+          },
+          {
+            "evidence_id": "dialogue:12",
+            "source": "dialogue",
+            "snippet": "okay .",
+            "score": 0.6666316390037537
+          }
+        ],
+        "confidence": 0.6801016330718994
+      },
+      {
+        "claim_id": "claim_33",
+        "claim_text": "*Acute Right Medial Meniscus Sprain/Strain:** Based on the patient's reported mechanism of injury (twisting fall), subjective complaint of medial knee pain, and objective findings of medial joint line tenderness and pain with valgus stress on exam, in conjunction with normal findings on X-ray (ruling out fracture/dislocation), the most likely diagnosis is an acute sprain or strain of the medial meniscus.",
+        "section": "A",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          42,
+          38,
+          16
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:42",
+            "source": "dialogue",
+            "snippet": "so in summary after my exam , uh , looking at your knee , uh , on the x-ray and your exam , you have...",
+            "score": 0.8092530965805054
+          },
+          {
+            "evidence_id": "dialogue:38",
+            "source": "dialogue",
+            "snippet": "no , okay . so on exam you do have some tenderness over the medial portion of your knee over the med...",
+            "score": 0.6689702272415161
+          },
+          {
+            "evidence_id": "dialogue:16",
+            "source": "dialogue",
+            "snippet": "okay . so it sounds like you fell a couple days ago , and you've hurt something inside of your right...",
+            "score": 0.5722976922988892
+          }
+        ],
+        "confidence": 0.6689702272415161
+      },
+      {
+        "claim_id": "claim_34",
+        "claim_text": "Mild effusion noted on imaging is consistent with acute injury.",
+        "section": "A",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          31,
+          7,
+          33
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:31",
+            "source": "dialogue",
+            "snippet": "yes , that hurts .",
+            "score": 0.5802077054977417
+          },
+          {
+            "evidence_id": "dialogue:7",
+            "source": "dialogue",
+            "snippet": "no , no . it just seems to be the knee .",
+            "score": 0.5750821828842163
+          },
+          {
+            "evidence_id": "dialogue:33",
+            "source": "dialogue",
+            "snippet": "that hurts a lot .",
+            "score": 0.5588263869285583
+          }
+        ],
+        "confidence": 0.5750821828842163
+      },
+      {
+        "claim_id": "claim_35",
+        "claim_text": "*Acute Right Medial Meniscus Sprain/Strain:**",
+        "section": "P",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          42,
+          13,
+          29
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:42",
+            "source": "dialogue",
+            "snippet": "so in summary after my exam , uh , looking at your knee , uh , on the x-ray and your exam , you have...",
+            "score": 0.570966362953186
+          },
+          {
+            "evidence_id": "dialogue:13",
+            "source": "dialogue",
+            "snippet": "right here .",
+            "score": 0.5063266754150391
+          },
+          {
+            "evidence_id": "dialogue:29",
+            "source": "dialogue",
+            "snippet": "right on the inside of my knee . right here .",
+            "score": 0.495790034532547
+          }
+        ],
+        "confidence": 0.4567730903625489
+      },
+      {
+        "claim_id": "claim_36",
+        "claim_text": "**Supportive Care:** Recommend use of a knee brace for support.",
+        "section": "P",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          42,
+          7,
+          11
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:42",
+            "source": "dialogue",
+            "snippet": "so in summary after my exam , uh , looking at your knee , uh , on the x-ray and your exam , you have...",
+            "score": 0.668119490146637
+          },
+          {
+            "evidence_id": "dialogue:7",
+            "source": "dialogue",
+            "snippet": "no , no . it just seems to be the knee .",
+            "score": 0.5796083211898804
+          },
+          {
+            "evidence_id": "dialogue:11",
+            "source": "dialogue",
+            "snippet": "it hurts like in , in , in the inside of my knee .",
+            "score": 0.5636049509048462
+          }
+        ],
+        "confidence": 0.5796083211898804
+      },
+      {
+        "claim_id": "claim_37",
+        "claim_text": "Advised temporary use of crutches for the next couple of days to limit weight-bearing and reduce stress on the injured knee.",
+        "section": "P",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          42,
+          16,
+          11
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:42",
+            "source": "dialogue",
+            "snippet": "so in summary after my exam , uh , looking at your knee , uh , on the x-ray and your exam , you have...",
+            "score": 0.682712733745575
+          },
+          {
+            "evidence_id": "dialogue:16",
+            "source": "dialogue",
+            "snippet": "okay . so it sounds like you fell a couple days ago , and you've hurt something inside of your right...",
+            "score": 0.6360107064247131
+          },
+          {
+            "evidence_id": "dialogue:11",
+            "source": "dialogue",
+            "snippet": "it hurts like in , in , in the inside of my knee .",
+            "score": 0.5812920331954956
+          }
+        ],
+        "confidence": 0.682712733745575
+      },
+      {
+        "claim_id": "claim_38",
+        "claim_text": "**Medication:** Prescribed Motrin (ibuprofen) 800 mg to be taken every 6 hours with food for pain and inflammation control.",
+        "section": "P",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          44,
+          22,
+          15
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:44",
+            "source": "dialogue",
+            "snippet": "i'm going to recommend we give you some motrin , 800 milligrams . uh , you can take it about every s...",
+            "score": 0.8174601793289185
+          },
+          {
+            "evidence_id": "dialogue:22",
+            "source": "dialogue",
+            "snippet": "okay , and are you taking any medications for that ?",
+            "score": 0.6097646951675415
+          },
+          {
+            "evidence_id": "dialogue:15",
+            "source": "dialogue",
+            "snippet": "i have been putting ice on it , uh , and i've been taking ibuprofen , but it does n't seem to help m...",
+            "score": 0.6079531908035278
+          }
+        ],
+        "confidence": 0.8174601793289185
+      },
+      {
+        "claim_id": "claim_39",
+        "claim_text": "Provided a 2-week supply.",
+        "section": "P",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          44,
+          27,
+          47
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:44",
+            "source": "dialogue",
+            "snippet": "i'm going to recommend we give you some motrin , 800 milligrams . uh , you can take it about every s...",
+            "score": 0.6456623673439026
+          },
+          {
+            "evidence_id": "dialogue:27",
+            "source": "dialogue",
+            "snippet": "i have had a nose job .",
+            "score": 0.5891766548156738
+          },
+          {
+            "evidence_id": "dialogue:47",
+            "source": "dialogue",
+            "snippet": "no , i think i'm good .",
+            "score": 0.5358387231826782
+          }
+        ],
+        "confidence": 0.5358387231826782
+      },
+      {
+        "claim_id": "claim_40",
+        "claim_text": "**Follow-up:** Schedule a follow-up appointment in 1 week to re-evaluate symptoms and progress.",
+        "section": "P",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          48,
+          44,
+          20
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:48",
+            "source": "dialogue",
+            "snippet": "all right . hey , dragon , order the medications and procedures discussed , and finalize the report ...",
+            "score": 0.6076979637145996
+          },
+          {
+            "evidence_id": "dialogue:44",
+            "source": "dialogue",
+            "snippet": "i'm going to recommend we give you some motrin , 800 milligrams . uh , you can take it about every s...",
+            "score": 0.6006748080253601
+          },
+          {
+            "evidence_id": "dialogue:20",
+            "source": "dialogue",
+            "snippet": "okay , let's review your past history for a second . it looks like , uh , do you have any other past...",
+            "score": 0.568760097026825
+          }
+        ],
+        "confidence": 0.6076979637145996
+      },
+      {
+        "claim_id": "claim_41",
+        "claim_text": "**Further Imaging:** If symptoms have not improved significantly at the 1-week follow-up, will obtain an MRI of the right knee for further evaluation of the meniscus and other soft tissue structures.",
+        "section": "P",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          42,
+          38,
+          16
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:42",
+            "source": "dialogue",
+            "snippet": "so in summary after my exam , uh , looking at your knee , uh , on the x-ray and your exam , you have...",
+            "score": 0.721767008304596
+          },
+          {
+            "evidence_id": "dialogue:38",
+            "source": "dialogue",
+            "snippet": "no , okay . so on exam you do have some tenderness over the medial portion of your knee over the med...",
+            "score": 0.6234428286552429
+          },
+          {
+            "evidence_id": "dialogue:16",
+            "source": "dialogue",
+            "snippet": "okay . so it sounds like you fell a couple days ago , and you've hurt something inside of your right...",
+            "score": 0.601508617401123
+          }
+        ],
+        "confidence": 0.6234428286552429
+      },
+      {
+        "claim_id": "claim_42",
+        "claim_text": "Patient education provided regarding the diagnosis and treatment plan.",
+        "section": "P",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          48,
+          1,
+          22
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:48",
+            "source": "dialogue",
+            "snippet": "all right . hey , dragon , order the medications and procedures discussed , and finalize the report ...",
+            "score": 0.6129162311553955
+          },
+          {
+            "evidence_id": "dialogue:1",
+            "source": "dialogue",
+            "snippet": "hi , dr. moore .",
+            "score": 0.5232306718826294
+          },
+          {
+            "evidence_id": "dialogue:22",
+            "source": "dialogue",
+            "snippet": "okay , and are you taking any medications for that ?",
+            "score": 0.5123261213302612
+          }
+        ],
+        "confidence": 0.6129162311553955
+      },
+      {
+        "claim_id": "claim_43",
+        "claim_text": "All questions answered.",
+        "section": "P",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          46,
+          45,
+          43
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:46",
+            "source": "dialogue",
+            "snippet": "okay . uh , do you have any questions ?",
+            "score": 0.6443321704864502
+          },
+          {
+            "evidence_id": "dialogue:45",
+            "source": "dialogue",
+            "snippet": "okay .",
+            "score": 0.6035580635070801
+          },
+          {
+            "evidence_id": "dialogue:43",
+            "source": "dialogue",
+            "snippet": "okay .",
+            "score": 0.6035580635070801
+          }
+        ],
+        "confidence": 0.6443321704864502
+      }
+    ],
+    "total_claims_evaluated": 44
+  },
+  "coverage_of_salient_findings": {
+    "completeness_score": 0.5,
+    "omission_rate": 1.0,
+    "verdict": "borderline",
+    "symptom_recall": 0.0,
+    "medication_recall": 0.0,
+    "allergy_recall": 0.0,
+    "risk_factor_recall": 0.0,
+    "omissions": [
+      {
+        "finding_type": "symptom",
+        "finding_text": "knee_pain",
+        "dialogue_sentence_ids": [],
+        "importance": "moderate"
+      },
+      {
+        "finding_type": "medication",
+        "finding_text": "motrin (800mg)",
+        "dialogue_sentence_ids": [],
+        "importance": "high"
+      },
+      {
+        "finding_type": "medication",
+        "finding_text": "ibuprofen",
+        "dialogue_sentence_ids": [],
+        "importance": "high"
+      }
+    ],
+    "critical_omissions": 0
+  },
+  "assessment_quality": {
+    "dx_coherence_score": 0.6,
+    "differential_breadth_score": 0.8,
+    "verdict": "borderline",
+    "diagnosis_evaluations": [
+      {
+        "diagnosis": "Acute Right Medial Meniscus Sprain/Strain",
+        "coherence_with_evidence": 0.9,
+        "evidence_support": [],
+        "guideline_support": [
+          {
+            "evidence_id": "guidelines:636",
+            "guideline_name": "standards-of-care-2025",
+            "section": "",
+            "snippet": "Several high-quality and mediumquality studies support the role of pregabalin in treatment of pain in DPN. One\nhigh-quality study and many small studies\nsupport the role of gabapentin in the\ntreatment",
+            "relevance_score": 0.6022365689277649
+          }
+        ],
+        "concerns": []
+      }
+    ],
+    "missed_differentials": [
+      {
+        "condition": "Osteoarthritis",
+        "reasoning": "Patient's age and chronic use of NSAIDs may indicate underlying OA, which could be contributing to the current symptoms.",
+        "is_red_flag": false,
+        "guideline_evidence": [
+          {
+            "evidence_id": "guidelines:3779",
+            "guideline_name": "qaseem-et-al-2017-noninvasive-treatments-for-acute-subacute-and-chronic-low-back-pain-a-clinical-practice-guideline",
+            "section": "",
+            "snippet": "(moderate effect) Operant therapy: improved pain (small effect) Cognitive behavioral therapy: improved pain (moderate effect) Spinal manipulation: improved pain (small effect) Radicular low back pain ",
+            "relevance_score": 0.5925405025482178
+          }
+        ]
+      },
+      {
+        "condition": "Patellofemoral Pain Syndrome",
+        "reasoning": "Patient's knee pain and lack of specific trauma history may suggest PFPS, which could be a contributing factor.",
+        "is_red_flag": false,
+        "guideline_evidence": [
+          {
+            "evidence_id": "guidelines:636",
+            "guideline_name": "standards-of-care-2025",
+            "section": "",
+            "snippet": "Several high-quality and mediumquality studies support the role of pregabalin in treatment of pain in DPN. One\nhigh-quality study and many small studies\nsupport the role of gabapentin in the\ntreatment",
+            "relevance_score": 0.6022365689277649
+          }
+        ]
+      }
+    ],
+    "red_flag_misses": 0
+  },
+  "plan_quality_and_safety": {
+    "guideline_adherence_score": 0.8,
+    "safety_score": 0.9,
+    "verdict": "safe",
+    "guideline_checks": [
+      {
+        "plan_item": "Prescribed Motrin (ibuprofen) 800 mg to be taken every 6 hours with food for pain and inflammation control",
+        "item_type": "medication",
+        "guideline_adherence": "aligned",
+        "guideline_citations": [
+          {
+            "evidence_id": "guidelines:636",
+            "guideline_name": "standards-of-care-2025",
+            "section": "",
+            "snippet": "Several high-quality and mediumquality studies support the role of pregabalin in treatment of pain in DPN. One\nhigh-quality study and many small studies\nsupport the role of gabapentin in the\ntreatment",
+            "relevance_score": 0.6022365689277649
+          }
+        ],
+        "deviation_explanation": ""
+      },
+      {
+        "plan_item": "Recommend use of a knee brace for support.",
+        "item_type": "lifestyle",
+        "guideline_adherence": "uncertain",
+        "guideline_citations": [
+          {
+            "evidence_id": "guidelines:3779",
+            "guideline_name": "qaseem-et-al-2017-noninvasive-treatments-for-acute-subacute-and-chronic-low-back-pain-a-clinical-practice-guideline",
+            "section": "",
+            "snippet": "(moderate effect) Operant therapy: improved pain (small effect) Cognitive behavioral therapy: improved pain (moderate effect) Spinal manipulation: improved pain (small effect) Radicular low back pain ",
+            "relevance_score": 0.5925405025482178
+          },
+          {
+            "evidence_id": "guidelines:3780",
+            "guideline_name": "qaseem-et-al-2017-noninvasive-treatments-for-acute-subacute-and-chronic-low-back-pain-a-clinical-practice-guideline",
+            "section": "",
+            "snippet": "Ultrasound, TENS, and Kinesio taping had no effect\non pain or function compared with control treatments\n(low-quality evidence). Recommendation 3: In patients with chronic low\nback pain who have had an",
+            "relevance_score": 0.5899807214736938
+          }
+        ],
+        "deviation_explanation": ""
+      },
+      {
+        "plan_item": "Schedule a follow-up appointment in 1 week to re-evaluate symptoms and progress.",
+        "item_type": "follow_up",
+        "guideline_adherence": "aligned",
+        "guideline_citations": [
+          {
+            "evidence_id": "guidelines:3779",
+            "guideline_name": "qaseem-et-al-2017-noninvasive-treatments-for-acute-subacute-and-chronic-low-back-pain-a-clinical-practice-guideline",
+            "section": "",
+            "snippet": "(moderate effect) Operant therapy: improved pain (small effect) Cognitive behavioral therapy: improved pain (moderate effect) Spinal manipulation: improved pain (small effect) Radicular low back pain ",
+            "relevance_score": 0.5925405025482178
+          },
+          {
+            "evidence_id": "guidelines:3780",
+            "guideline_name": "qaseem-et-al-2017-noninvasive-treatments-for-acute-subacute-and-chronic-low-back-pain-a-clinical-practice-guideline",
+            "section": "",
+            "snippet": "Ultrasound, TENS, and Kinesio taping had no effect\non pain or function compared with control treatments\n(low-quality evidence). Recommendation 3: In patients with chronic low\nback pain who have had an",
+            "relevance_score": 0.5899807214736938
+          }
+        ],
+        "deviation_explanation": ""
+      }
+    ],
+    "guideline_deviations": 0,
+    "safety_checks": [
+      {
+        "check_type": "drug_allergy",
+        "status": "pass",
+        "description": "No known allergies to ibuprofen or Motrin.",
+        "related_items": [
+          "ibuprofen",
+          "Motrin"
+        ],
+        "severity": "low"
+      },
+      {
+        "check_type": "dosing_range",
+        "status": "warning",
+        "description": "Dosing of 800 mg every 6 hours may be higher than recommended for some patients.",
+        "related_items": [
+          "ibuprofen",
+          "Motrin"
+        ],
+        "severity": "moderate"
+      }
+    ],
+    "safety_failures": 0,
+    "critical_safety_issues": 0,
+    "missing_return_precautions": false,
+    "missing_follow_up": false
+  },
+  "overall_score": 0.6534090909090909,
+  "overall_verdict": "poor",
+  "overall_safety": "safe",
+  "num_claims_evaluated": 44,
+  "num_guideline_checks": 3,
+  "num_safety_checks": 2
+}

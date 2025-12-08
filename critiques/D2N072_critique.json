@@ -1,0 +1,1161 @@
+{
+  "encounter_id": "D2N072",
+  "note_type": "soap",
+  "source_note_consistency": {
+    "support_score": 0.45454545454545453,
+    "contradiction_score": 0.5151515151515151,
+    "hallucination_density": 0.030303030303030304,
+    "verdict": "poor",
+    "claim_judgments": [
+      {
+        "claim_id": "claim_0",
+        "claim_text": "*Chief Complaint:** Right finger pain.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          2,
+          31,
+          4
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:2",
+            "source": "dialogue",
+            "snippet": "is your , is your right finger hurting ?",
+            "score": 0.7270792722702026
+          },
+          {
+            "evidence_id": "dialogue:31",
+            "source": "dialogue",
+            "snippet": "okay . let's do your exam . uh , so , it's this finger right here . and does it hurt here on your , ...",
+            "score": 0.6588636040687561
+          },
+          {
+            "evidence_id": "dialogue:4",
+            "source": "dialogue",
+            "snippet": "okay . hey , dragon , uh , sharon brooks is a 48 year old female here for right finger pain . all ri...",
+            "score": 0.6293249726295471
+          }
+        ],
+        "confidence": 0.7270792722702026
+      },
+      {
+        "claim_id": "claim_1",
+        "claim_text": "*History of Present Illness:** Ms.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          1,
+          22,
+          0
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:1",
+            "source": "dialogue",
+            "snippet": "hi , dr. baker .",
+            "score": 0.5557005405426025
+          },
+          {
+            "evidence_id": "dialogue:22",
+            "source": "dialogue",
+            "snippet": "um , i have been suffering from constipation recently .",
+            "score": 0.5449726581573486
+          },
+          {
+            "evidence_id": "dialogue:0",
+            "source": "dialogue",
+            "snippet": "hi , ms. brooks . i'm dr. baker . how are you ?",
+            "score": 0.5243584513664246
+          }
+        ],
+        "confidence": 0.44456043243408205
+      },
+      {
+        "claim_id": "claim_2",
+        "claim_text": "Brooks is a 48-year-old female presenting with right index finger pain.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          4,
+          2,
+          0
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:4",
+            "source": "dialogue",
+            "snippet": "okay . hey , dragon , uh , sharon brooks is a 48 year old female here for right finger pain . all ri...",
+            "score": 0.7567262053489685
+          },
+          {
+            "evidence_id": "dialogue:2",
+            "source": "dialogue",
+            "snippet": "is your , is your right finger hurting ?",
+            "score": 0.6355652809143066
+          },
+          {
+            "evidence_id": "dialogue:0",
+            "source": "dialogue",
+            "snippet": "hi , ms. brooks . i'm dr. baker . how are you ?",
+            "score": 0.6270202994346619
+          }
+        ],
+        "confidence": 0.7567262053489685
+      },
+      {
+        "claim_id": "claim_3",
+        "claim_text": "The pain began on Sunday (approximately 4 days ago) while skiing.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          5,
+          21,
+          12
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:5",
+            "source": "dialogue",
+            "snippet": "well , i was skiing over the weekend-",
+            "score": 0.7110517024993896
+          },
+          {
+            "evidence_id": "dialogue:21",
+            "source": "dialogue",
+            "snippet": "okay . so , it sounds like you were skiing about four about days ago and you went over a mogul and g...",
+            "score": 0.6899350881576538
+          },
+          {
+            "evidence_id": "dialogue:12",
+            "source": "dialogue",
+            "snippet": "it happened , uh ... that was sunday .",
+            "score": 0.633836567401886
+          }
+        ],
+        "confidence": 0.7110517024993896
+      },
+      {
+        "claim_id": "claim_4",
+        "claim_text": "She reports that her finger was hyperextended when it became caught in a strap while going over moguls.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          7,
+          21,
+          2
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:7",
+            "source": "dialogue",
+            "snippet": ". and as i was , um , coming down the hill , i tried moguls , which jumping over those big hills , i...",
+            "score": 0.7473017573356628
+          },
+          {
+            "evidence_id": "dialogue:21",
+            "source": "dialogue",
+            "snippet": "okay . so , it sounds like you were skiing about four about days ago and you went over a mogul and g...",
+            "score": 0.6290414333343506
+          },
+          {
+            "evidence_id": "dialogue:2",
+            "source": "dialogue",
+            "snippet": "is your , is your right finger hurting ?",
+            "score": 0.5611611604690552
+          }
+        ],
+        "confidence": 0.7473017573356628
+      },
+      {
+        "claim_id": "claim_5",
+        "claim_text": "She describes the pain as severe (\"very painful\") and aggravated by movement, specifically bending the finger.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          36,
+          2,
+          16
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:36",
+            "source": "dialogue",
+            "snippet": "that hurts .",
+            "score": 0.6228695511817932
+          },
+          {
+            "evidence_id": "dialogue:2",
+            "source": "dialogue",
+            "snippet": "is your , is your right finger hurting ?",
+            "score": 0.6159135103225708
+          },
+          {
+            "evidence_id": "dialogue:16",
+            "source": "dialogue",
+            "snippet": "uh , and then i- i've been taking ibuprofen , but it's still very painful .",
+            "score": 0.5948904752731323
+          }
+        ],
+        "confidence": 0.6228695511817932
+      },
+      {
+        "claim_id": "claim_6",
+        "claim_text": "She has attempted applying ice and taking ibuprofen, but these measures have not provided significant relief.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          14,
+          16,
+          22
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:14",
+            "source": "dialogue",
+            "snippet": "i tried , um , putting ice on it .",
+            "score": 0.6765151023864746
+          },
+          {
+            "evidence_id": "dialogue:16",
+            "source": "dialogue",
+            "snippet": "uh , and then i- i've been taking ibuprofen , but it's still very painful .",
+            "score": 0.6733098030090332
+          },
+          {
+            "evidence_id": "dialogue:22",
+            "source": "dialogue",
+            "snippet": "um , i have been suffering from constipation recently .",
+            "score": 0.5806965827941895
+          }
+        ],
+        "confidence": 0.6765151023864746
+      },
+      {
+        "claim_id": "claim_7",
+        "claim_text": "*Past Medical History:** Constipation.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          22,
+          23,
+          14
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:22",
+            "source": "dialogue",
+            "snippet": "um , i have been suffering from constipation recently .",
+            "score": 0.7147860527038574
+          },
+          {
+            "evidence_id": "dialogue:23",
+            "source": "dialogue",
+            "snippet": "okay . all right . and do you take ... what medicines do you take for constipation ?",
+            "score": 0.5995582342147827
+          },
+          {
+            "evidence_id": "dialogue:14",
+            "source": "dialogue",
+            "snippet": "i tried , um , putting ice on it .",
+            "score": 0.5387898683547974
+          }
+        ],
+        "confidence": 0.7147860527038574
+      },
+      {
+        "claim_id": "claim_8",
+        "claim_text": "*Past Surgical History:** Appendectomy at age 18.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          30,
+          29,
+          40
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:30",
+            "source": "dialogue",
+            "snippet": "i did have my appendix taken out when i was 18 .",
+            "score": 0.7125394940376282
+          },
+          {
+            "evidence_id": "dialogue:29",
+            "source": "dialogue",
+            "snippet": "and any surgeries in the past ?",
+            "score": 0.5251464247703552
+          },
+          {
+            "evidence_id": "dialogue:40",
+            "source": "dialogue",
+            "snippet": "yes .",
+            "score": 0.4559215307235718
+          }
+        ],
+        "confidence": 0.7125394940376282
+      },
+      {
+        "claim_id": "claim_9",
+        "claim_text": "*Medications:** MiraLax (dose/frequency not specified).",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          27,
+          28,
+          25
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:27",
+            "source": "dialogue",
+            "snippet": "okay . miralax is sufficient .",
+            "score": 0.7180521488189697
+          },
+          {
+            "evidence_id": "dialogue:28",
+            "source": "dialogue",
+            "snippet": "miralax . yes .",
+            "score": 0.6568490862846375
+          },
+          {
+            "evidence_id": "dialogue:25",
+            "source": "dialogue",
+            "snippet": "miralax ?",
+            "score": 0.6493428945541382
+          }
+        ],
+        "confidence": 0.7180521488189697
+      },
+      {
+        "claim_id": "claim_10",
+        "claim_text": "*Allergies:** No allergies mentioned.",
+        "section": "S",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          6,
+          19,
+          43
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:6",
+            "source": "dialogue",
+            "snippet": "okay .",
+            "score": 0.5392287969589233
+          },
+          {
+            "evidence_id": "dialogue:19",
+            "source": "dialogue",
+            "snippet": "okay .",
+            "score": 0.5392287969589233
+          },
+          {
+            "evidence_id": "dialogue:43",
+            "source": "dialogue",
+            "snippet": "okay .",
+            "score": 0.5392287969589233
+          }
+        ],
+        "confidence": 0.5392287969589233
+      },
+      {
+        "claim_id": "claim_11",
+        "claim_text": "*Review of Systems:**",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          48,
+          19,
+          6
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:48",
+            "source": "dialogue",
+            "snippet": "all right . finalize report , dragon .",
+            "score": 0.5149528980255127
+          },
+          {
+            "evidence_id": "dialogue:19",
+            "source": "dialogue",
+            "snippet": "okay .",
+            "score": 0.5068765878677368
+          },
+          {
+            "evidence_id": "dialogue:6",
+            "source": "dialogue",
+            "snippet": "okay .",
+            "score": 0.5068765878677368
+          }
+        ],
+        "confidence": 0.4119623184204102
+      },
+      {
+        "claim_id": "claim_12",
+        "claim_text": "**General:** No other general symptoms discussed.",
+        "section": "S",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          42,
+          41,
+          32
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:42",
+            "source": "dialogue",
+            "snippet": "all right . so , on this x-ray.\neverything looks normal right now . uh , i do n't see any fractures ...",
+            "score": 0.5263804197311401
+          },
+          {
+            "evidence_id": "dialogue:41",
+            "source": "dialogue",
+            "snippet": "all right . so , on exam , you do have some tenderness over your distal phalanx , which is the tip o...",
+            "score": 0.524204432964325
+          },
+          {
+            "evidence_id": "dialogue:32",
+            "source": "dialogue",
+            "snippet": "no .",
+            "score": 0.5150477886199951
+          }
+        ],
+        "confidence": 0.524204432964325
+      },
+      {
+        "claim_id": "claim_13",
+        "claim_text": "**Musculoskeletal:** Right index finger pain with movement.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          2,
+          31,
+          36
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:2",
+            "source": "dialogue",
+            "snippet": "is your , is your right finger hurting ?",
+            "score": 0.6773449182510376
+          },
+          {
+            "evidence_id": "dialogue:31",
+            "source": "dialogue",
+            "snippet": "okay . let's do your exam . uh , so , it's this finger right here . and does it hurt here on your , ...",
+            "score": 0.6191755533218384
+          },
+          {
+            "evidence_id": "dialogue:36",
+            "source": "dialogue",
+            "snippet": "that hurts .",
+            "score": 0.5822869539260864
+          }
+        ],
+        "confidence": 0.6773449182510376
+      },
+      {
+        "claim_id": "claim_14",
+        "claim_text": "**Gastrointestinal:** Reports recent constipation, managed with MiraLax.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          22,
+          27,
+          23
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:22",
+            "source": "dialogue",
+            "snippet": "um , i have been suffering from constipation recently .",
+            "score": 0.7526873350143433
+          },
+          {
+            "evidence_id": "dialogue:27",
+            "source": "dialogue",
+            "snippet": "okay . miralax is sufficient .",
+            "score": 0.6638418436050415
+          },
+          {
+            "evidence_id": "dialogue:23",
+            "source": "dialogue",
+            "snippet": "okay . all right . and do you take ... what medicines do you take for constipation ?",
+            "score": 0.6322054266929626
+          }
+        ],
+        "confidence": 0.7526873350143433
+      },
+      {
+        "claim_id": "claim_15",
+        "claim_text": "**Other systems:** Not discussed in the transcript.",
+        "section": "S",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          32,
+          34,
+          9
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:32",
+            "source": "dialogue",
+            "snippet": "no .",
+            "score": 0.5832881927490234
+          },
+          {
+            "evidence_id": "dialogue:34",
+            "source": "dialogue",
+            "snippet": "no .",
+            "score": 0.5832881927490234
+          },
+          {
+            "evidence_id": "dialogue:9",
+            "source": "dialogue",
+            "snippet": "okay .",
+            "score": 0.5452674031257629
+          }
+        ],
+        "confidence": 0.5832881927490234
+      },
+      {
+        "claim_id": "claim_16",
+        "claim_text": "*Vitals:** Not documented in the transcript.",
+        "section": "O",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          32,
+          34,
+          15
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:32",
+            "source": "dialogue",
+            "snippet": "no .",
+            "score": 0.5590416789054871
+          },
+          {
+            "evidence_id": "dialogue:34",
+            "source": "dialogue",
+            "snippet": "no .",
+            "score": 0.5590416789054871
+          },
+          {
+            "evidence_id": "dialogue:15",
+            "source": "dialogue",
+            "snippet": "okay .",
+            "score": 0.5145788192749023
+          }
+        ],
+        "confidence": 0.5590416789054871
+      },
+      {
+        "claim_id": "claim_17",
+        "claim_text": "*Physical Exam:**",
+        "section": "O",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          18,
+          6,
+          9
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:18",
+            "source": "dialogue",
+            "snippet": "yeah , movement .",
+            "score": 0.5041228532791138
+          },
+          {
+            "evidence_id": "dialogue:6",
+            "source": "dialogue",
+            "snippet": "okay .",
+            "score": 0.5018141269683838
+          },
+          {
+            "evidence_id": "dialogue:9",
+            "source": "dialogue",
+            "snippet": "okay .",
+            "score": 0.5018141269683838
+          }
+        ],
+        "confidence": 0.40329828262329104
+      },
+      {
+        "claim_id": "claim_18",
+        "claim_text": "**Right Hand/Finger:** Tenderness noted over the distal phalanx (tip of the finger) and the distal interphalangeal (DIP) joint.",
+        "section": "O",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          41,
+          31,
+          42
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:41",
+            "source": "dialogue",
+            "snippet": "all right . so , on exam , you do have some tenderness over your distal phalanx , which is the tip o...",
+            "score": 0.7722243070602417
+          },
+          {
+            "evidence_id": "dialogue:31",
+            "source": "dialogue",
+            "snippet": "okay . let's do your exam . uh , so , it's this finger right here . and does it hurt here on your , ...",
+            "score": 0.6167371273040771
+          },
+          {
+            "evidence_id": "dialogue:42",
+            "source": "dialogue",
+            "snippet": "all right . so , on this x-ray.\neverything looks normal right now . uh , i do n't see any fractures ...",
+            "score": 0.5942931175231934
+          }
+        ],
+        "confidence": 0.5942931175231934
+      },
+      {
+        "claim_id": "claim_19",
+        "claim_text": "No tenderness appreciated over the proximal phalanx or the metacarpophalangeal (MP) joint.",
+        "section": "O",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          41,
+          27,
+          36
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:41",
+            "source": "dialogue",
+            "snippet": "all right . so , on exam , you do have some tenderness over your distal phalanx , which is the tip o...",
+            "score": 0.6506608724594116
+          },
+          {
+            "evidence_id": "dialogue:27",
+            "source": "dialogue",
+            "snippet": "okay . miralax is sufficient .",
+            "score": 0.497717022895813
+          },
+          {
+            "evidence_id": "dialogue:36",
+            "source": "dialogue",
+            "snippet": "that hurts .",
+            "score": 0.4823869466781616
+          }
+        ],
+        "confidence": 0.6506608724594116
+      },
+      {
+        "claim_id": "claim_20",
+        "claim_text": "Pain noted with flexion of the finger.",
+        "section": "O",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          2,
+          36,
+          31
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:2",
+            "source": "dialogue",
+            "snippet": "is your , is your right finger hurting ?",
+            "score": 0.6954599618911743
+          },
+          {
+            "evidence_id": "dialogue:36",
+            "source": "dialogue",
+            "snippet": "that hurts .",
+            "score": 0.6683579087257385
+          },
+          {
+            "evidence_id": "dialogue:31",
+            "source": "dialogue",
+            "snippet": "okay . let's do your exam . uh , so , it's this finger right here . and does it hurt here on your , ...",
+            "score": 0.6549772620201111
+          }
+        ],
+        "confidence": 0.6954599618911743
+      },
+      {
+        "claim_id": "claim_21",
+        "claim_text": "Extension and touching the thumb with the finger were performed, but pain level with these movements was not explicitly described by the clinician, only pain with flexion.",
+        "section": "O",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          39,
+          41,
+          42
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:39",
+            "source": "dialogue",
+            "snippet": "all right . and how about extend it ? all right . and can you touch your thumb with it ?",
+            "score": 0.6436845064163208
+          },
+          {
+            "evidence_id": "dialogue:41",
+            "source": "dialogue",
+            "snippet": "all right . so , on exam , you do have some tenderness over your distal phalanx , which is the tip o...",
+            "score": 0.6159616708755493
+          },
+          {
+            "evidence_id": "dialogue:42",
+            "source": "dialogue",
+            "snippet": "all right . so , on this x-ray.\neverything looks normal right now . uh , i do n't see any fractures ...",
+            "score": 0.605890154838562
+          }
+        ],
+        "confidence": 0.605890154838562
+      },
+      {
+        "claim_id": "claim_22",
+        "claim_text": "*Imaging:**",
+        "section": "O",
+        "verdict": "unsupported",
+        "dialogue_sentence_ids": [],
+        "dialogue_evidence": [],
+        "confidence": 0.9
+      },
+      {
+        "claim_id": "claim_23",
+        "claim_text": "**Right Hand X-ray:** Reviewed.",
+        "section": "O",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          45,
+          20,
+          3
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:45",
+            "source": "dialogue",
+            "snippet": "no . i think that sounds good .",
+            "score": 0.586435854434967
+          },
+          {
+            "evidence_id": "dialogue:20",
+            "source": "dialogue",
+            "snippet": "yes .",
+            "score": 0.5737543106079102
+          },
+          {
+            "evidence_id": "dialogue:3",
+            "source": "dialogue",
+            "snippet": "yes .",
+            "score": 0.5737543106079102
+          }
+        ],
+        "confidence": 0.586435854434967
+      },
+      {
+        "claim_id": "claim_24",
+        "claim_text": "Findings reported as normal with no evidence of fracture or bony abnormalities.",
+        "section": "O",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          42,
+          6,
+          43
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:42",
+            "source": "dialogue",
+            "snippet": "all right . so , on this x-ray.\neverything looks normal right now . uh , i do n't see any fractures ...",
+            "score": 0.5769778490066528
+          },
+          {
+            "evidence_id": "dialogue:6",
+            "source": "dialogue",
+            "snippet": "okay .",
+            "score": 0.5135319828987122
+          },
+          {
+            "evidence_id": "dialogue:43",
+            "source": "dialogue",
+            "snippet": "okay .",
+            "score": 0.5135319828987122
+          }
+        ],
+        "confidence": 0.5135319828987122
+      },
+      {
+        "claim_id": "claim_25",
+        "claim_text": "Alignment appears well-maintained.",
+        "section": "O",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          45,
+          6,
+          19
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:45",
+            "source": "dialogue",
+            "snippet": "no . i think that sounds good .",
+            "score": 0.6546871066093445
+          },
+          {
+            "evidence_id": "dialogue:6",
+            "source": "dialogue",
+            "snippet": "okay .",
+            "score": 0.6312756538391113
+          },
+          {
+            "evidence_id": "dialogue:19",
+            "source": "dialogue",
+            "snippet": "okay .",
+            "score": 0.6312756538391113
+          }
+        ],
+        "confidence": 0.6546871066093445
+      },
+      {
+        "claim_id": "claim_26",
+        "claim_text": "Right Index Finger Contusion:** Based on the patient's history of hyperextension injury while skiing, localized tenderness over the distal phalanx and DIP joint on exam, pain with flexion, and normal findings on right hand x-ray ruling out fracture, the diagnosis is a contusion of the right index finger, specifically at the tip.",
+        "section": "A",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          42,
+          41,
+          31
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:42",
+            "source": "dialogue",
+            "snippet": "all right . so , on this x-ray.\neverything looks normal right now . uh , i do n't see any fractures ...",
+            "score": 0.7159829139709473
+          },
+          {
+            "evidence_id": "dialogue:41",
+            "source": "dialogue",
+            "snippet": "all right . so , on exam , you do have some tenderness over your distal phalanx , which is the tip o...",
+            "score": 0.6918069124221802
+          },
+          {
+            "evidence_id": "dialogue:31",
+            "source": "dialogue",
+            "snippet": "okay . let's do your exam . uh , so , it's this finger right here . and does it hurt here on your , ...",
+            "score": 0.6343653798103333
+          }
+        ],
+        "confidence": 0.7159829139709473
+      },
+      {
+        "claim_id": "claim_27",
+        "claim_text": "Right Index Finger Contusion:**",
+        "section": "P",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          2,
+          42,
+          36
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:2",
+            "source": "dialogue",
+            "snippet": "is your , is your right finger hurting ?",
+            "score": 0.5850290060043335
+          },
+          {
+            "evidence_id": "dialogue:42",
+            "source": "dialogue",
+            "snippet": "all right . so , on this x-ray.\neverything looks normal right now . uh , i do n't see any fractures ...",
+            "score": 0.57217937707901
+          },
+          {
+            "evidence_id": "dialogue:36",
+            "source": "dialogue",
+            "snippet": "that hurts .",
+            "score": 0.5672100186347961
+          }
+        ],
+        "confidence": 0.57217937707901
+      },
+      {
+        "claim_id": "claim_28",
+        "claim_text": "**Supportive Care:** Recommend use of an aluminum foam splint for support and protection.",
+        "section": "P",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          42,
+          14,
+          37
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:42",
+            "source": "dialogue",
+            "snippet": "all right . so , on this x-ray.\neverything looks normal right now . uh , i do n't see any fractures ...",
+            "score": 0.6038128137588501
+          },
+          {
+            "evidence_id": "dialogue:14",
+            "source": "dialogue",
+            "snippet": "i tried , um , putting ice on it .",
+            "score": 0.5160703659057617
+          },
+          {
+            "evidence_id": "dialogue:37",
+            "source": "dialogue",
+            "snippet": "all right . uh , can you bend your finger for me ?",
+            "score": 0.50254225730896
+          }
+        ],
+        "confidence": 0.6038128137588501
+      },
+      {
+        "claim_id": "claim_29",
+        "claim_text": "**Pain Management:** Prescribe Motrin (ibuprofen) 600 mg by mouth every 6 hours as needed for pain for one week.",
+        "section": "P",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          42,
+          16,
+          27
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:42",
+            "source": "dialogue",
+            "snippet": "all right . so , on this x-ray.\neverything looks normal right now . uh , i do n't see any fractures ...",
+            "score": 0.6247607469558716
+          },
+          {
+            "evidence_id": "dialogue:16",
+            "source": "dialogue",
+            "snippet": "uh , and then i- i've been taking ibuprofen , but it's still very painful .",
+            "score": 0.6087111830711365
+          },
+          {
+            "evidence_id": "dialogue:27",
+            "source": "dialogue",
+            "snippet": "okay . miralax is sufficient .",
+            "score": 0.5646992921829224
+          }
+        ],
+        "confidence": 0.6247607469558716
+      },
+      {
+        "claim_id": "claim_30",
+        "claim_text": "**Follow-up:** Instruct patient to call or return for evaluation if symptoms do not improve after one week of treatment.",
+        "section": "P",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          46,
+          42,
+          13
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:46",
+            "source": "dialogue",
+            "snippet": "okay . hey , dragon , order the medication and procedures we discussed . all right . and why do n't ...",
+            "score": 0.5585719347000122
+          },
+          {
+            "evidence_id": "dialogue:42",
+            "source": "dialogue",
+            "snippet": "all right . so , on this x-ray.\neverything looks normal right now . uh , i do n't see any fractures ...",
+            "score": 0.521541178226471
+          },
+          {
+            "evidence_id": "dialogue:13",
+            "source": "dialogue",
+            "snippet": "okay . and have you tried anything for this or anything made it better or worse ?",
+            "score": 0.5151152610778809
+          }
+        ],
+        "confidence": 0.521541178226471
+      },
+      {
+        "claim_id": "claim_31",
+        "claim_text": "**Patient Education:** Discussed the diagnosis of contusion and the rationale for treatment with splinting and anti-inflammatory medication, emphasizing the absence of fracture on x-ray.",
+        "section": "P",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          42,
+          41,
+          31
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:42",
+            "source": "dialogue",
+            "snippet": "all right . so , on this x-ray.\neverything looks normal right now . uh , i do n't see any fractures ...",
+            "score": 0.6827454566955566
+          },
+          {
+            "evidence_id": "dialogue:41",
+            "source": "dialogue",
+            "snippet": "all right . so , on exam , you do have some tenderness over your distal phalanx , which is the tip o...",
+            "score": 0.5319070816040039
+          },
+          {
+            "evidence_id": "dialogue:31",
+            "source": "dialogue",
+            "snippet": "okay . let's do your exam . uh , so , it's this finger right here . and does it hurt here on your , ...",
+            "score": 0.5215245485305786
+          }
+        ],
+        "confidence": 0.6827454566955566
+      },
+      {
+        "claim_id": "claim_32",
+        "claim_text": "Explained expectations for recovery and when to seek further care.",
+        "section": "P",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          46,
+          42,
+          27
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:46",
+            "source": "dialogue",
+            "snippet": "okay . hey , dragon , order the medication and procedures we discussed . all right . and why do n't ...",
+            "score": 0.5304418802261353
+          },
+          {
+            "evidence_id": "dialogue:42",
+            "source": "dialogue",
+            "snippet": "all right . so , on this x-ray.\neverything looks normal right now . uh , i do n't see any fractures ...",
+            "score": 0.5254231691360474
+          },
+          {
+            "evidence_id": "dialogue:27",
+            "source": "dialogue",
+            "snippet": "okay . miralax is sufficient .",
+            "score": 0.5108665823936462
+          }
+        ],
+        "confidence": 0.5254231691360474
+      }
+    ],
+    "total_claims_evaluated": 33
+  },
+  "coverage_of_salient_findings": {
+    "completeness_score": 0.5,
+    "omission_rate": 0.75,
+    "verdict": "borderline",
+    "symptom_recall": 0.0,
+    "medication_recall": 0.5,
+    "allergy_recall": 0.0,
+    "risk_factor_recall": 0.0,
+    "omissions": [
+      {
+        "finding_type": "symptom",
+        "finding_text": "finger_pain",
+        "dialogue_sentence_ids": [],
+        "importance": "moderate"
+      },
+      {
+        "finding_type": "symptom",
+        "finding_text": "constipation",
+        "dialogue_sentence_ids": [],
+        "importance": "moderate"
+      },
+      {
+        "finding_type": "medication",
+        "finding_text": "ibuprofen",
+        "dialogue_sentence_ids": [],
+        "importance": "high"
+      }
+    ],
+    "critical_omissions": 0
+  },
+  "assessment_quality": {
+    "dx_coherence_score": 0.2,
+    "differential_breadth_score": 0.5,
+    "verdict": "borderline",
+    "diagnosis_evaluations": [
+      {
+        "diagnosis": "Right Index Finger Contusion (primary)",
+        "coherence_with_evidence": 0.8,
+        "evidence_support": [],
+        "guideline_support": [],
+        "concerns": []
+      }
+    ],
+    "missed_differentials": [
+      {
+        "condition": "Gastroesophageal Reflux Disease",
+        "reasoning": "Patient's constipation and lack of mention of GERD symptoms in the diagnosis make this a plausible alternative.",
+        "is_red_flag": false,
+        "guideline_evidence": []
+      },
+      {
+        "condition": "Diabetic Peripheral Neuropathy (DPN)",
+        "reasoning": "Patient's finger pain could be related to DPN, especially given the lack of mention of other symptoms or diagnostic tests.",
+        "is_red_flag": false,
+        "guideline_evidence": []
+      },
+      {
+        "condition": "Low Back Pain",
+        "reasoning": "Patient's finger pain and constipation could be related to underlying musculoskeletal issues, such as low back pain.",
+        "is_red_flag": false,
+        "guideline_evidence": []
+      }
+    ],
+    "red_flag_misses": 0
+  },
+  "plan_quality_and_safety": {
+    "guideline_adherence_score": 0.5,
+    "safety_score": 0.8,
+    "verdict": "needs_review",
+    "guideline_checks": [
+      {
+        "plan_item": "Pain Management: Prescribe Motrin (ibuprofen) 600 mg by mouth every 6 hours as needed for pain for one week.",
+        "item_type": "medication",
+        "guideline_adherence": "deviation",
+        "guideline_citations": [],
+        "deviation_explanation": "Dosing is higher than recommended in guideline 3779"
+      },
+      {
+        "plan_item": "Patient Education: Discussed the diagnosis of contusion and the rationale for treatment with splinting and anti-inflammatory medication, emphasizing the absence of fracture on x-ray.",
+        "item_type": "lifestyle",
+        "guideline_adherence": "aligned",
+        "guideline_citations": [],
+        "deviation_explanation": ""
+      }
+    ],
+    "guideline_deviations": 1,
+    "safety_checks": [
+      {
+        "check_type": "drug_allergy",
+        "status": "pass",
+        "description": "No known allergies to ibuprofen or Miralax",
+        "related_items": [],
+        "severity": "low"
+      },
+      {
+        "check_type": "dosing_range",
+        "status": "warning",
+        "description": "Dosing of ibuprofen is higher than recommended in guideline 3779",
+        "related_items": [
+          "Pain Management: Prescribe Motrin (ibuprofen) 600 mg by mouth every 6 hours as needed for pain for one week."
+        ],
+        "severity": "moderate"
+      }
+    ],
+    "safety_failures": 0,
+    "critical_safety_issues": 0,
+    "missing_return_precautions": true,
+    "missing_follow_up": false
+  },
+  "overall_score": 0.48863636363636365,
+  "overall_verdict": "poor",
+  "overall_safety": "needs_review",
+  "num_claims_evaluated": 33,
+  "num_guideline_checks": 2,
+  "num_safety_checks": 2
+}

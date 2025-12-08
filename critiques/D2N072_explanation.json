@@ -1,0 +1,16 @@
+{
+  "overall_summary": "The doctor's clinical note was found to have several areas for improvement, including inadequate documentation of symptoms and missed diagnoses.",
+  "overall_rating": "needs_improvement",
+  "strengths": "The doctor did a good job documenting the patient's medication regimen, but there were some notable omissions. The doctor also considered multiple potential diagnoses in their differential diagnosis.",
+  "concerns": "Notably, the doctor failed to document several important symptoms, including finger pain and constipation, which could impact future care. Additionally, the doctor missed several potential diagnoses, including Gastroesophageal Reflux Disease, Diabetic Peripheral Neuropathy, and Low Back Pain. Furthermore, the dosing of ibuprofen was higher than recommended.",
+  "documentation_quality": "The note had low consistency with the conversation, with only 45% of claims supported by evidence, indicating that some information may have been missing or inaccurate.",
+  "diagnostic_reasoning": "While the doctor considered multiple potential diagnoses, their diagnosis coherence was poor, suggesting that they may not have fully explored all possible explanations for the patient's symptoms.",
+  "treatment_plan": "The treatment plan had moderate adherence to guidelines and a safety score of 80%, but there were no critical safety issues identified.",
+  "safety_assessment": "There is a moderate safety concern related to the dosing of ibuprofen, which was higher than recommended. This may increase the risk of adverse effects.",
+  "recommendations": [
+    "Please discuss your symptoms with your doctor and ensure that all relevant information is documented in your medical record.",
+    "Ask your doctor about potential diagnoses that were not considered, such as Gastroesophageal Reflux Disease, Diabetic Peripheral Neuropathy, and Low Back Pain.",
+    "Inquire about the dosing of ibuprofen and whether it can be adjusted to a safer range."
+  ],
+  "full_narrative": "The doctor's clinical note had several areas for improvement. Notably, they failed to document important symptoms such as finger pain and constipation, which could impact future care. Additionally, they missed several potential diagnoses, including Gastroesophageal Reflux Disease, Diabetic Peripheral Neuropathy, and Low Back Pain. The dosing of ibuprofen was also higher than recommended, posing a moderate safety concern. While the doctor considered multiple potential diagnoses, their diagnosis coherence was poor. It is essential to discuss your symptoms with your doctor and ensure that all relevant information is documented in your medical record."
+}

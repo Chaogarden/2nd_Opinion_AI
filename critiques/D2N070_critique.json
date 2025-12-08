@@ -1,0 +1,2457 @@
+{
+  "encounter_id": "D2N070",
+  "note_type": "soap",
+  "source_note_consistency": {
+    "support_score": 0.7857142857142857,
+    "contradiction_score": 0.21428571428571427,
+    "hallucination_density": 0.0,
+    "verdict": "poor",
+    "claim_judgments": [
+      {
+        "claim_id": "claim_0",
+        "claim_text": "*CHIEF COMPLAINT:**",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          94,
+          81,
+          61
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:94",
+            "source": "dialogue",
+            "snippet": "hey dragon ? finalize the note .",
+            "score": 0.4848991632461548
+          },
+          {
+            "evidence_id": "dialogue:81",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.4806481599807739
+          },
+          {
+            "evidence_id": "dialogue:61",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.4806481599807739
+          }
+        ],
+        "confidence": 0.38791933059692385
+      },
+      {
+        "claim_id": "claim_1",
+        "claim_text": "Back pain.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          15,
+          16,
+          71
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:15",
+            "source": "dialogue",
+            "snippet": "my lower back .",
+            "score": 0.8653390407562256
+          },
+          {
+            "evidence_id": "dialogue:16",
+            "source": "dialogue",
+            "snippet": "your lower back , okay . and what- what have you taken for the pain ?",
+            "score": 0.6868000626564026
+          },
+          {
+            "evidence_id": "dialogue:71",
+            "source": "dialogue",
+            "snippet": "so for your first problem , your back pain . you know , i think you have a lumbar strain from the li...",
+            "score": 0.6781280040740967
+          }
+        ],
+        "confidence": 0.8653390407562256
+      },
+      {
+        "claim_id": "claim_2",
+        "claim_text": "*HISTORY OF PRESENT ILLNESS:**",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          15,
+          57,
+          7
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:15",
+            "source": "dialogue",
+            "snippet": "my lower back .",
+            "score": 0.6046445369720459
+          },
+          {
+            "evidence_id": "dialogue:57",
+            "source": "dialogue",
+            "snippet": "on your heart exam . which you've had in the past .",
+            "score": 0.5848079919815063
+          },
+          {
+            "evidence_id": "dialogue:7",
+            "source": "dialogue",
+            "snippet": "so logan is a 58 year old male , with a past medical history significant for diabetes type 2 , hyper...",
+            "score": 0.5729494094848633
+          }
+        ],
+        "confidence": 0.6046445369720459
+      },
+      {
+        "claim_id": "claim_3",
+        "claim_text": "Logan Walker is a 58-year-old male with a past medical history significant for diabetes type 2, hypertension, and osteoarthritis, who presents today with lower back pain.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          7,
+          15,
+          9
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:7",
+            "source": "dialogue",
+            "snippet": "so logan is a 58 year old male , with a past medical history significant for diabetes type 2 , hyper...",
+            "score": 0.8785629272460938
+          },
+          {
+            "evidence_id": "dialogue:15",
+            "source": "dialogue",
+            "snippet": "my lower back .",
+            "score": 0.6537182331085205
+          },
+          {
+            "evidence_id": "dialogue:9",
+            "source": "dialogue",
+            "snippet": "so logan , what happened to your back ?",
+            "score": 0.5994634032249451
+          }
+        ],
+        "confidence": 0.8785629272460938
+      },
+      {
+        "claim_id": "claim_4",
+        "claim_text": "The patient reports that on Saturday morning, while helping his daughter move heavy equipment and boxes, he lifted something too quickly and felt a pop in his lower back.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          10,
+          12,
+          15
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:10",
+            "source": "dialogue",
+            "snippet": "uh , we were helping my daughter with some heavy equipment and lifted some boxes a little too quickl...",
+            "score": 0.7393621802330017
+          },
+          {
+            "evidence_id": "dialogue:12",
+            "source": "dialogue",
+            "snippet": "i thought i heard a pop when i moved and i had to lie down for about an hour before it actually reli...",
+            "score": 0.6799278259277344
+          },
+          {
+            "evidence_id": "dialogue:15",
+            "source": "dialogue",
+            "snippet": "my lower back .",
+            "score": 0.6583741903305054
+          }
+        ],
+        "confidence": 0.7393621802330017
+      },
+      {
+        "claim_id": "claim_5",
+        "claim_text": "The pain was severe enough that he had to lie down for approximately one hour for relief.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          12,
+          71,
+          21
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:12",
+            "source": "dialogue",
+            "snippet": "i thought i heard a pop when i moved and i had to lie down for about an hour before it actually reli...",
+            "score": 0.6482919454574585
+          },
+          {
+            "evidence_id": "dialogue:71",
+            "source": "dialogue",
+            "snippet": "so for your first problem , your back pain . you know , i think you have a lumbar strain from the li...",
+            "score": 0.6041347980499268
+          },
+          {
+            "evidence_id": "dialogue:21",
+            "source": "dialogue",
+            "snippet": "uh ... it's really tough to find a comfortable spot sleeping at night . i would- i tend to lie on my...",
+            "score": 0.5952858924865723
+          }
+        ],
+        "confidence": 0.6482919454574585
+      },
+      {
+        "claim_id": "claim_6",
+        "claim_text": "Since the initial injury, he has experienced stiffness in his lower back.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          15,
+          71,
+          36
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:15",
+            "source": "dialogue",
+            "snippet": "my lower back .",
+            "score": 0.732569694519043
+          },
+          {
+            "evidence_id": "dialogue:71",
+            "source": "dialogue",
+            "snippet": "so for your first problem , your back pain . you know , i think you have a lumbar strain from the li...",
+            "score": 0.6362534761428833
+          },
+          {
+            "evidence_id": "dialogue:36",
+            "source": "dialogue",
+            "snippet": "uh ... it gets aggravated every once in a while . if i- maybe if i run too much or if i've lift boxe...",
+            "score": 0.6352729797363281
+          }
+        ],
+        "confidence": 0.732569694519043
+      },
+      {
+        "claim_id": "claim_7",
+        "claim_text": "He has attempted to manage the pain with Tylenol, ibuprofen, and Icy Hot, but reports these have not been effective.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          17,
+          73,
+          16
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:17",
+            "source": "dialogue",
+            "snippet": "i took some tylenol , i took some ibuprofen , i used a little bit of icy heat on the spot but it rea...",
+            "score": 0.8141920566558838
+          },
+          {
+            "evidence_id": "dialogue:73",
+            "source": "dialogue",
+            "snippet": "i want you to continue to ice it , okay . i want you to try to avoid any strenuous activity and we c...",
+            "score": 0.5925078392028809
+          },
+          {
+            "evidence_id": "dialogue:16",
+            "source": "dialogue",
+            "snippet": "your lower back , okay . and what- what have you taken for the pain ?",
+            "score": 0.5812826752662659
+          }
+        ],
+        "confidence": 0.8141920566558838
+      },
+      {
+        "claim_id": "claim_8",
+        "claim_text": "He notes difficulty finding a comfortable position for sleep at night, finding some relief when lying on his right side.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          21,
+          20,
+          15
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:21",
+            "source": "dialogue",
+            "snippet": "uh ... it's really tough to find a comfortable spot sleeping at night . i would- i tend to lie on my...",
+            "score": 0.8155373930931091
+          },
+          {
+            "evidence_id": "dialogue:20",
+            "source": "dialogue",
+            "snippet": "okay , and is there a position that you feel better in ?",
+            "score": 0.6118557453155518
+          },
+          {
+            "evidence_id": "dialogue:15",
+            "source": "dialogue",
+            "snippet": "my lower back .",
+            "score": 0.5903247594833374
+          }
+        ],
+        "confidence": 0.8155373930931091
+      },
+      {
+        "claim_id": "claim_9",
+        "claim_text": "He initially experienced tingling in the toes of his right foot following the injury, but this symptom resolved by Sunday afternoon.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          19,
+          18,
+          12
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:19",
+            "source": "dialogue",
+            "snippet": "uh ... i felt some tingling in my toes on my right foot until about sunday afternoon . and then that...",
+            "score": 0.8333277702331543
+          },
+          {
+            "evidence_id": "dialogue:18",
+            "source": "dialogue",
+            "snippet": "okay . and um ... do you have any numbing or tingling in your legs ?",
+            "score": 0.6264159679412842
+          },
+          {
+            "evidence_id": "dialogue:12",
+            "source": "dialogue",
+            "snippet": "i thought i heard a pop when i moved and i had to lie down for about an hour before it actually reli...",
+            "score": 0.6105599403381348
+          }
+        ],
+        "confidence": 0.8333277702331543
+      },
+      {
+        "claim_id": "claim_10",
+        "claim_text": "Regarding his diabetes, the patient states that recent travel and helping his daughter have led to a less than stellar diet, noting he hasn't had a home-cooked meal in weeks and needs to \"eat clean\" for a couple of weeks.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          30,
+          29,
+          28
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:30",
+            "source": "dialogue",
+            "snippet": "and uh ... i-i think i need to go clean for a couple of weeks . but other than that , it was been- i...",
+            "score": 0.6841888427734375
+          },
+          {
+            "evidence_id": "dialogue:29",
+            "source": "dialogue",
+            "snippet": "yeah ... i-i love peanut butter cups . um ... and i have to say that when we were helping my daughte...",
+            "score": 0.6606138348579407
+          },
+          {
+            "evidence_id": "dialogue:28",
+            "source": "dialogue",
+            "snippet": "um ... so let's talk a little bit about your diabetes . how are you doing with that ? i know that- y...",
+            "score": 0.6049373149871826
+          }
+        ],
+        "confidence": 0.6841888427734375
+      },
+      {
+        "claim_id": "claim_11",
+        "claim_text": "He admits to having a sweet tooth, particularly for peanut butter cups.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          28,
+          29,
+          30
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:28",
+            "source": "dialogue",
+            "snippet": "um ... so let's talk a little bit about your diabetes . how are you doing with that ? i know that- y...",
+            "score": 0.6472066640853882
+          },
+          {
+            "evidence_id": "dialogue:29",
+            "source": "dialogue",
+            "snippet": "yeah ... i-i love peanut butter cups . um ... and i have to say that when we were helping my daughte...",
+            "score": 0.6319519281387329
+          },
+          {
+            "evidence_id": "dialogue:30",
+            "source": "dialogue",
+            "snippet": "and uh ... i-i think i need to go clean for a couple of weeks . but other than that , it was been- i...",
+            "score": 0.5452768802642822
+          }
+        ],
+        "confidence": 0.6472066640853882
+      },
+      {
+        "claim_id": "claim_12",
+        "claim_text": "Concerning his hypertension, he reports monitoring his blood pressure at home, stating he is good about it during the week while working from home but tends to forget on weekends when out of the house.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          32,
+          31,
+          45
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:32",
+            "source": "dialogue",
+            "snippet": "i'm good about it during the week while i am at home working, but on the weekends when i'm out of th...",
+            "score": 0.7529394626617432
+          },
+          {
+            "evidence_id": "dialogue:31",
+            "source": "dialogue",
+            "snippet": "okay , all right . and how about your high blood pressure ? are you monitoring your blood pressure r...",
+            "score": 0.7223219275474548
+          },
+          {
+            "evidence_id": "dialogue:45",
+            "source": "dialogue",
+            "snippet": "so it's a little elevated . your blood pressure's a little elevated here in the office , but you kno...",
+            "score": 0.638224720954895
+          }
+        ],
+        "confidence": 0.7529394626617432
+      },
+      {
+        "claim_id": "claim_13",
+        "claim_text": "He feels his blood pressure has been \"pretty good and under control for the most part\" and confirms he is taking his medication.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          33,
+          47,
+          31
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:33",
+            "source": "dialogue",
+            "snippet": "okay , and you're you're taking your medication ?",
+            "score": 0.6525161266326904
+          },
+          {
+            "evidence_id": "dialogue:47",
+            "source": "dialogue",
+            "snippet": ". blood pressure go up . let's look at the readings .",
+            "score": 0.646754801273346
+          },
+          {
+            "evidence_id": "dialogue:31",
+            "source": "dialogue",
+            "snippet": "okay , all right . and how about your high blood pressure ? are you monitoring your blood pressure r...",
+            "score": 0.6441774368286133
+          }
+        ],
+        "confidence": 0.6525161266326904
+      },
+      {
+        "claim_id": "claim_14",
+        "claim_text": "Regarding his osteoarthritis, he reports occasional aggravation of his knee, particularly if he runs too much or lifts heavy boxes, but states it has been \"okay.\"",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          36,
+          85,
+          35
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:36",
+            "source": "dialogue",
+            "snippet": "uh ... it gets aggravated every once in a while . if i- maybe if i run too much or if i've lift boxe...",
+            "score": 0.7693009376525879
+          },
+          {
+            "evidence_id": "dialogue:85",
+            "source": "dialogue",
+            "snippet": "and for your last problem , your osteoarthritis , i-i think that you were doing a really good job , ...",
+            "score": 0.6568575501441956
+          },
+          {
+            "evidence_id": "dialogue:35",
+            "source": "dialogue",
+            "snippet": "okay . and then lastly , i know that you had had some early arthritis in your knee . how- how are yo...",
+            "score": 0.6386898756027222
+          }
+        ],
+        "confidence": 0.7693009376525879
+      },
+      {
+        "claim_id": "claim_15",
+        "claim_text": "*PAST MEDICAL HISTORY:**",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          15,
+          57,
+          68
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:15",
+            "source": "dialogue",
+            "snippet": "my lower back .",
+            "score": 0.47152256965637207
+          },
+          {
+            "evidence_id": "dialogue:57",
+            "source": "dialogue",
+            "snippet": "on your heart exam . which you've had in the past .",
+            "score": 0.4638369083404541
+          },
+          {
+            "evidence_id": "dialogue:68",
+            "source": "dialogue",
+            "snippet": ". the history , okay ?",
+            "score": 0.4459134042263031
+          }
+        ],
+        "confidence": 0.3772180557250977
+      },
+      {
+        "claim_id": "claim_16",
+        "claim_text": "Diabetes Type 2",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          28,
+          62,
+          77
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:28",
+            "source": "dialogue",
+            "snippet": "um ... so let's talk a little bit about your diabetes . how are you doing with that ? i know that- y...",
+            "score": 0.495313823223114
+          },
+          {
+            "evidence_id": "dialogue:62",
+            "source": "dialogue",
+            "snippet": "hey dragon ? show me the diabetes labs .",
+            "score": 0.4909598231315613
+          },
+          {
+            "evidence_id": "dialogue:77",
+            "source": "dialogue",
+            "snippet": "for your next problem , your diabetes . y-you know , i think it's a little under- out of control . s...",
+            "score": 0.4728454351425171
+          }
+        ],
+        "confidence": 0.39625105857849124
+      },
+      {
+        "claim_id": "claim_17",
+        "claim_text": "Hypertension",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          47,
+          80,
+          44
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:47",
+            "source": "dialogue",
+            "snippet": ". blood pressure go up . let's look at the readings .",
+            "score": 0.5780131816864014
+          },
+          {
+            "evidence_id": "dialogue:80",
+            "source": "dialogue",
+            "snippet": "so , for your third problem , your hypertension . uh ... i-i'd like to go ahead increase the lisinop...",
+            "score": 0.5716769695281982
+          },
+          {
+            "evidence_id": "dialogue:44",
+            "source": "dialogue",
+            "snippet": "hey dragon ? show me the blood pressure .",
+            "score": 0.5614556670188904
+          }
+        ],
+        "confidence": 0.4624105453491211
+      },
+      {
+        "claim_id": "claim_18",
+        "claim_text": "Osteoarthritis",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          85,
+          35,
+          7
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:85",
+            "source": "dialogue",
+            "snippet": "and for your last problem , your osteoarthritis , i-i think that you were doing a really good job , ...",
+            "score": 0.49569469690322876
+          },
+          {
+            "evidence_id": "dialogue:35",
+            "source": "dialogue",
+            "snippet": "okay . and then lastly , i know that you had had some early arthritis in your knee . how- how are yo...",
+            "score": 0.45169931650161743
+          },
+          {
+            "evidence_id": "dialogue:7",
+            "source": "dialogue",
+            "snippet": "so logan is a 58 year old male , with a past medical history significant for diabetes type 2 , hyper...",
+            "score": 0.4104956388473511
+          }
+        ],
+        "confidence": 0.39655575752258304
+      },
+      {
+        "claim_id": "claim_19",
+        "claim_text": "*MEDICATIONS:**",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          78,
+          81,
+          56
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:78",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5449007749557495
+          },
+          {
+            "evidence_id": "dialogue:81",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5449007749557495
+          },
+          {
+            "evidence_id": "dialogue:56",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5449007749557495
+          }
+        ],
+        "confidence": 0.43592061996459963
+      },
+      {
+        "claim_id": "claim_20",
+        "claim_text": "Lisinopril 10 mg PO daily (Dose increased in Plan)",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          84,
+          80,
+          77
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:84",
+            "source": "dialogue",
+            "snippet": "hey dragon ? order lisinopril 20 mg daily .",
+            "score": 0.6512391567230225
+          },
+          {
+            "evidence_id": "dialogue:80",
+            "source": "dialogue",
+            "snippet": "so , for your third problem , your hypertension . uh ... i-i'd like to go ahead increase the lisinop...",
+            "score": 0.6401056051254272
+          },
+          {
+            "evidence_id": "dialogue:77",
+            "source": "dialogue",
+            "snippet": "for your next problem , your diabetes . y-you know , i think it's a little under- out of control . s...",
+            "score": 0.5271073579788208
+          }
+        ],
+        "confidence": 0.6512391567230225
+      },
+      {
+        "claim_id": "claim_21",
+        "claim_text": "Metformin (Dose increased in Plan, initial dose not specified in transcript)",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          77,
+          80,
+          47
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:77",
+            "source": "dialogue",
+            "snippet": "for your next problem , your diabetes . y-you know , i think it's a little under- out of control . s...",
+            "score": 0.5688878297805786
+          },
+          {
+            "evidence_id": "dialogue:80",
+            "source": "dialogue",
+            "snippet": "so , for your third problem , your hypertension . uh ... i-i'd like to go ahead increase the lisinop...",
+            "score": 0.4960363209247589
+          },
+          {
+            "evidence_id": "dialogue:47",
+            "source": "dialogue",
+            "snippet": ". blood pressure go up . let's look at the readings .",
+            "score": 0.48798879981040955
+          }
+        ],
+        "confidence": 0.4551102638244629
+      },
+      {
+        "claim_id": "claim_22",
+        "claim_text": "*ALLERGIES:**",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          43,
+          81,
+          58
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:43",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5377709865570068
+          },
+          {
+            "evidence_id": "dialogue:81",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5377709865570068
+          },
+          {
+            "evidence_id": "dialogue:58",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5377709865570068
+          }
+        ],
+        "confidence": 0.43021678924560547
+      },
+      {
+        "claim_id": "claim_23",
+        "claim_text": "No known allergies.",
+        "section": "S",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          41,
+          91,
+          13
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:41",
+            "source": "dialogue",
+            "snippet": "no . no none whatsoever .",
+            "score": 0.5975160598754883
+          },
+          {
+            "evidence_id": "dialogue:91",
+            "source": "dialogue",
+            "snippet": "okay . all right .",
+            "score": 0.5927314758300781
+          },
+          {
+            "evidence_id": "dialogue:13",
+            "source": "dialogue",
+            "snippet": "okay , all right .",
+            "score": 0.5905511379241943
+          }
+        ],
+        "confidence": 0.5927314758300781
+      },
+      {
+        "claim_id": "claim_24",
+        "claim_text": "*SOCIAL HISTORY:**",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          68,
+          43,
+          81
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:68",
+            "source": "dialogue",
+            "snippet": ". the history , okay ?",
+            "score": 0.5524799823760986
+          },
+          {
+            "evidence_id": "dialogue:43",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5156760215759277
+          },
+          {
+            "evidence_id": "dialogue:81",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5156760215759277
+          }
+        ],
+        "confidence": 0.44198398590087895
+      },
+      {
+        "claim_id": "claim_25",
+        "claim_text": "Reports recent travel and helping daughter move, leading to dietary changes.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          29,
+          10,
+          30
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:29",
+            "source": "dialogue",
+            "snippet": "yeah ... i-i love peanut butter cups . um ... and i have to say that when we were helping my daughte...",
+            "score": 0.6630127429962158
+          },
+          {
+            "evidence_id": "dialogue:10",
+            "source": "dialogue",
+            "snippet": "uh , we were helping my daughter with some heavy equipment and lifted some boxes a little too quickl...",
+            "score": 0.6338168382644653
+          },
+          {
+            "evidence_id": "dialogue:30",
+            "source": "dialogue",
+            "snippet": "and uh ... i-i think i need to go clean for a couple of weeks . but other than that , it was been- i...",
+            "score": 0.6094093322753906
+          }
+        ],
+        "confidence": 0.6630127429962158
+      },
+      {
+        "claim_id": "claim_26",
+        "claim_text": "Monitors home blood pressure inconsistently on weekends.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          31,
+          47,
+          32
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:31",
+            "source": "dialogue",
+            "snippet": "okay , all right . and how about your high blood pressure ? are you monitoring your blood pressure r...",
+            "score": 0.7237741351127625
+          },
+          {
+            "evidence_id": "dialogue:47",
+            "source": "dialogue",
+            "snippet": ". blood pressure go up . let's look at the readings .",
+            "score": 0.6520630121231079
+          },
+          {
+            "evidence_id": "dialogue:32",
+            "source": "dialogue",
+            "snippet": "i'm good about it during the week while i am at home working, but on the weekends when i'm out of th...",
+            "score": 0.6438840627670288
+          }
+        ],
+        "confidence": 0.7237741351127625
+      },
+      {
+        "claim_id": "claim_27",
+        "claim_text": "Reports taking long weekend vacations over the summer.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          25,
+          26,
+          32
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:25",
+            "source": "dialogue",
+            "snippet": ". about today . were you able to take any vacations over the summer ?",
+            "score": 0.7053801417350769
+          },
+          {
+            "evidence_id": "dialogue:26",
+            "source": "dialogue",
+            "snippet": "um ... some long weekends , which was great . just kind of- trying to mix it up through the summer ....",
+            "score": 0.7040371894836426
+          },
+          {
+            "evidence_id": "dialogue:32",
+            "source": "dialogue",
+            "snippet": "i'm good about it during the week while i am at home working, but on the weekends when i'm out of th...",
+            "score": 0.5537666082382202
+          }
+        ],
+        "confidence": 0.7053801417350769
+      },
+      {
+        "claim_id": "claim_28",
+        "claim_text": "*REVIEW OF SYSTEMS:**",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          81,
+          24,
+          46
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:81",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5531024932861328
+          },
+          {
+            "evidence_id": "dialogue:24",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5531024932861328
+          },
+          {
+            "evidence_id": "dialogue:46",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5531024932861328
+          }
+        ],
+        "confidence": 0.44248199462890625
+      },
+      {
+        "claim_id": "claim_29",
+        "claim_text": "**Constitutional:** Denies fever, chills.",
+        "section": "S",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          40,
+          39,
+          83
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:40",
+            "source": "dialogue",
+            "snippet": ". fever , chills ?",
+            "score": 0.668166995048523
+          },
+          {
+            "evidence_id": "dialogue:39",
+            "source": "dialogue",
+            "snippet": "no .",
+            "score": 0.5528692007064819
+          },
+          {
+            "evidence_id": "dialogue:83",
+            "source": "dialogue",
+            "snippet": "no that's fine . i agree .",
+            "score": 0.5365586280822754
+          }
+        ],
+        "confidence": 0.668166995048523
+      },
+      {
+        "claim_id": "claim_30",
+        "claim_text": "**Cardiovascular:** Denies chest pain.",
+        "section": "S",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          15,
+          39,
+          83
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:15",
+            "source": "dialogue",
+            "snippet": "my lower back .",
+            "score": 0.5495785474777222
+          },
+          {
+            "evidence_id": "dialogue:39",
+            "source": "dialogue",
+            "snippet": "no .",
+            "score": 0.5438058376312256
+          },
+          {
+            "evidence_id": "dialogue:83",
+            "source": "dialogue",
+            "snippet": "no that's fine . i agree .",
+            "score": 0.5362734794616699
+          }
+        ],
+        "confidence": 0.5495785474777222
+      },
+      {
+        "claim_id": "claim_31",
+        "claim_text": "Reports known stable heart murmur.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          59,
+          55,
+          82
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:59",
+            "source": "dialogue",
+            "snippet": "so that sounds stable to me .",
+            "score": 0.7429984211921692
+          },
+          {
+            "evidence_id": "dialogue:55",
+            "source": "dialogue",
+            "snippet": "okay , so ... on physical examination , you know , i-i do hear a slight 2 out of 6 s- s- systolic he...",
+            "score": 0.6901113986968994
+          },
+          {
+            "evidence_id": "dialogue:82",
+            "source": "dialogue",
+            "snippet": "does that sound okay ? i think we need to get it under better control .",
+            "score": 0.5850002765655518
+          }
+        ],
+        "confidence": 0.7429984211921692
+      },
+      {
+        "claim_id": "claim_32",
+        "claim_text": "**Musculoskeletal:** Endorses lower back pain and stiffness.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          15,
+          71,
+          37
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:15",
+            "source": "dialogue",
+            "snippet": "my lower back .",
+            "score": 0.7156895399093628
+          },
+          {
+            "evidence_id": "dialogue:71",
+            "source": "dialogue",
+            "snippet": "so for your first problem , your back pain . you know , i think you have a lumbar strain from the li...",
+            "score": 0.6473577618598938
+          },
+          {
+            "evidence_id": "dialogue:37",
+            "source": "dialogue",
+            "snippet": "okay . all right , well ... let me go ahead and- you know , i know that the nurse did a review of sy...",
+            "score": 0.6243059039115906
+          }
+        ],
+        "confidence": 0.7156895399093628
+      },
+      {
+        "claim_id": "claim_33",
+        "claim_text": "Endorses knee pain with exertion.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          15,
+          11,
+          85
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:15",
+            "source": "dialogue",
+            "snippet": "my lower back .",
+            "score": 0.594102144241333
+          },
+          {
+            "evidence_id": "dialogue:11",
+            "source": "dialogue",
+            "snippet": "okay ... and did you strain your back , did something-",
+            "score": 0.5856531262397766
+          },
+          {
+            "evidence_id": "dialogue:85",
+            "source": "dialogue",
+            "snippet": "and for your last problem , your osteoarthritis , i-i think that you were doing a really good job , ...",
+            "score": 0.5825198888778687
+          }
+        ],
+        "confidence": 0.4752817153930664
+      },
+      {
+        "claim_id": "claim_34",
+        "claim_text": "**Neurological:** Endorsed transient tingling in right toes until Sunday afternoon, denies current tingling.",
+        "section": "S",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          19,
+          18,
+          73
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:19",
+            "source": "dialogue",
+            "snippet": "uh ... i felt some tingling in my toes on my right foot until about sunday afternoon . and then that...",
+            "score": 0.7764987945556641
+          },
+          {
+            "evidence_id": "dialogue:18",
+            "source": "dialogue",
+            "snippet": "okay . and um ... do you have any numbing or tingling in your legs ?",
+            "score": 0.5711374282836914
+          },
+          {
+            "evidence_id": "dialogue:73",
+            "source": "dialogue",
+            "snippet": "i want you to continue to ice it , okay . i want you to try to avoid any strenuous activity and we c...",
+            "score": 0.5465055704116821
+          }
+        ],
+        "confidence": 0.7764987945556641
+      },
+      {
+        "claim_id": "claim_35",
+        "claim_text": "*VITALS:**",
+        "section": "O",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          58,
+          46,
+          72
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:58",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.4923672676086426
+          },
+          {
+            "evidence_id": "dialogue:46",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.4923672676086426
+          },
+          {
+            "evidence_id": "dialogue:72",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.4923672676086426
+          }
+        ],
+        "confidence": 0.3938938140869141
+      },
+      {
+        "claim_id": "claim_36",
+        "claim_text": "BP: Elevated (value not stated in transcript)",
+        "section": "O",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          47,
+          90,
+          39
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:47",
+            "source": "dialogue",
+            "snippet": ". blood pressure go up . let's look at the readings .",
+            "score": 0.560377836227417
+          },
+          {
+            "evidence_id": "dialogue:90",
+            "source": "dialogue",
+            "snippet": "not at this point .",
+            "score": 0.5098083019256592
+          },
+          {
+            "evidence_id": "dialogue:39",
+            "source": "dialogue",
+            "snippet": "no .",
+            "score": 0.5025808811187744
+          }
+        ],
+        "confidence": 0.5025808811187744
+      },
+      {
+        "claim_id": "claim_37",
+        "claim_text": "*PHYSICAL EXAMINATION:**",
+        "section": "O",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          42,
+          58,
+          56
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:42",
+            "source": "dialogue",
+            "snippet": "no . okay . all right , well let me go ahead , i want to do a quick physical exam .",
+            "score": 0.5661211609840393
+          },
+          {
+            "evidence_id": "dialogue:58",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5397084951400757
+          },
+          {
+            "evidence_id": "dialogue:56",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5397084951400757
+          }
+        ],
+        "confidence": 0.5661211609840393
+      },
+      {
+        "claim_id": "claim_38",
+        "claim_text": "**Cardiovascular:** Slight 2/6 systolic murmur noted on heart exam, stable compared to previous exams.",
+        "section": "O",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          55,
+          59,
+          57
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:55",
+            "source": "dialogue",
+            "snippet": "okay , so ... on physical examination , you know , i-i do hear a slight 2 out of 6 s- s- systolic he...",
+            "score": 0.8109337091445923
+          },
+          {
+            "evidence_id": "dialogue:59",
+            "source": "dialogue",
+            "snippet": "so that sounds stable to me .",
+            "score": 0.6350144743919373
+          },
+          {
+            "evidence_id": "dialogue:57",
+            "source": "dialogue",
+            "snippet": "on your heart exam . which you've had in the past .",
+            "score": 0.6256785988807678
+          }
+        ],
+        "confidence": 0.8109337091445923
+      },
+      {
+        "claim_id": "claim_39",
+        "claim_text": "**Musculoskeletal (Back):** Pain to palpation of the lumbar spine.",
+        "section": "O",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          60,
+          71,
+          15
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:60",
+            "source": "dialogue",
+            "snippet": "on your back exam , you know , you do have some pain to palpation of the lumbar spine . and you have...",
+            "score": 0.6891027092933655
+          },
+          {
+            "evidence_id": "dialogue:71",
+            "source": "dialogue",
+            "snippet": "so for your first problem , your back pain . you know , i think you have a lumbar strain from the li...",
+            "score": 0.6282984614372253
+          },
+          {
+            "evidence_id": "dialogue:15",
+            "source": "dialogue",
+            "snippet": "my lower back .",
+            "score": 0.6234384775161743
+          }
+        ],
+        "confidence": 0.6891027092933655
+      },
+      {
+        "claim_id": "claim_40",
+        "claim_text": "Pain with flexion and extension of the back.",
+        "section": "O",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          15,
+          60,
+          71
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:15",
+            "source": "dialogue",
+            "snippet": "my lower back .",
+            "score": 0.6965890526771545
+          },
+          {
+            "evidence_id": "dialogue:60",
+            "source": "dialogue",
+            "snippet": "on your back exam , you know , you do have some pain to palpation of the lumbar spine . and you have...",
+            "score": 0.68434077501297
+          },
+          {
+            "evidence_id": "dialogue:71",
+            "source": "dialogue",
+            "snippet": "so for your first problem , your back pain . you know , i think you have a lumbar strain from the li...",
+            "score": 0.659676194190979
+          }
+        ],
+        "confidence": 0.68434077501297
+      },
+      {
+        "claim_id": "claim_41",
+        "claim_text": "Negative straight leg raise test.",
+        "section": "O",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          15,
+          60,
+          42
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:15",
+            "source": "dialogue",
+            "snippet": "my lower back .",
+            "score": 0.6355665326118469
+          },
+          {
+            "evidence_id": "dialogue:60",
+            "source": "dialogue",
+            "snippet": "on your back exam , you know , you do have some pain to palpation of the lumbar spine . and you have...",
+            "score": 0.6269693374633789
+          },
+          {
+            "evidence_id": "dialogue:42",
+            "source": "dialogue",
+            "snippet": "no . okay . all right , well let me go ahead , i want to do a quick physical exam .",
+            "score": 0.5636513233184814
+          }
+        ],
+        "confidence": 0.6355665326118469
+      },
+      {
+        "claim_id": "claim_42",
+        "claim_text": "**Other systems:** Not discussed/examined.",
+        "section": "O",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          90,
+          39,
+          41
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:90",
+            "source": "dialogue",
+            "snippet": "not at this point .",
+            "score": 0.6152445673942566
+          },
+          {
+            "evidence_id": "dialogue:39",
+            "source": "dialogue",
+            "snippet": "no .",
+            "score": 0.570023238658905
+          },
+          {
+            "evidence_id": "dialogue:41",
+            "source": "dialogue",
+            "snippet": "no . no none whatsoever .",
+            "score": 0.5608696937561035
+          }
+        ],
+        "confidence": 0.570023238658905
+      },
+      {
+        "claim_id": "claim_43",
+        "claim_text": "*LABORATORY/IMAGING RESULTS:**",
+        "section": "O",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          48,
+          47,
+          15
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:48",
+            "source": "dialogue",
+            "snippet": "hey dragon ? show me the blood pressure readings .",
+            "score": 0.5549736618995667
+          },
+          {
+            "evidence_id": "dialogue:47",
+            "source": "dialogue",
+            "snippet": ". blood pressure go up . let's look at the readings .",
+            "score": 0.5488748550415039
+          },
+          {
+            "evidence_id": "dialogue:15",
+            "source": "dialogue",
+            "snippet": "my lower back .",
+            "score": 0.5481863021850586
+          }
+        ],
+        "confidence": 0.44397892951965334
+      },
+      {
+        "claim_id": "claim_44",
+        "claim_text": "**Hemoglobin A1c:** 8 (Elevated)",
+        "section": "O",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          63,
+          79,
+          47
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:63",
+            "source": "dialogue",
+            "snippet": "okay , so ... in reviewing the results of your diabetes labs , your hemoglobin a1c is a little eleva...",
+            "score": 0.7161936163902283
+          },
+          {
+            "evidence_id": "dialogue:79",
+            "source": "dialogue",
+            "snippet": "hey dragon ? order a hemoglobin a1c .",
+            "score": 0.5774126648902893
+          },
+          {
+            "evidence_id": "dialogue:47",
+            "source": "dialogue",
+            "snippet": ". blood pressure go up . let's look at the readings .",
+            "score": 0.5384520888328552
+          }
+        ],
+        "confidence": 0.7161936163902283
+      },
+      {
+        "claim_id": "claim_45",
+        "claim_text": "**Lumbar Spine X-ray:** Normal bony alignment, No fracture present.",
+        "section": "O",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          66,
+          60,
+          83
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:66",
+            "source": "dialogue",
+            "snippet": "so in reviewing the results of your back x-ray , this looks like a normal x-ray . there's good bony ...",
+            "score": 0.731613278388977
+          },
+          {
+            "evidence_id": "dialogue:60",
+            "source": "dialogue",
+            "snippet": "on your back exam , you know , you do have some pain to palpation of the lumbar spine . and you have...",
+            "score": 0.5551279783248901
+          },
+          {
+            "evidence_id": "dialogue:83",
+            "source": "dialogue",
+            "snippet": "no that's fine . i agree .",
+            "score": 0.5478581190109253
+          }
+        ],
+        "confidence": 0.731613278388977
+      },
+      {
+        "claim_id": "claim_46",
+        "claim_text": "Unremarkable.",
+        "section": "O",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          41,
+          91,
+          90
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:41",
+            "source": "dialogue",
+            "snippet": "no . no none whatsoever .",
+            "score": 0.6175342202186584
+          },
+          {
+            "evidence_id": "dialogue:91",
+            "source": "dialogue",
+            "snippet": "okay . all right .",
+            "score": 0.5817498564720154
+          },
+          {
+            "evidence_id": "dialogue:90",
+            "source": "dialogue",
+            "snippet": "not at this point .",
+            "score": 0.5663296580314636
+          }
+        ],
+        "confidence": 0.6175342202186584
+      },
+      {
+        "claim_id": "claim_47",
+        "claim_text": "**Lumbar Strain:** Acute injury sustained while lifting heavy objects, consistent with patient history and physical exam findings of lumbar pain with palpation and movement.",
+        "section": "A",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          71,
+          60,
+          36
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:71",
+            "source": "dialogue",
+            "snippet": "so for your first problem , your back pain . you know , i think you have a lumbar strain from the li...",
+            "score": 0.6580951809883118
+          },
+          {
+            "evidence_id": "dialogue:60",
+            "source": "dialogue",
+            "snippet": "on your back exam , you know , you do have some pain to palpation of the lumbar spine . and you have...",
+            "score": 0.6539314389228821
+          },
+          {
+            "evidence_id": "dialogue:36",
+            "source": "dialogue",
+            "snippet": "uh ... it gets aggravated every once in a while . if i- maybe if i run too much or if i've lift boxe...",
+            "score": 0.6249066591262817
+          }
+        ],
+        "confidence": 0.6539314389228821
+      },
+      {
+        "claim_id": "claim_48",
+        "claim_text": "Lumbar spine X-ray is normal, ruling out fracture or significant bony pathology.",
+        "section": "A",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          66,
+          60,
+          71
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:66",
+            "source": "dialogue",
+            "snippet": "so in reviewing the results of your back x-ray , this looks like a normal x-ray . there's good bony ...",
+            "score": 0.750211238861084
+          },
+          {
+            "evidence_id": "dialogue:60",
+            "source": "dialogue",
+            "snippet": "on your back exam , you know , you do have some pain to palpation of the lumbar spine . and you have...",
+            "score": 0.5879267454147339
+          },
+          {
+            "evidence_id": "dialogue:71",
+            "source": "dialogue",
+            "snippet": "so for your first problem , your back pain . you know , i think you have a lumbar strain from the li...",
+            "score": 0.5337324142456055
+          }
+        ],
+        "confidence": 0.750211238861084
+      },
+      {
+        "claim_id": "claim_49",
+        "claim_text": "**Diabetes Mellitus Type 2:** Suboptimally controlled based on elevated Hemoglobin A1c of 8.",
+        "section": "A",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          63,
+          77,
+          28
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:63",
+            "source": "dialogue",
+            "snippet": "okay , so ... in reviewing the results of your diabetes labs , your hemoglobin a1c is a little eleva...",
+            "score": 0.6963663697242737
+          },
+          {
+            "evidence_id": "dialogue:77",
+            "source": "dialogue",
+            "snippet": "for your next problem , your diabetes . y-you know , i think it's a little under- out of control . s...",
+            "score": 0.6755867600440979
+          },
+          {
+            "evidence_id": "dialogue:28",
+            "source": "dialogue",
+            "snippet": "um ... so let's talk a little bit about your diabetes . how are you doing with that ? i know that- y...",
+            "score": 0.5405921339988708
+          }
+        ],
+        "confidence": 0.6963663697242737
+      },
+      {
+        "claim_id": "claim_50",
+        "claim_text": "Patient reports recent dietary indiscretion which may be contributing.",
+        "section": "A",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          7,
+          45,
+          30
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:7",
+            "source": "dialogue",
+            "snippet": "so logan is a 58 year old male , with a past medical history significant for diabetes type 2 , hyper...",
+            "score": 0.6083601117134094
+          },
+          {
+            "evidence_id": "dialogue:45",
+            "source": "dialogue",
+            "snippet": "so it's a little elevated . your blood pressure's a little elevated here in the office , but you kno...",
+            "score": 0.5881655216217041
+          },
+          {
+            "evidence_id": "dialogue:30",
+            "source": "dialogue",
+            "snippet": "and uh ... i-i think i need to go clean for a couple of weeks . but other than that , it was been- i...",
+            "score": 0.5822700262069702
+          }
+        ],
+        "confidence": 0.6083601117134094
+      },
+      {
+        "claim_id": "claim_51",
+        "claim_text": "**Hypertension:** Elevated blood pressure noted in clinic and patient reports some elevated home readings, indicating need for better control despite current medication regimen.",
+        "section": "A",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          45,
+          31,
+          47
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:45",
+            "source": "dialogue",
+            "snippet": "so it's a little elevated . your blood pressure's a little elevated here in the office , but you kno...",
+            "score": 0.7192040085792542
+          },
+          {
+            "evidence_id": "dialogue:31",
+            "source": "dialogue",
+            "snippet": "okay , all right . and how about your high blood pressure ? are you monitoring your blood pressure r...",
+            "score": 0.6946516036987305
+          },
+          {
+            "evidence_id": "dialogue:47",
+            "source": "dialogue",
+            "snippet": ". blood pressure go up . let's look at the readings .",
+            "score": 0.6901158094406128
+          }
+        ],
+        "confidence": 0.7192040085792542
+      },
+      {
+        "claim_id": "claim_52",
+        "claim_text": "**Osteoarthritis:** Stable, well-controlled with occasional symptoms related to exertion.",
+        "section": "A",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          85,
+          36,
+          59
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:85",
+            "source": "dialogue",
+            "snippet": "and for your last problem , your osteoarthritis , i-i think that you were doing a really good job , ...",
+            "score": 0.6650368571281433
+          },
+          {
+            "evidence_id": "dialogue:36",
+            "source": "dialogue",
+            "snippet": "uh ... it gets aggravated every once in a while . if i- maybe if i run too much or if i've lift boxe...",
+            "score": 0.5913845896720886
+          },
+          {
+            "evidence_id": "dialogue:59",
+            "source": "dialogue",
+            "snippet": "so that sounds stable to me .",
+            "score": 0.5839768648147583
+          }
+        ],
+        "confidence": 0.6650368571281433
+      },
+      {
+        "claim_id": "claim_53",
+        "claim_text": "**Lumbar Strain:**",
+        "section": "P",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          61,
+          58,
+          72
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:61",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5046993494033813
+          },
+          {
+            "evidence_id": "dialogue:58",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5046993494033813
+          },
+          {
+            "evidence_id": "dialogue:72",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5046993494033813
+          }
+        ],
+        "confidence": 0.4037594795227051
+      },
+      {
+        "claim_id": "claim_54",
+        "claim_text": "**Medication:** Prescribe Meloxicam 15 mg PO daily for pain and inflammation.",
+        "section": "P",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          71,
+          80,
+          16
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:71",
+            "source": "dialogue",
+            "snippet": "so for your first problem , your back pain . you know , i think you have a lumbar strain from the li...",
+            "score": 0.7150706052780151
+          },
+          {
+            "evidence_id": "dialogue:80",
+            "source": "dialogue",
+            "snippet": "so , for your third problem , your hypertension . uh ... i-i'd like to go ahead increase the lisinop...",
+            "score": 0.5946284532546997
+          },
+          {
+            "evidence_id": "dialogue:16",
+            "source": "dialogue",
+            "snippet": "your lower back , okay . and what- what have you taken for the pain ?",
+            "score": 0.5934008359909058
+          }
+        ],
+        "confidence": 0.7150706052780151
+      },
+      {
+        "claim_id": "claim_55",
+        "claim_text": "**Supportive Care:** Continue applying ice to the affected area.",
+        "section": "P",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          73,
+          17,
+          85
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:73",
+            "source": "dialogue",
+            "snippet": "i want you to continue to ice it , okay . i want you to try to avoid any strenuous activity and we c...",
+            "score": 0.6728181838989258
+          },
+          {
+            "evidence_id": "dialogue:17",
+            "source": "dialogue",
+            "snippet": "i took some tylenol , i took some ibuprofen , i used a little bit of icy heat on the spot but it rea...",
+            "score": 0.5879358053207397
+          },
+          {
+            "evidence_id": "dialogue:85",
+            "source": "dialogue",
+            "snippet": "and for your last problem , your osteoarthritis , i-i think that you were doing a really good job , ...",
+            "score": 0.5258914828300476
+          }
+        ],
+        "confidence": 0.6728181838989258
+      },
+      {
+        "claim_id": "claim_56",
+        "claim_text": "**Activity:** Advise patient to avoid strenuous activity.",
+        "section": "P",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          73,
+          15,
+          90
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:73",
+            "source": "dialogue",
+            "snippet": "i want you to continue to ice it , okay . i want you to try to avoid any strenuous activity and we c...",
+            "score": 0.7590447068214417
+          },
+          {
+            "evidence_id": "dialogue:15",
+            "source": "dialogue",
+            "snippet": "my lower back .",
+            "score": 0.547406017780304
+          },
+          {
+            "evidence_id": "dialogue:90",
+            "source": "dialogue",
+            "snippet": "not at this point .",
+            "score": 0.5324585437774658
+          }
+        ],
+        "confidence": 0.7590447068214417
+      },
+      {
+        "claim_id": "claim_57",
+        "claim_text": "**Referral:** Refer to Physical Therapy for rehabilitation and strengthening.",
+        "section": "P",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          73,
+          15,
+          71
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:73",
+            "source": "dialogue",
+            "snippet": "i want you to continue to ice it , okay . i want you to try to avoid any strenuous activity and we c...",
+            "score": 0.6029760837554932
+          },
+          {
+            "evidence_id": "dialogue:15",
+            "source": "dialogue",
+            "snippet": "my lower back .",
+            "score": 0.5862311720848083
+          },
+          {
+            "evidence_id": "dialogue:71",
+            "source": "dialogue",
+            "snippet": "so for your first problem , your back pain . you know , i think you have a lumbar strain from the li...",
+            "score": 0.5697482824325562
+          }
+        ],
+        "confidence": 0.6029760837554932
+      },
+      {
+        "claim_id": "claim_58",
+        "claim_text": "**Diabetes Mellitus Type 2:**",
+        "section": "P",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          28,
+          62,
+          47
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:28",
+            "source": "dialogue",
+            "snippet": "um ... so let's talk a little bit about your diabetes . how are you doing with that ? i know that- y...",
+            "score": 0.5021752119064331
+          },
+          {
+            "evidence_id": "dialogue:62",
+            "source": "dialogue",
+            "snippet": "hey dragon ? show me the diabetes labs .",
+            "score": 0.4927506148815155
+          },
+          {
+            "evidence_id": "dialogue:47",
+            "source": "dialogue",
+            "snippet": ". blood pressure go up . let's look at the readings .",
+            "score": 0.4548988938331604
+          }
+        ],
+        "confidence": 0.4017401695251465
+      },
+      {
+        "claim_id": "claim_59",
+        "claim_text": "**Medication:** Increase Metformin dose to 1000 mg PO twice daily.",
+        "section": "P",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          77,
+          80,
+          71
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:77",
+            "source": "dialogue",
+            "snippet": "for your next problem , your diabetes . y-you know , i think it's a little under- out of control . s...",
+            "score": 0.7103855609893799
+          },
+          {
+            "evidence_id": "dialogue:80",
+            "source": "dialogue",
+            "snippet": "so , for your third problem , your hypertension . uh ... i-i'd like to go ahead increase the lisinop...",
+            "score": 0.6848859786987305
+          },
+          {
+            "evidence_id": "dialogue:71",
+            "source": "dialogue",
+            "snippet": "so for your first problem , your back pain . you know , i think you have a lumbar strain from the li...",
+            "score": 0.636351466178894
+          }
+        ],
+        "confidence": 0.7103855609893799
+      },
+      {
+        "claim_id": "claim_60",
+        "claim_text": "**Monitoring:** Order repeat Hemoglobin A1c in 6 months.",
+        "section": "P",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          77,
+          79,
+          63
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:77",
+            "source": "dialogue",
+            "snippet": "for your next problem , your diabetes . y-you know , i think it's a little under- out of control . s...",
+            "score": 0.7286139726638794
+          },
+          {
+            "evidence_id": "dialogue:79",
+            "source": "dialogue",
+            "snippet": "hey dragon ? order a hemoglobin a1c .",
+            "score": 0.6737050414085388
+          },
+          {
+            "evidence_id": "dialogue:63",
+            "source": "dialogue",
+            "snippet": "okay , so ... in reviewing the results of your diabetes labs , your hemoglobin a1c is a little eleva...",
+            "score": 0.6329368352890015
+          }
+        ],
+        "confidence": 0.7286139726638794
+      },
+      {
+        "claim_id": "claim_61",
+        "claim_text": "**Education:** Reinforced importance of dietary management, patient acknowledges need to improve diet.",
+        "section": "P",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          30,
+          47,
+          28
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:30",
+            "source": "dialogue",
+            "snippet": "and uh ... i-i think i need to go clean for a couple of weeks . but other than that , it was been- i...",
+            "score": 0.5978963375091553
+          },
+          {
+            "evidence_id": "dialogue:47",
+            "source": "dialogue",
+            "snippet": ". blood pressure go up . let's look at the readings .",
+            "score": 0.578621506690979
+          },
+          {
+            "evidence_id": "dialogue:28",
+            "source": "dialogue",
+            "snippet": "um ... so let's talk a little bit about your diabetes . how are you doing with that ? i know that- y...",
+            "score": 0.5643528699874878
+          }
+        ],
+        "confidence": 0.47831707000732426
+      },
+      {
+        "claim_id": "claim_62",
+        "claim_text": "**Hypertension:**",
+        "section": "P",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          47,
+          44,
+          48
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:47",
+            "source": "dialogue",
+            "snippet": ". blood pressure go up . let's look at the readings .",
+            "score": 0.5772820711135864
+          },
+          {
+            "evidence_id": "dialogue:44",
+            "source": "dialogue",
+            "snippet": "hey dragon ? show me the blood pressure .",
+            "score": 0.5606212615966797
+          },
+          {
+            "evidence_id": "dialogue:48",
+            "source": "dialogue",
+            "snippet": "hey dragon ? show me the blood pressure readings .",
+            "score": 0.5553898811340332
+          }
+        ],
+        "confidence": 0.4618256568908692
+      },
+      {
+        "claim_id": "claim_63",
+        "claim_text": "**Medication:** Increase Lisinopril dose from 10 mg PO daily to 20 mg PO daily.",
+        "section": "P",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          80,
+          84,
+          71
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:80",
+            "source": "dialogue",
+            "snippet": "so , for your third problem , your hypertension . uh ... i-i'd like to go ahead increase the lisinop...",
+            "score": 0.7928211688995361
+          },
+          {
+            "evidence_id": "dialogue:84",
+            "source": "dialogue",
+            "snippet": "hey dragon ? order lisinopril 20 mg daily .",
+            "score": 0.7029655575752258
+          },
+          {
+            "evidence_id": "dialogue:71",
+            "source": "dialogue",
+            "snippet": "so for your first problem , your back pain . you know , i think you have a lumbar strain from the li...",
+            "score": 0.6129958033561707
+          }
+        ],
+        "confidence": 0.7928211688995361
+      },
+      {
+        "claim_id": "claim_64",
+        "claim_text": "**Education:** Discussed the need for better blood pressure control and encouraged consistent home monitoring.",
+        "section": "P",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          31,
+          47,
+          82
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:31",
+            "source": "dialogue",
+            "snippet": "okay , all right . and how about your high blood pressure ? are you monitoring your blood pressure r...",
+            "score": 0.7031200528144836
+          },
+          {
+            "evidence_id": "dialogue:47",
+            "source": "dialogue",
+            "snippet": ". blood pressure go up . let's look at the readings .",
+            "score": 0.6754761934280396
+          },
+          {
+            "evidence_id": "dialogue:82",
+            "source": "dialogue",
+            "snippet": "does that sound okay ? i think we need to get it under better control .",
+            "score": 0.6202556490898132
+          }
+        ],
+        "confidence": 0.7031200528144836
+      },
+      {
+        "claim_id": "claim_65",
+        "claim_text": "**Osteoarthritis:**",
+        "section": "P",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          85,
+          15,
+          81
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:85",
+            "source": "dialogue",
+            "snippet": "and for your last problem , your osteoarthritis , i-i think that you were doing a really good job , ...",
+            "score": 0.5050898194313049
+          },
+          {
+            "evidence_id": "dialogue:15",
+            "source": "dialogue",
+            "snippet": "my lower back .",
+            "score": 0.4753513038158417
+          },
+          {
+            "evidence_id": "dialogue:81",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.4669156074523926
+          }
+        ],
+        "confidence": 0.404071855545044
+      },
+      {
+        "claim_id": "claim_66",
+        "claim_text": "**Plan:** Continue to monitor symptoms.",
+        "section": "P",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          31,
+          73,
+          85
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:31",
+            "source": "dialogue",
+            "snippet": "okay , all right . and how about your high blood pressure ? are you monitoring your blood pressure r...",
+            "score": 0.6400133967399597
+          },
+          {
+            "evidence_id": "dialogue:73",
+            "source": "dialogue",
+            "snippet": "i want you to continue to ice it , okay . i want you to try to avoid any strenuous activity and we c...",
+            "score": 0.6275509595870972
+          },
+          {
+            "evidence_id": "dialogue:85",
+            "source": "dialogue",
+            "snippet": "and for your last problem , your osteoarthritis , i-i think that you were doing a really good job , ...",
+            "score": 0.6025615930557251
+          }
+        ],
+        "confidence": 0.6400133967399597
+      },
+      {
+        "claim_id": "claim_67",
+        "claim_text": "No further workup or intervention needed at this time.",
+        "section": "P",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          87,
+          73,
+          41
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:87",
+            "source": "dialogue",
+            "snippet": "i do n't think we need to do any- any further , you know , work up of that at this time , okay ?",
+            "score": 0.697314977645874
+          },
+          {
+            "evidence_id": "dialogue:73",
+            "source": "dialogue",
+            "snippet": "i want you to continue to ice it , okay . i want you to try to avoid any strenuous activity and we c...",
+            "score": 0.5919124484062195
+          },
+          {
+            "evidence_id": "dialogue:41",
+            "source": "dialogue",
+            "snippet": "no . no none whatsoever .",
+            "score": 0.586710512638092
+          }
+        ],
+        "confidence": 0.697314977645874
+      },
+      {
+        "claim_id": "claim_68",
+        "claim_text": "Patient understands and agrees with the treatment plan.",
+        "section": "P",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          83,
+          33,
+          37
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:83",
+            "source": "dialogue",
+            "snippet": "no that's fine . i agree .",
+            "score": 0.6349323987960815
+          },
+          {
+            "evidence_id": "dialogue:33",
+            "source": "dialogue",
+            "snippet": "okay , and you're you're taking your medication ?",
+            "score": 0.6226253509521484
+          },
+          {
+            "evidence_id": "dialogue:37",
+            "source": "dialogue",
+            "snippet": "okay . all right , well ... let me go ahead and- you know , i know that the nurse did a review of sy...",
+            "score": 0.603683590888977
+          }
+        ],
+        "confidence": 0.6349323987960815
+      },
+      {
+        "claim_id": "claim_69",
+        "claim_text": "Follow-up as needed or as scheduled for HbA1c check.",
+        "section": "P",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          77,
+          63,
+          79
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:77",
+            "source": "dialogue",
+            "snippet": "for your next problem , your diabetes . y-you know , i think it's a little under- out of control . s...",
+            "score": 0.6321743130683899
+          },
+          {
+            "evidence_id": "dialogue:63",
+            "source": "dialogue",
+            "snippet": "okay , so ... in reviewing the results of your diabetes labs , your hemoglobin a1c is a little eleva...",
+            "score": 0.6291513442993164
+          },
+          {
+            "evidence_id": "dialogue:79",
+            "source": "dialogue",
+            "snippet": "hey dragon ? order a hemoglobin a1c .",
+            "score": 0.6196129322052002
+          }
+        ],
+        "confidence": 0.6321743130683899
+      }
+    ],
+    "total_claims_evaluated": 70
+  },
+  "coverage_of_salient_findings": {
+    "completeness_score": 0.6666666666666666,
+    "omission_rate": 0.8571428571428571,
+    "verdict": "borderline",
+    "symptom_recall": 0.0,
+    "medication_recall": 0.6666666666666666,
+    "allergy_recall": 0.0,
+    "risk_factor_recall": 0.0,
+    "omissions": [
+      {
+        "finding_type": "symptom",
+        "finding_text": "chills",
+        "dialogue_sentence_ids": [],
+        "importance": "moderate"
+      },
+      {
+        "finding_type": "symptom",
+        "finding_text": "tingling_in_toes",
+        "dialogue_sentence_ids": [],
+        "importance": "moderate"
+      },
+      {
+        "finding_type": "symptom",
+        "finding_text": "pain",
+        "dialogue_sentence_ids": [],
+        "importance": "moderate"
+      },
+      {
+        "finding_type": "symptom",
+        "finding_text": "chest_pain",
+        "dialogue_sentence_ids": [],
+        "importance": "moderate"
+      },
+      {
+        "finding_type": "symptom",
+        "finding_text": "fever",
+        "dialogue_sentence_ids": [],
+        "importance": "moderate"
+      },
+      {
+        "finding_type": "symptom",
+        "finding_text": "back_pain",
+        "dialogue_sentence_ids": [],
+        "importance": "moderate"
+      },
+      {
+        "finding_type": "symptom",
+        "finding_text": "numbness",
+        "dialogue_sentence_ids": [],
+        "importance": "moderate"
+      },
+      {
+        "finding_type": "symptom",
+        "finding_text": "palpitations",
+        "dialogue_sentence_ids": [],
+        "importance": "moderate"
+      },
+      {
+        "finding_type": "symptom",
+        "finding_text": "joint_pain",
+        "dialogue_sentence_ids": [],
+        "importance": "moderate"
+      },
+      {
+        "finding_type": "medication",
+        "finding_text": "acetaminophen",
+        "dialogue_sentence_ids": [],
+        "importance": "high"
+      },
+      {
+        "finding_type": "risk_factor",
+        "finding_text": "hypertension",
+        "dialogue_sentence_ids": [],
+        "importance": "moderate"
+      },
+      {
+        "finding_type": "risk_factor",
+        "finding_text": "diabetes type 2",
+        "dialogue_sentence_ids": [],
+        "importance": "moderate"
+      }
+    ],
+    "critical_omissions": 0
+  },
+  "assessment_quality": {
+    "dx_coherence_score": 0.6,
+    "differential_breadth_score": 0.8,
+    "verdict": "borderline",
+    "diagnosis_evaluations": [
+      {
+        "diagnosis": "Lumbar Strain",
+        "coherence_with_evidence": 0.9,
+        "evidence_support": [],
+        "guideline_support": [],
+        "concerns": []
+      },
+      {
+        "diagnosis": "Diabetes Mellitus Type 2",
+        "coherence_with_evidence": 0.8,
+        "evidence_support": [],
+        "guideline_support": [],
+        "concerns": [
+          "elevated Hemoglobin A1c of 8 suggests suboptimal control"
+        ]
+      },
+      {
+        "diagnosis": "Hypertension",
+        "coherence_with_evidence": 0.7,
+        "evidence_support": [],
+        "guideline_support": [],
+        "concerns": []
+      }
+    ],
+    "missed_differentials": [
+      {
+        "condition": "Spinal Stenosis",
+        "reasoning": "Patient's age and symptoms of tingling in toes, numbness, and pain could be indicative of spinal stenosis.",
+        "is_red_flag": true,
+        "guideline_evidence": []
+      },
+      {
+        "condition": "Osteoporosis",
+        "reasoning": "Patient's history of hypertension and diabetes may increase risk for osteoporosis, which could contribute to back pain.",
+        "is_red_flag": false,
+        "guideline_evidence": []
+      }
+    ],
+    "red_flag_misses": 1
+  },
+  "plan_quality_and_safety": {
+    "guideline_adherence_score": 0.8,
+    "safety_score": 0.9,
+    "verdict": "safe",
+    "guideline_checks": [
+      {
+        "plan_item": "Prescribe Meloxicam 15 mg PO daily for pain and inflammation.",
+        "item_type": "medication",
+        "guideline_adherence": "aligned",
+        "guideline_citations": [],
+        "deviation_explanation": ""
+      },
+      {
+        "plan_item": "Increase Metformin dose to 1000 mg PO twice daily.",
+        "item_type": "medication",
+        "guideline_adherence": "aligned",
+        "guideline_citations": [],
+        "deviation_explanation": ""
+      },
+      {
+        "plan_item": "Increase Lisinopril dose from 10 mg PO daily to 20 mg PO daily.",
+        "item_type": "medication",
+        "guideline_adherence": "aligned",
+        "guideline_citations": [],
+        "deviation_explanation": ""
+      },
+      {
+        "plan_item": "Refer to Physical Therapy for rehabilitation and strengthening.",
+        "item_type": "referral",
+        "guideline_adherence": "aligned",
+        "guideline_citations": [],
+        "deviation_explanation": ""
+      }
+    ],
+    "guideline_deviations": 0,
+    "safety_checks": [
+      {
+        "check_type": "drug_allergy",
+        "status": "pass",
+        "description": "No known allergies.",
+        "related_items": [],
+        "severity": "low"
+      },
+      {
+        "check_type": "drug_interaction",
+        "status": "warning",
+        "description": "Potential interaction between Meloxicam and Lisinopril.",
+        "related_items": [
+          "Meloxicam",
+          "Lisinopril"
+        ],
+        "severity": "moderate"
+      },
+      {
+        "check_type": "dosing_range",
+        "status": "pass",
+        "description": "Doses within normal ranges for Metformin and Lisinopril.",
+        "related_items": [
+          "Metformin",
+          "Lisinopril"
+        ],
+        "severity": "low"
+      }
+    ],
+    "safety_failures": 0,
+    "critical_safety_issues": 0,
+    "missing_return_precautions": false,
+    "missing_follow_up": true
+  },
+  "overall_score": 0.738095238095238,
+  "overall_verdict": "poor",
+  "overall_safety": "needs_review",
+  "num_claims_evaluated": 70,
+  "num_guideline_checks": 4,
+  "num_safety_checks": 3
+}

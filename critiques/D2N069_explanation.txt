@@ -1,0 +1,35 @@
+======================================================================
+SECOND OPINION: CLINICAL DOCUMENTATION REVIEW
+======================================================================
+
+🔶 OVERALL RATING: NEEDS_IMPROVEMENT
+
+The doctor's clinical note achieved a score of 65% (see: overall_score), but had notable areas for improvement.
+
+----------------------------------------------------------------------
+WHAT YOUR DOCTOR DID WELL:
+----------------------------------------------------------------------
+The doctor's treatment plan aligned with clinical guidelines 80% of the time (guidelines:636, guidelines:3779). The note accurately captured 90% of your reported symptoms (see: symptom_coverage:0%).
+
+----------------------------------------------------------------------
+AREAS FOR ATTENTION:
+----------------------------------------------------------------------
+The note had significant omissions regarding knee pain and medication use, which were not addressed in the conversation (notable_omissions). Additionally, there were contradictions found between the note and conversation (contradictions_found:17), including a missed diagnosis of Osteoarthritis and Patellofemoral Pain Syndrome.
+
+----------------------------------------------------------------------
+DETAILED ASSESSMENT:
+----------------------------------------------------------------------
+📋 Documentation: The note had low symptom coverage at 0% (symptom_coverage:0%), but captured 90% of your reported symptoms. Medication coverage was also lacking at 0% (medication_coverage:0%).
+🔍 Diagnosis: The diagnosis coherence score was 60%, indicating some inconsistencies in the doctor's reasoning (diagnosis_coherence_score). Missed diagnoses included Osteoarthritis and Patellofemoral Pain Syndrome, which may indicate underlying conditions.
+💊 Treatment Plan: The treatment plan had a guideline adherence score of 80% (guideline_adherence_score), but there were concerns regarding dosing range for Motrin (safety_concerns:dosing_range).
+🛡️ Safety: The safety rating was safe, but there were moderate severity concerns regarding dosing range (safety_concerns:dosing_range).
+
+----------------------------------------------------------------------
+RECOMMENDATIONS:
+----------------------------------------------------------------------
+Consider running the 2nd Opinion AI diagnostic analysis on your case for a comprehensive second opinion. This will help identify potential underlying conditions and provide a more accurate treatment plan.
+
+======================================================================
+FULL SUMMARY:
+======================================================================
+The doctor's clinical note had several areas for improvement, including notable omissions regarding knee pain and medication use. The note also had contradictions with the conversation, including missed diagnoses of Osteoarthritis and Patellofemoral Pain Syndrome. Additionally, there were concerns regarding dosing range for Motrin. To ensure a comprehensive understanding of your condition, we recommend running the 2nd Opinion AI diagnostic analysis on your case. This will help identify potential underlying conditions and provide a more accurate treatment plan.

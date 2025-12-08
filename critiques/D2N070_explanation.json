@@ -1,0 +1,16 @@
+{
+  "overall_summary": "The doctor's clinical note was found to have several areas for improvement, including missing symptoms and potential safety concerns.",
+  "overall_rating": "needs_improvement",
+  "strengths": "The doctor did a good job of documenting the patient's medication list, with 67% coverage. The treatment plan also showed good adherence to guidelines, scoring 80%. Additionally, there were no critical safety issues identified.",
+  "concerns": "Several symptoms were not documented in the note, including chills, tingling in toes, pain, chest pain, and fever. A potential drug interaction between Meloxicam and Lisinopril was also noted as a moderate concern. Furthermore, two red-flag diagnoses (Spinal Stenosis and Osteoporosis) were missed.",
+  "documentation_quality": "The note captured 79% of the conversation claims with supporting evidence, but had some contradictions and omissions.",
+  "diagnostic_reasoning": "The diagnosis coherence was only 60%, indicating that not all symptoms were considered in the differential diagnoses. However, the breadth of differential diagnoses was good at 80%.",
+  "treatment_plan": "The treatment plan showed good safety scores with no critical safety issues identified, but there may be room for improvement in terms of guideline adherence and symptom management.",
+  "safety_assessment": "There is a potential safety concern related to the interaction between Meloxicam and Lisinopril. It's essential to discuss this with your doctor to ensure safe treatment.",
+  "recommendations": [
+    "Discuss the potential drug interaction with your doctor and ask about alternative medications if necessary.",
+    "Make sure to report any new or worsening symptoms, especially those related to pain, tingling, or chest discomfort.",
+    "Ask your doctor to review your medication list for any potential interactions or side effects."
+  ],
+  "full_narrative": "The doctor's clinical note showed some areas of strength, including good documentation of the patient's medication list and a safe treatment plan. However, there were several notable omissions, including symptoms like chills, tingling in toes, pain, chest pain, and fever. Additionally, two red-flag diagnoses (Spinal Stenosis and Osteoporosis) were missed, which may indicate a need for further evaluation. It's essential to discuss these concerns with your doctor to ensure safe and effective treatment."
+}

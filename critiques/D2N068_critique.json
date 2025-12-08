@@ -1,0 +1,1902 @@
+{
+  "encounter_id": "D2N068",
+  "note_type": "soap",
+  "source_note_consistency": {
+    "support_score": 0.9074074074074074,
+    "contradiction_score": 0.09259259259259259,
+    "hallucination_density": 0.0,
+    "verdict": "borderline",
+    "claim_judgments": [
+      {
+        "claim_id": "claim_0",
+        "claim_text": "*Chief Complaint:** Follow-up of chronic problems.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          6,
+          60,
+          37
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:6",
+            "source": "dialogue",
+            "snippet": "so , brian is a 58 year old male with a past medical history significant for congestive heart failur...",
+            "score": 0.579444408416748
+          },
+          {
+            "evidence_id": "dialogue:60",
+            "source": "dialogue",
+            "snippet": "okay ? so , for your first problem , your congestive heart failure , i think you're retaining fluid ...",
+            "score": 0.5453188419342041
+          },
+          {
+            "evidence_id": "dialogue:37",
+            "source": "dialogue",
+            "snippet": "yeah , i , i did , and we do mon- , i , i monitor it regularly . my wife makes sure i stay on top of...",
+            "score": 0.5443281531333923
+          }
+        ],
+        "confidence": 0.46355552673339845
+      },
+      {
+        "claim_id": "claim_1",
+        "claim_text": "*History of Present Illness:** Mr.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          6,
+          59,
+          63
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:6",
+            "source": "dialogue",
+            "snippet": "so , brian is a 58 year old male with a past medical history significant for congestive heart failur...",
+            "score": 0.6225736141204834
+          },
+          {
+            "evidence_id": "dialogue:59",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5775430202484131
+          },
+          {
+            "evidence_id": "dialogue:63",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5775430202484131
+          }
+        ],
+        "confidence": 0.6225736141204834
+      },
+      {
+        "claim_id": "claim_2",
+        "claim_text": "Brian White is a 58-year-old male with a past medical history significant for congestive heart failure and hypertension, who presents today for follow-up of his chronic problems.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          6,
+          0,
+          60
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:6",
+            "source": "dialogue",
+            "snippet": "so , brian is a 58 year old male with a past medical history significant for congestive heart failur...",
+            "score": 0.8345019817352295
+          },
+          {
+            "evidence_id": "dialogue:0",
+            "source": "dialogue",
+            "snippet": "hi , brian . how are you ?",
+            "score": 0.5582438111305237
+          },
+          {
+            "evidence_id": "dialogue:60",
+            "source": "dialogue",
+            "snippet": "okay ? so , for your first problem , your congestive heart failure , i think you're retaining fluid ...",
+            "score": 0.5259681940078735
+          }
+        ],
+        "confidence": 0.8345019817352295
+      },
+      {
+        "claim_id": "claim_3",
+        "claim_text": "He reports feeling \"out of sorts\" for approximately five weeks, since Labor Day.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          11,
+          9,
+          17
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:11",
+            "source": "dialogue",
+            "snippet": "uh , probably since labor day , so about five weeks or so .",
+            "score": 0.6951814889907837
+          },
+          {
+            "evidence_id": "dialogue:9",
+            "source": "dialogue",
+            "snippet": "i , i just feel out of sorts lately . i do n't know if it's the change in the seasons or if we're ju...",
+            "score": 0.6649324893951416
+          },
+          {
+            "evidence_id": "dialogue:17",
+            "source": "dialogue",
+            "snippet": "uh , it's been a little bit of a struggle . we began construction on our kitchen over labor day week...",
+            "score": 0.6097315549850464
+          }
+        ],
+        "confidence": 0.6951814889907837
+      },
+      {
+        "claim_id": "claim_4",
+        "claim_text": "Symptoms include fatigue, tiredness, and lightheadedness occurring \"every once in a while.\" He also reports feeling bloated occasionally.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          13,
+          9,
+          40
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:13",
+            "source": "dialogue",
+            "snippet": "i feel , i feel bloated every once in a while .",
+            "score": 0.7138633728027344
+          },
+          {
+            "evidence_id": "dialogue:9",
+            "source": "dialogue",
+            "snippet": "i , i just feel out of sorts lately . i do n't know if it's the change in the seasons or if we're ju...",
+            "score": 0.670079231262207
+          },
+          {
+            "evidence_id": "dialogue:40",
+            "source": "dialogue",
+            "snippet": ". and a little dizziness and we just talked a lot about a lot of other symptoms .",
+            "score": 0.6370102167129517
+          }
+        ],
+        "confidence": 0.7138633728027344
+      },
+      {
+        "claim_id": "claim_5",
+        "claim_text": "He notes shortness of breath and \"slight cramps\" (chest pain) when exerting energy, even without lifting heavy objects.",
+        "section": "S",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          21,
+          23,
+          20
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:21",
+            "source": "dialogue",
+            "snippet": "uh , just when i'm doing doing the projects . again , not even lifting anything really heavy , it's ...",
+            "score": 0.6641682386398315
+          },
+          {
+            "evidence_id": "dialogue:23",
+            "source": "dialogue",
+            "snippet": "slight cramps . that seems to go away after about , maybe about an hour or so after i first feel it ...",
+            "score": 0.6445790529251099
+          },
+          {
+            "evidence_id": "dialogue:20",
+            "source": "dialogue",
+            "snippet": "okay , and any problems breathing ? do you feel short of breath ?",
+            "score": 0.6294220685958862
+          }
+        ],
+        "confidence": 0.6641682386398315
+      },
+      {
+        "claim_id": "claim_6",
+        "claim_text": "The chest cramps reportedly resolve after about an hour.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          23,
+          22,
+          11
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:23",
+            "source": "dialogue",
+            "snippet": "slight cramps . that seems to go away after about , maybe about an hour or so after i first feel it ...",
+            "score": 0.8166537880897522
+          },
+          {
+            "evidence_id": "dialogue:22",
+            "source": "dialogue",
+            "snippet": "okay . do you have any chest pain ?",
+            "score": 0.6476141214370728
+          },
+          {
+            "evidence_id": "dialogue:11",
+            "source": "dialogue",
+            "snippet": "uh , probably since labor day , so about five weeks or so .",
+            "score": 0.570543646812439
+          }
+        ],
+        "confidence": 0.8166537880897522
+      },
+      {
+        "claim_id": "claim_7",
+        "claim_text": "He has a slight cough, which he attributes potentially to seasonal changes.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          25,
+          24,
+          13
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:25",
+            "source": "dialogue",
+            "snippet": "a , a slight cough , and again , i'm not sure if it's just the change of seasons and i'm getting a c...",
+            "score": 0.7924482822418213
+          },
+          {
+            "evidence_id": "dialogue:24",
+            "source": "dialogue",
+            "snippet": "okay , and how about a cough ?",
+            "score": 0.6715526580810547
+          },
+          {
+            "evidence_id": "dialogue:13",
+            "source": "dialogue",
+            "snippet": "i feel , i feel bloated every once in a while .",
+            "score": 0.624031126499176
+          }
+        ],
+        "confidence": 0.7924482822418213
+      },
+      {
+        "claim_id": "claim_8",
+        "claim_text": "He denies fever, chills, nausea, vomiting, or diarrhea.",
+        "section": "S",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          42,
+          18,
+          20
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:42",
+            "source": "dialogue",
+            "snippet": "any other symptoms i might be missing ? nausea or vomiting , diarrhea ?",
+            "score": 0.6508677005767822
+          },
+          {
+            "evidence_id": "dialogue:18",
+            "source": "dialogue",
+            "snippet": "okay . all right . and , how about , you know , other symptoms , like , have you had a fever or chil...",
+            "score": 0.5834112763404846
+          },
+          {
+            "evidence_id": "dialogue:20",
+            "source": "dialogue",
+            "snippet": "okay , and any problems breathing ? do you feel short of breath ?",
+            "score": 0.5508461594581604
+          }
+        ],
+        "confidence": 0.6508677005767822
+      },
+      {
+        "claim_id": "claim_9",
+        "claim_text": "He reports taking his medications.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          14,
+          69,
+          6
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:14",
+            "source": "dialogue",
+            "snippet": "okay . all right . um , and , are you taking your , your medications ?",
+            "score": 0.7196442484855652
+          },
+          {
+            "evidence_id": "dialogue:69",
+            "source": "dialogue",
+            "snippet": "that sounds fine .",
+            "score": 0.6218425035476685
+          },
+          {
+            "evidence_id": "dialogue:6",
+            "source": "dialogue",
+            "snippet": "so , brian is a 58 year old male with a past medical history significant for congestive heart failur...",
+            "score": 0.6154670715332031
+          }
+        ],
+        "confidence": 0.7196442484855652
+      },
+      {
+        "claim_id": "claim_10",
+        "claim_text": "He admits his diet has been a struggle since construction began on his kitchen over Labor Day weekend, leading to eating out frequently and consuming less healthy food.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          17,
+          28,
+          13
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:17",
+            "source": "dialogue",
+            "snippet": "uh , it's been a little bit of a struggle . we began construction on our kitchen over labor day week...",
+            "score": 0.7889205813407898
+          },
+          {
+            "evidence_id": "dialogue:28",
+            "source": "dialogue",
+            "snippet": ". how were you doing with your heart failure ? i know that we've kinda talked about you being able t...",
+            "score": 0.5920836925506592
+          },
+          {
+            "evidence_id": "dialogue:13",
+            "source": "dialogue",
+            "snippet": "i feel , i feel bloated every once in a while .",
+            "score": 0.5826866626739502
+          }
+        ],
+        "confidence": 0.7889205813407898
+      },
+      {
+        "claim_id": "claim_11",
+        "claim_text": "He states he has otherwise been \"pretty good\" with his diet and salt intake over the past year, trying to stay on top of it.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          29,
+          16,
+          28
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:29",
+            "source": "dialogue",
+            "snippet": "i , i , i've actually been pretty good about that ever since . the , the , the last year , it's been...",
+            "score": 0.6600519418716431
+          },
+          {
+            "evidence_id": "dialogue:16",
+            "source": "dialogue",
+            "snippet": "okay . and , how about your diet ? are you watching your diet ?",
+            "score": 0.6360078454017639
+          },
+          {
+            "evidence_id": "dialogue:28",
+            "source": "dialogue",
+            "snippet": ". how were you doing with your heart failure ? i know that we've kinda talked about you being able t...",
+            "score": 0.6136443614959717
+          }
+        ],
+        "confidence": 0.6600519418716431
+      },
+      {
+        "claim_id": "claim_12",
+        "claim_text": "He monitors his blood pressure regularly at home with a cuff and reports it has been \"pretty good.\"",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          36,
+          37,
+          66
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:36",
+            "source": "dialogue",
+            "snippet": "and , so , lastly , for your high blood pressure , how are you doing with that ? have , are , did yo...",
+            "score": 0.6685558557510376
+          },
+          {
+            "evidence_id": "dialogue:37",
+            "source": "dialogue",
+            "snippet": "yeah , i , i did , and we do mon- , i , i monitor it regularly . my wife makes sure i stay on top of...",
+            "score": 0.6477053165435791
+          },
+          {
+            "evidence_id": "dialogue:66",
+            "source": "dialogue",
+            "snippet": "hey , dragon ? order an echocardiogram .\nlastly , for your high blood pressure , it looks like you'r...",
+            "score": 0.6194514632225037
+          }
+        ],
+        "confidence": 0.6685558557510376
+      },
+      {
+        "claim_id": "claim_13",
+        "claim_text": "*Past Medical History:**",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          47,
+          53,
+          49
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:47",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5016258955001831
+          },
+          {
+            "evidence_id": "dialogue:53",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5016258955001831
+          },
+          {
+            "evidence_id": "dialogue:49",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5016258955001831
+          }
+        ],
+        "confidence": 0.40130071640014653
+      },
+      {
+        "claim_id": "claim_14",
+        "claim_text": "Congestive Heart Failure",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          60,
+          28,
+          58
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:60",
+            "source": "dialogue",
+            "snippet": "okay ? so , for your first problem , your congestive heart failure , i think you're retaining fluid ...",
+            "score": 0.5114597678184509
+          },
+          {
+            "evidence_id": "dialogue:28",
+            "source": "dialogue",
+            "snippet": ". how were you doing with your heart failure ? i know that we've kinda talked about you being able t...",
+            "score": 0.4105827212333679
+          },
+          {
+            "evidence_id": "dialogue:58",
+            "source": "dialogue",
+            "snippet": "hey , dragon ? show me the chest x-ray . so , looking here at the results of your chest x-ray , it d...",
+            "score": 0.40193113684654236
+          }
+        ],
+        "confidence": 0.4091678142547608
+      },
+      {
+        "claim_id": "claim_15",
+        "claim_text": "Hypertension",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          57,
+          71,
+          65
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:57",
+            "source": "dialogue",
+            "snippet": "sure .",
+            "score": 0.5307694673538208
+          },
+          {
+            "evidence_id": "dialogue:71",
+            "source": "dialogue",
+            "snippet": "sure .",
+            "score": 0.5307694673538208
+          },
+          {
+            "evidence_id": "dialogue:65",
+            "source": "dialogue",
+            "snippet": "sure .",
+            "score": 0.5307694673538208
+          }
+        ],
+        "confidence": 0.42461557388305665
+      },
+      {
+        "claim_id": "claim_16",
+        "claim_text": "*Social History:**",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          39,
+          61,
+          53
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:39",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.4987383484840393
+          },
+          {
+            "evidence_id": "dialogue:61",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.4987383484840393
+          },
+          {
+            "evidence_id": "dialogue:53",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.4987383484840393
+          }
+        ],
+        "confidence": 0.3989906787872315
+      },
+      {
+        "claim_id": "claim_17",
+        "claim_text": "Reports recent dietary indiscretion due to home construction.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          17,
+          13,
+          16
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:17",
+            "source": "dialogue",
+            "snippet": "uh , it's been a little bit of a struggle . we began construction on our kitchen over labor day week...",
+            "score": 0.6523715257644653
+          },
+          {
+            "evidence_id": "dialogue:13",
+            "source": "dialogue",
+            "snippet": "i feel , i feel bloated every once in a while .",
+            "score": 0.6073237657546997
+          },
+          {
+            "evidence_id": "dialogue:16",
+            "source": "dialogue",
+            "snippet": "okay . and , how about your diet ? are you watching your diet ?",
+            "score": 0.5949680805206299
+          }
+        ],
+        "confidence": 0.6523715257644653
+      },
+      {
+        "claim_id": "claim_18",
+        "claim_text": "*Review of Systems:**",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          38,
+          41,
+          63
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:38",
+            "source": "dialogue",
+            "snippet": "okay . all right . well , i know you did the review of systems sheet when you checked in , and you w...",
+            "score": 0.5361778736114502
+          },
+          {
+            "evidence_id": "dialogue:41",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5312432050704956
+          },
+          {
+            "evidence_id": "dialogue:63",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5312432050704956
+          }
+        ],
+        "confidence": 0.4289422988891602
+      },
+      {
+        "claim_id": "claim_19",
+        "claim_text": "**Constitutional:** Endorses fatigue, tiredness, feeling \"out of sorts.\" Endorses lightheadedness.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          9,
+          69,
+          18
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:9",
+            "source": "dialogue",
+            "snippet": "i , i just feel out of sorts lately . i do n't know if it's the change in the seasons or if we're ju...",
+            "score": 0.6597644090652466
+          },
+          {
+            "evidence_id": "dialogue:69",
+            "source": "dialogue",
+            "snippet": "that sounds fine .",
+            "score": 0.5746825337409973
+          },
+          {
+            "evidence_id": "dialogue:18",
+            "source": "dialogue",
+            "snippet": "okay . all right . and , how about , you know , other symptoms , like , have you had a fever or chil...",
+            "score": 0.5651304721832275
+          }
+        ],
+        "confidence": 0.6597644090652466
+      },
+      {
+        "claim_id": "claim_20",
+        "claim_text": "Denies fever, chills.",
+        "section": "S",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          18,
+          25,
+          24
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:18",
+            "source": "dialogue",
+            "snippet": "okay . all right . and , how about , you know , other symptoms , like , have you had a fever or chil...",
+            "score": 0.6114513874053955
+          },
+          {
+            "evidence_id": "dialogue:25",
+            "source": "dialogue",
+            "snippet": "a , a slight cough , and again , i'm not sure if it's just the change of seasons and i'm getting a c...",
+            "score": 0.5752879977226257
+          },
+          {
+            "evidence_id": "dialogue:24",
+            "source": "dialogue",
+            "snippet": "okay , and how about a cough ?",
+            "score": 0.5571216344833374
+          }
+        ],
+        "confidence": 0.6114513874053955
+      },
+      {
+        "claim_id": "claim_21",
+        "claim_text": "**Cardiovascular:** Endorses chest cramps with exertion.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          22,
+          52,
+          54
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:22",
+            "source": "dialogue",
+            "snippet": "okay . do you have any chest pain ?",
+            "score": 0.6097583770751953
+          },
+          {
+            "evidence_id": "dialogue:52",
+            "source": "dialogue",
+            "snippet": "okay . so , on your physical examination , you know , i do appreciate some jugular venous distention...",
+            "score": 0.597224235534668
+          },
+          {
+            "evidence_id": "dialogue:54",
+            "source": "dialogue",
+            "snippet": "to about eight centimeters . on your heart exam , i do appreciate a three out of six systolic ejecti...",
+            "score": 0.5803765058517456
+          }
+        ],
+        "confidence": 0.6097583770751953
+      },
+      {
+        "claim_id": "claim_22",
+        "claim_text": "Endorses shortness of breath with exertion.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          20,
+          64,
+          24
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:20",
+            "source": "dialogue",
+            "snippet": "okay , and any problems breathing ? do you feel short of breath ?",
+            "score": 0.6685333251953125
+          },
+          {
+            "evidence_id": "dialogue:64",
+            "source": "dialogue",
+            "snippet": "and , i certainly want you to call me if you have any other symptoms of shortness of breath , and i ...",
+            "score": 0.6201558709144592
+          },
+          {
+            "evidence_id": "dialogue:24",
+            "source": "dialogue",
+            "snippet": "okay , and how about a cough ?",
+            "score": 0.5722283124923706
+          }
+        ],
+        "confidence": 0.6685333251953125
+      },
+      {
+        "claim_id": "claim_23",
+        "claim_text": "**Respiratory:** Endorses slight cough.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          24,
+          25,
+          69
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:24",
+            "source": "dialogue",
+            "snippet": "okay , and how about a cough ?",
+            "score": 0.7083353400230408
+          },
+          {
+            "evidence_id": "dialogue:25",
+            "source": "dialogue",
+            "snippet": "a , a slight cough , and again , i'm not sure if it's just the change of seasons and i'm getting a c...",
+            "score": 0.6709691286087036
+          },
+          {
+            "evidence_id": "dialogue:69",
+            "source": "dialogue",
+            "snippet": "that sounds fine .",
+            "score": 0.6318238377571106
+          }
+        ],
+        "confidence": 0.7083353400230408
+      },
+      {
+        "claim_id": "claim_24",
+        "claim_text": "**Gastrointestinal:** Endorses bloating.",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          13,
+          69,
+          52
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:13",
+            "source": "dialogue",
+            "snippet": "i feel , i feel bloated every once in a while .",
+            "score": 0.6538779735565186
+          },
+          {
+            "evidence_id": "dialogue:69",
+            "source": "dialogue",
+            "snippet": "that sounds fine .",
+            "score": 0.5732271671295166
+          },
+          {
+            "evidence_id": "dialogue:52",
+            "source": "dialogue",
+            "snippet": "okay . so , on your physical examination , you know , i do appreciate some jugular venous distention...",
+            "score": 0.5731841921806335
+          }
+        ],
+        "confidence": 0.6538779735565186
+      },
+      {
+        "claim_id": "claim_25",
+        "claim_text": "Denies nausea, vomiting, diarrhea.",
+        "section": "S",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          42,
+          13,
+          20
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:42",
+            "source": "dialogue",
+            "snippet": "any other symptoms i might be missing ? nausea or vomiting , diarrhea ?",
+            "score": 0.6827176213264465
+          },
+          {
+            "evidence_id": "dialogue:13",
+            "source": "dialogue",
+            "snippet": "i feel , i feel bloated every once in a while .",
+            "score": 0.5251743197441101
+          },
+          {
+            "evidence_id": "dialogue:20",
+            "source": "dialogue",
+            "snippet": "okay , and any problems breathing ? do you feel short of breath ?",
+            "score": 0.5219008922576904
+          }
+        ],
+        "confidence": 0.6827176213264465
+      },
+      {
+        "claim_id": "claim_26",
+        "claim_text": "*Medications:**",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          59,
+          61,
+          7
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:59",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5346860289573669
+          },
+          {
+            "evidence_id": "dialogue:61",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5346860289573669
+          },
+          {
+            "evidence_id": "dialogue:7",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5346860289573669
+          }
+        ],
+        "confidence": 0.4277488231658936
+      },
+      {
+        "claim_id": "claim_27",
+        "claim_text": "Lasix (dose not specified by patient, taken daily)",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          60,
+          66,
+          14
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:60",
+            "source": "dialogue",
+            "snippet": "okay ? so , for your first problem , your congestive heart failure , i think you're retaining fluid ...",
+            "score": 0.5192826390266418
+          },
+          {
+            "evidence_id": "dialogue:66",
+            "source": "dialogue",
+            "snippet": "hey , dragon ? order an echocardiogram .\nlastly , for your high blood pressure , it looks like you'r...",
+            "score": 0.5048349499702454
+          },
+          {
+            "evidence_id": "dialogue:14",
+            "source": "dialogue",
+            "snippet": "okay . all right . um , and , are you taking your , your medications ?",
+            "score": 0.48336324095726013
+          }
+        ],
+        "confidence": 0.4154261112213135
+      },
+      {
+        "claim_id": "claim_28",
+        "claim_text": "Lisinopril 20 mg daily",
+        "section": "S",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          66,
+          57,
+          5
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:66",
+            "source": "dialogue",
+            "snippet": "hey , dragon ? order an echocardiogram .\nlastly , for your high blood pressure , it looks like you'r...",
+            "score": 0.6444553136825562
+          },
+          {
+            "evidence_id": "dialogue:57",
+            "source": "dialogue",
+            "snippet": "sure .",
+            "score": 0.4542299807071686
+          },
+          {
+            "evidence_id": "dialogue:5",
+            "source": "dialogue",
+            "snippet": "sure .",
+            "score": 0.4542299807071686
+          }
+        ],
+        "confidence": 0.6444553136825562
+      },
+      {
+        "claim_id": "claim_29",
+        "claim_text": "*Allergies:** No allergies mentioned in transcript.",
+        "section": "S",
+        "verdict": "contradicted",
+        "dialogue_sentence_ids": [
+          18,
+          20,
+          69
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:18",
+            "source": "dialogue",
+            "snippet": "okay . all right . and , how about , you know , other symptoms , like , have you had a fever or chil...",
+            "score": 0.5134352445602417
+          },
+          {
+            "evidence_id": "dialogue:20",
+            "source": "dialogue",
+            "snippet": "okay , and any problems breathing ? do you feel short of breath ?",
+            "score": 0.49146872758865356
+          },
+          {
+            "evidence_id": "dialogue:69",
+            "source": "dialogue",
+            "snippet": "that sounds fine .",
+            "score": 0.49122336506843567
+          }
+        ],
+        "confidence": 0.5134352445602417
+      },
+      {
+        "claim_id": "claim_30",
+        "claim_text": "*Vital Signs:** Reviewed, noted as \"good\" (specific values not provided in transcript).",
+        "section": "O",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          48,
+          69,
+          1
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:48",
+            "source": "dialogue",
+            "snippet": "hey , dragon ? show me the vital signs . so , looking at your vital signs here in the office , every...",
+            "score": 0.6021847724914551
+          },
+          {
+            "evidence_id": "dialogue:69",
+            "source": "dialogue",
+            "snippet": "that sounds fine .",
+            "score": 0.5812164545059204
+          },
+          {
+            "evidence_id": "dialogue:1",
+            "source": "dialogue",
+            "snippet": "hi , good to see you .",
+            "score": 0.5539076924324036
+          }
+        ],
+        "confidence": 0.6021847724914551
+      },
+      {
+        "claim_id": "claim_31",
+        "claim_text": "Blood pressure, heart rate, and oxygenation reported as \"really good.\"",
+        "section": "O",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          48,
+          69,
+          66
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:48",
+            "source": "dialogue",
+            "snippet": "hey , dragon ? show me the vital signs . so , looking at your vital signs here in the office , every...",
+            "score": 0.7117500305175781
+          },
+          {
+            "evidence_id": "dialogue:69",
+            "source": "dialogue",
+            "snippet": "that sounds fine .",
+            "score": 0.6162958145141602
+          },
+          {
+            "evidence_id": "dialogue:66",
+            "source": "dialogue",
+            "snippet": "hey , dragon ? order an echocardiogram .\nlastly , for your high blood pressure , it looks like you'r...",
+            "score": 0.6146562695503235
+          }
+        ],
+        "confidence": 0.7117500305175781
+      },
+      {
+        "claim_id": "claim_32",
+        "claim_text": "*Physical Examination:**",
+        "section": "O",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          46,
+          3,
+          55
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:46",
+            "source": "dialogue",
+            "snippet": "okay . all right . well , i just want to go ahead and do a quick physical exam .",
+            "score": 0.5421054363250732
+          },
+          {
+            "evidence_id": "dialogue:3",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5293187499046326
+          },
+          {
+            "evidence_id": "dialogue:55",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5293187499046326
+          }
+        ],
+        "confidence": 0.4336843490600586
+      },
+      {
+        "claim_id": "claim_33",
+        "claim_text": "**Neck:** Jugular venous distention appreciated to 8 cm.",
+        "section": "O",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          52,
+          54,
+          60
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:52",
+            "source": "dialogue",
+            "snippet": "okay . so , on your physical examination , you know , i do appreciate some jugular venous distention...",
+            "score": 0.7301371097564697
+          },
+          {
+            "evidence_id": "dialogue:54",
+            "source": "dialogue",
+            "snippet": "to about eight centimeters . on your heart exam , i do appreciate a three out of six systolic ejecti...",
+            "score": 0.5884139537811279
+          },
+          {
+            "evidence_id": "dialogue:60",
+            "source": "dialogue",
+            "snippet": "okay ? so , for your first problem , your congestive heart failure , i think you're retaining fluid ...",
+            "score": 0.5068292617797852
+          }
+        ],
+        "confidence": 0.7301371097564697
+      },
+      {
+        "claim_id": "claim_34",
+        "claim_text": "**Cardiovascular:** 3/6 systolic ejection murmur appreciated.",
+        "section": "O",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          54,
+          69,
+          52
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:54",
+            "source": "dialogue",
+            "snippet": "to about eight centimeters . on your heart exam , i do appreciate a three out of six systolic ejecti...",
+            "score": 0.680359959602356
+          },
+          {
+            "evidence_id": "dialogue:69",
+            "source": "dialogue",
+            "snippet": "that sounds fine .",
+            "score": 0.6090818047523499
+          },
+          {
+            "evidence_id": "dialogue:52",
+            "source": "dialogue",
+            "snippet": "okay . so , on your physical examination , you know , i do appreciate some jugular venous distention...",
+            "score": 0.6067877411842346
+          }
+        ],
+        "confidence": 0.680359959602356
+      },
+      {
+        "claim_id": "claim_35",
+        "claim_text": "**Respiratory:** Fine crackles appreciated at the bases bilaterally.",
+        "section": "O",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          69,
+          52,
+          54
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:69",
+            "source": "dialogue",
+            "snippet": "that sounds fine .",
+            "score": 0.618724524974823
+          },
+          {
+            "evidence_id": "dialogue:52",
+            "source": "dialogue",
+            "snippet": "okay . so , on your physical examination , you know , i do appreciate some jugular venous distention...",
+            "score": 0.6163598299026489
+          },
+          {
+            "evidence_id": "dialogue:54",
+            "source": "dialogue",
+            "snippet": "to about eight centimeters . on your heart exam , i do appreciate a three out of six systolic ejecti...",
+            "score": 0.5904982089996338
+          }
+        ],
+        "confidence": 0.618724524974823
+      },
+      {
+        "claim_id": "claim_36",
+        "claim_text": "**Extremities:** 1+ pitting edema appreciated in lower extremities.",
+        "section": "O",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          54,
+          52,
+          18
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:54",
+            "source": "dialogue",
+            "snippet": "to about eight centimeters . on your heart exam , i do appreciate a three out of six systolic ejecti...",
+            "score": 0.6953502893447876
+          },
+          {
+            "evidence_id": "dialogue:52",
+            "source": "dialogue",
+            "snippet": "okay . so , on your physical examination , you know , i do appreciate some jugular venous distention...",
+            "score": 0.6164472699165344
+          },
+          {
+            "evidence_id": "dialogue:18",
+            "source": "dialogue",
+            "snippet": "okay . all right . and , how about , you know , other symptoms , like , have you had a fever or chil...",
+            "score": 0.5448748469352722
+          }
+        ],
+        "confidence": 0.6953502893447876
+      },
+      {
+        "claim_id": "claim_37",
+        "claim_text": "*Other systems not described in transcript.*",
+        "section": "O",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          49,
+          3,
+          39
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:49",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.530809223651886
+          },
+          {
+            "evidence_id": "dialogue:3",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.530809223651886
+          },
+          {
+            "evidence_id": "dialogue:39",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.530809223651886
+          }
+        ],
+        "confidence": 0.42464737892150883
+      },
+      {
+        "claim_id": "claim_38",
+        "claim_text": "*Imaging Results:**",
+        "section": "O",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          3,
+          27,
+          7
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:3",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5295385122299194
+          },
+          {
+            "evidence_id": "dialogue:27",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5295385122299194
+          },
+          {
+            "evidence_id": "dialogue:7",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.5295385122299194
+          }
+        ],
+        "confidence": 0.4236308097839356
+      },
+      {
+        "claim_id": "claim_39",
+        "claim_text": "**Chest X-ray:** Reviewed, demonstrates \"a little bit of fluid in your lungs.\"",
+        "section": "O",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          54,
+          58,
+          52
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:54",
+            "source": "dialogue",
+            "snippet": "to about eight centimeters . on your heart exam , i do appreciate a three out of six systolic ejecti...",
+            "score": 0.7002535462379456
+          },
+          {
+            "evidence_id": "dialogue:58",
+            "source": "dialogue",
+            "snippet": "hey , dragon ? show me the chest x-ray . so , looking here at the results of your chest x-ray , it d...",
+            "score": 0.679940938949585
+          },
+          {
+            "evidence_id": "dialogue:52",
+            "source": "dialogue",
+            "snippet": "okay . so , on your physical examination , you know , i do appreciate some jugular venous distention...",
+            "score": 0.6232882142066956
+          }
+        ],
+        "confidence": 0.7002535462379456
+      },
+      {
+        "claim_id": "claim_40",
+        "claim_text": "**Echocardiogram (4 months ago):** Reviewed, demonstrates reduced ejection fraction of 45% and mitral regurgitation.",
+        "section": "O",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          58,
+          54,
+          52
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:58",
+            "source": "dialogue",
+            "snippet": "hey , dragon ? show me the chest x-ray . so , looking here at the results of your chest x-ray , it d...",
+            "score": 0.6992195844650269
+          },
+          {
+            "evidence_id": "dialogue:54",
+            "source": "dialogue",
+            "snippet": "to about eight centimeters . on your heart exam , i do appreciate a three out of six systolic ejecti...",
+            "score": 0.623910665512085
+          },
+          {
+            "evidence_id": "dialogue:52",
+            "source": "dialogue",
+            "snippet": "okay . so , on your physical examination , you know , i do appreciate some jugular venous distention...",
+            "score": 0.5751414895057678
+          }
+        ],
+        "confidence": 0.6992195844650269
+      },
+      {
+        "claim_id": "claim_41",
+        "claim_text": "**Congestive Heart Failure, likely exacerbated by fluid overload:** 58-year-old male with known CHF presenting with increased fatigue, lightheadedness, bloating, exertional shortness of breath, and chest cramps.",
+        "section": "A",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          60,
+          6,
+          58
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:60",
+            "source": "dialogue",
+            "snippet": "okay ? so , for your first problem , your congestive heart failure , i think you're retaining fluid ...",
+            "score": 0.666024923324585
+          },
+          {
+            "evidence_id": "dialogue:6",
+            "source": "dialogue",
+            "snippet": "so , brian is a 58 year old male with a past medical history significant for congestive heart failur...",
+            "score": 0.6354738473892212
+          },
+          {
+            "evidence_id": "dialogue:58",
+            "source": "dialogue",
+            "snippet": "hey , dragon ? show me the chest x-ray . so , looking here at the results of your chest x-ray , it d...",
+            "score": 0.6021255254745483
+          }
+        ],
+        "confidence": 0.666024923324585
+      },
+      {
+        "claim_id": "claim_42",
+        "claim_text": "Objective findings include JVD to 8cm, bilateral lung crackles, 1+ lower extremity edema, and chest X-ray showing fluid in the lungs.",
+        "section": "A",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          54,
+          58,
+          52
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:54",
+            "source": "dialogue",
+            "snippet": "to about eight centimeters . on your heart exam , i do appreciate a three out of six systolic ejecti...",
+            "score": 0.7071985006332397
+          },
+          {
+            "evidence_id": "dialogue:58",
+            "source": "dialogue",
+            "snippet": "hey , dragon ? show me the chest x-ray . so , looking here at the results of your chest x-ray , it d...",
+            "score": 0.6203370690345764
+          },
+          {
+            "evidence_id": "dialogue:52",
+            "source": "dialogue",
+            "snippet": "okay . so , on your physical examination , you know , i do appreciate some jugular venous distention...",
+            "score": 0.5936069488525391
+          }
+        ],
+        "confidence": 0.7071985006332397
+      },
+      {
+        "claim_id": "claim_43",
+        "claim_text": "These findings, coupled with a history of reduced EF (45%) and recent dietary indiscretion, are consistent with fluid retention related to heart failure.",
+        "section": "A",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          60,
+          58,
+          28
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:60",
+            "source": "dialogue",
+            "snippet": "okay ? so , for your first problem , your congestive heart failure , i think you're retaining fluid ...",
+            "score": 0.6821480393409729
+          },
+          {
+            "evidence_id": "dialogue:58",
+            "source": "dialogue",
+            "snippet": "hey , dragon ? show me the chest x-ray . so , looking here at the results of your chest x-ray , it d...",
+            "score": 0.6560918688774109
+          },
+          {
+            "evidence_id": "dialogue:28",
+            "source": "dialogue",
+            "snippet": ". how were you doing with your heart failure ? i know that we've kinda talked about you being able t...",
+            "score": 0.6201692223548889
+          }
+        ],
+        "confidence": 0.6821480393409729
+      },
+      {
+        "claim_id": "claim_44",
+        "claim_text": "**Hypertension:** Well-controlled based on patient's report of regular home monitoring and current medication regimen.",
+        "section": "A",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          66,
+          37,
+          60
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:66",
+            "source": "dialogue",
+            "snippet": "hey , dragon ? order an echocardiogram .\nlastly , for your high blood pressure , it looks like you'r...",
+            "score": 0.6482862830162048
+          },
+          {
+            "evidence_id": "dialogue:37",
+            "source": "dialogue",
+            "snippet": "yeah , i , i did , and we do mon- , i , i monitor it regularly . my wife makes sure i stay on top of...",
+            "score": 0.6096486449241638
+          },
+          {
+            "evidence_id": "dialogue:60",
+            "source": "dialogue",
+            "snippet": "okay ? so , for your first problem , your congestive heart failure , i think you're retaining fluid ...",
+            "score": 0.5653793811798096
+          }
+        ],
+        "confidence": 0.6482862830162048
+      },
+      {
+        "claim_id": "claim_45",
+        "claim_text": "**Congestive Heart Failure:**",
+        "section": "P",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          60,
+          47,
+          63
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:60",
+            "source": "dialogue",
+            "snippet": "okay ? so , for your first problem , your congestive heart failure , i think you're retaining fluid ...",
+            "score": 0.539470911026001
+          },
+          {
+            "evidence_id": "dialogue:47",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.46736493706703186
+          },
+          {
+            "evidence_id": "dialogue:63",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.46736493706703186
+          }
+        ],
+        "confidence": 0.4315767288208008
+      },
+      {
+        "claim_id": "claim_46",
+        "claim_text": "**Medical Treatment:** Increase Lasix dose to 80 mg daily.",
+        "section": "P",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          60,
+          66,
+          23
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:60",
+            "source": "dialogue",
+            "snippet": "okay ? so , for your first problem , your congestive heart failure , i think you're retaining fluid ...",
+            "score": 0.742888331413269
+          },
+          {
+            "evidence_id": "dialogue:66",
+            "source": "dialogue",
+            "snippet": "hey , dragon ? order an echocardiogram .\nlastly , for your high blood pressure , it looks like you'r...",
+            "score": 0.5816202759742737
+          },
+          {
+            "evidence_id": "dialogue:23",
+            "source": "dialogue",
+            "snippet": "slight cramps . that seems to go away after about , maybe about an hour or so after i first feel it ...",
+            "score": 0.5345172882080078
+          }
+        ],
+        "confidence": 0.742888331413269
+      },
+      {
+        "claim_id": "claim_47",
+        "claim_text": "**Diagnostics:** Order repeat echocardiogram.",
+        "section": "P",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          64,
+          66,
+          60
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:64",
+            "source": "dialogue",
+            "snippet": "and , i certainly want you to call me if you have any other symptoms of shortness of breath , and i ...",
+            "score": 0.7161334156990051
+          },
+          {
+            "evidence_id": "dialogue:66",
+            "source": "dialogue",
+            "snippet": "hey , dragon ? order an echocardiogram .\nlastly , for your high blood pressure , it looks like you'r...",
+            "score": 0.6545376777648926
+          },
+          {
+            "evidence_id": "dialogue:60",
+            "source": "dialogue",
+            "snippet": "okay ? so , for your first problem , your congestive heart failure , i think you're retaining fluid ...",
+            "score": 0.6184321641921997
+          }
+        ],
+        "confidence": 0.7161334156990051
+      },
+      {
+        "claim_id": "claim_48",
+        "claim_text": "**Patient Education/Monitoring:** Instructed patient to weigh himself every day and call if gaining more weight.",
+        "section": "P",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          62,
+          37,
+          40
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:62",
+            "source": "dialogue",
+            "snippet": "i want you to weigh yourself every day . i want you to call me if you're gaining more weight .",
+            "score": 0.7660696506500244
+          },
+          {
+            "evidence_id": "dialogue:37",
+            "source": "dialogue",
+            "snippet": "yeah , i , i did , and we do mon- , i , i monitor it regularly . my wife makes sure i stay on top of...",
+            "score": 0.578204870223999
+          },
+          {
+            "evidence_id": "dialogue:40",
+            "source": "dialogue",
+            "snippet": ". and a little dizziness and we just talked a lot about a lot of other symptoms .",
+            "score": 0.5541102886199951
+          }
+        ],
+        "confidence": 0.7660696506500244
+      },
+      {
+        "claim_id": "claim_49",
+        "claim_text": "Instructed patient to call if he experiences any other symptoms of shortness of breath.",
+        "section": "P",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          64,
+          18,
+          20
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:64",
+            "source": "dialogue",
+            "snippet": "and , i certainly want you to call me if you have any other symptoms of shortness of breath , and i ...",
+            "score": 0.8052375912666321
+          },
+          {
+            "evidence_id": "dialogue:18",
+            "source": "dialogue",
+            "snippet": "okay . all right . and , how about , you know , other symptoms , like , have you had a fever or chil...",
+            "score": 0.6397667527198792
+          },
+          {
+            "evidence_id": "dialogue:20",
+            "source": "dialogue",
+            "snippet": "okay , and any problems breathing ? do you feel short of breath ?",
+            "score": 0.6394253969192505
+          }
+        ],
+        "confidence": 0.8052375912666321
+      },
+      {
+        "claim_id": "claim_50",
+        "claim_text": "**Hypertension:**",
+        "section": "P",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          53,
+          55,
+          7
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:53",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.538345217704773
+          },
+          {
+            "evidence_id": "dialogue:55",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.538345217704773
+          },
+          {
+            "evidence_id": "dialogue:7",
+            "source": "dialogue",
+            "snippet": "mm-hmm .",
+            "score": 0.538345217704773
+          }
+        ],
+        "confidence": 0.43067617416381837
+      },
+      {
+        "claim_id": "claim_51",
+        "claim_text": "**Medical Treatment:** Continue Lisinopril 20 mg daily.",
+        "section": "P",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          66,
+          60,
+          14
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:66",
+            "source": "dialogue",
+            "snippet": "hey , dragon ? order an echocardiogram .\nlastly , for your high blood pressure , it looks like you'r...",
+            "score": 0.6990947723388672
+          },
+          {
+            "evidence_id": "dialogue:60",
+            "source": "dialogue",
+            "snippet": "okay ? so , for your first problem , your congestive heart failure , i think you're retaining fluid ...",
+            "score": 0.6320958137512207
+          },
+          {
+            "evidence_id": "dialogue:14",
+            "source": "dialogue",
+            "snippet": "okay . all right . um , and , are you taking your , your medications ?",
+            "score": 0.5711485147476196
+          }
+        ],
+        "confidence": 0.6990947723388672
+      },
+      {
+        "claim_id": "claim_52",
+        "claim_text": "**Patient Education/Monitoring:** Instructed patient to continue recording blood pressures at home and report elevated readings via the patient portal.",
+        "section": "P",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          66,
+          37,
+          36
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:66",
+            "source": "dialogue",
+            "snippet": "hey , dragon ? order an echocardiogram .\nlastly , for your high blood pressure , it looks like you'r...",
+            "score": 0.6600266098976135
+          },
+          {
+            "evidence_id": "dialogue:37",
+            "source": "dialogue",
+            "snippet": "yeah , i , i did , and we do mon- , i , i monitor it regularly . my wife makes sure i stay on top of...",
+            "score": 0.5665254592895508
+          },
+          {
+            "evidence_id": "dialogue:36",
+            "source": "dialogue",
+            "snippet": "and , so , lastly , for your high blood pressure , how are you doing with that ? have , are , did yo...",
+            "score": 0.5634014010429382
+          }
+        ],
+        "confidence": 0.6600266098976135
+      },
+      {
+        "claim_id": "claim_53",
+        "claim_text": "**Follow-up:** Clinician will be in touch with the patient after test results are received.",
+        "section": "P",
+        "verdict": "entailed",
+        "dialogue_sentence_ids": [
+          70,
+          37,
+          23
+        ],
+        "dialogue_evidence": [
+          {
+            "evidence_id": "dialogue:70",
+            "source": "dialogue",
+            "snippet": "okay . um , i'm gon na be in touch with you after we get your test results , and we'll go from there...",
+            "score": 0.7461302876472473
+          },
+          {
+            "evidence_id": "dialogue:37",
+            "source": "dialogue",
+            "snippet": "yeah , i , i did , and we do mon- , i , i monitor it regularly . my wife makes sure i stay on top of...",
+            "score": 0.5507076382637024
+          },
+          {
+            "evidence_id": "dialogue:23",
+            "source": "dialogue",
+            "snippet": "slight cramps . that seems to go away after about , maybe about an hour or so after i first feel it ...",
+            "score": 0.5434654951095581
+          }
+        ],
+        "confidence": 0.7461302876472473
+      }
+    ],
+    "total_claims_evaluated": 54
+  },
+  "coverage_of_salient_findings": {
+    "completeness_score": 0.6666666666666666,
+    "omission_rate": 0.6153846153846154,
+    "verdict": "borderline",
+    "symptom_recall": 0.3333333333333333,
+    "medication_recall": 1.0,
+    "allergy_recall": 0.0,
+    "risk_factor_recall": 0.0,
+    "omissions": [
+      {
+        "finding_type": "symptom",
+        "finding_text": "mon-",
+        "dialogue_sentence_ids": [],
+        "importance": "moderate"
+      },
+      {
+        "finding_type": "symptom",
+        "finding_text": "slight_cramps",
+        "dialogue_sentence_ids": [],
+        "importance": "moderate"
+      },
+      {
+        "finding_type": "symptom",
+        "finding_text": "palpitations",
+        "dialogue_sentence_ids": [],
+        "importance": "moderate"
+      },
+      {
+        "finding_type": "symptom",
+        "finding_text": "chest_pain_(slight_cramps)",
+        "dialogue_sentence_ids": [],
+        "importance": "moderate"
+      },
+      {
+        "finding_type": "symptom",
+        "finding_text": "cough",
+        "dialogue_sentence_ids": [],
+        "importance": "moderate"
+      },
+      {
+        "finding_type": "symptom",
+        "finding_text": "cramps",
+        "dialogue_sentence_ids": [],
+        "importance": "moderate"
+      },
+      {
+        "finding_type": "risk_factor",
+        "finding_text": "congestive heart failure",
+        "dialogue_sentence_ids": [],
+        "importance": "moderate"
+      },
+      {
+        "finding_type": "risk_factor",
+        "finding_text": "hypertension",
+        "dialogue_sentence_ids": [],
+        "importance": "moderate"
+      }
+    ],
+    "critical_omissions": 0
+  },
+  "assessment_quality": {
+    "dx_coherence_score": 0.6,
+    "differential_breadth_score": 0.8,
+    "verdict": "borderline",
+    "diagnosis_evaluations": [
+      {
+        "diagnosis": "Congestive Heart Failure (primary)",
+        "coherence_with_evidence": 0.9,
+        "evidence_support": [],
+        "guideline_support": [],
+        "concerns": []
+      },
+      {
+        "diagnosis": "Hypertension (secondary)",
+        "coherence_with_evidence": 0.8,
+        "evidence_support": [],
+        "guideline_support": [],
+        "concerns": []
+      }
+    ],
+    "missed_differentials": [
+      {
+        "condition": "Anxiety or Depression",
+        "reasoning": "Patient's symptoms of fatigue, lightheadedness, and palpitations could be indicative of an underlying anxiety or depression disorder.",
+        "is_red_flag": true,
+        "guideline_evidence": []
+      },
+      {
+        "condition": "Chronic Obstructive Pulmonary Disease (COPD)",
+        "reasoning": "Patient's symptoms of cough, chest pain, and shortness of breath could be indicative of COPD.",
+        "is_red_flag": false,
+        "guideline_evidence": []
+      }
+    ],
+    "red_flag_misses": 1
+  },
+  "plan_quality_and_safety": {
+    "guideline_adherence_score": 0.8,
+    "safety_score": 0.9,
+    "verdict": "safe",
+    "guideline_checks": [
+      {
+        "plan_item": "Increase Lasix dose to 80 mg daily",
+        "item_type": "medication",
+        "guideline_adherence": "aligned",
+        "guideline_citations": [],
+        "deviation_explanation": ""
+      },
+      {
+        "plan_item": "Order repeat echocardiogram",
+        "item_type": "diagnostic_test",
+        "guideline_adherence": "aligned",
+        "guideline_citations": [],
+        "deviation_explanation": ""
+      },
+      {
+        "plan_item": "Instruct patient to weigh himself every day and call if gaining more weight",
+        "item_type": "lifestyle",
+        "guideline_adherence": "aligned",
+        "guideline_citations": [],
+        "deviation_explanation": ""
+      }
+    ],
+    "guideline_deviations": 0,
+    "safety_checks": [
+      {
+        "check_type": "drug_allergy",
+        "status": "pass",
+        "description": "No known allergies",
+        "related_items": [],
+        "severity": "low"
+      },
+      {
+        "check_type": "drug_interaction",
+        "status": "warning",
+        "description": "Potential interaction between Lasix and Lisinopril (both diuretics)",
+        "related_items": [
+          "Lasix",
+          "Lisinopril"
+        ],
+        "severity": "moderate"
+      },
+      {
+        "check_type": "dosing_range",
+        "status": "pass",
+        "description": "Dosing within normal ranges for Lasix and Lisinopril",
+        "related_items": [],
+        "severity": "low"
+      }
+    ],
+    "safety_failures": 0,
+    "critical_safety_issues": 0,
+    "missing_return_precautions": true,
+    "missing_follow_up": false
+  },
+  "overall_score": 0.7685185185185185,
+  "overall_verdict": "borderline",
+  "overall_safety": "needs_review",
+  "num_claims_evaluated": 54,
+  "num_guideline_checks": 3,
+  "num_safety_checks": 3
+}
